@@ -4,7 +4,7 @@ define(['angularMocks','controllers/module','controllers/my-ctrl-1'], function (
   describe('Controller: MainCtrl', function () {
 
     // load the controller's module
-    beforeEach(module('beepAdminApp'));
+    beforeEach(module('app.controllers'));
 
     var MainCtrl,
         scope;
