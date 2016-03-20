@@ -8,6 +8,7 @@ var lazypipe = require('lazypipe');
 var rimraf = require('rimraf');
 var wiredep = require('wiredep').stream;
 var runSequence = require('run-sequence');
+var karmaServer = require('karma').Server;
 
 var yeoman = {
   app: require('./bower.json').appPath || 'app',
@@ -28,7 +29,7 @@ var paths = {
     'test/mock/**/*.js',
     'test/spec/**/*.js'
   ],
-  karma: 'karma.conf.js',
+  karma: 'test/karma.conf.js',
   views: {
     main: yeoman.app + '/index.html',
     files: [yeoman.app + '/views/**/*.html']
@@ -84,7 +85,7 @@ gulp.task('start:server', function() {
 
 gulp.task('start:server:test', function() {
   $.connect.server({
-    root: ['test', yeoman.app, '.tmp'],
+    root: [yeoman.app, '.tmp'],
     livereload: true,
     port: 9001
   });
@@ -134,6 +135,15 @@ gulp.task('test', ['start:server:test'], function () {
       configFile: paths.karma,
       action: 'watch'
     }));
+});
+
+gulp.task('ktest', function (done) {
+  new karmaServer({
+    configFile: __dirname + '/test/karma.conf.js',
+    singleRun: false
+  }, function (err) {
+    done(err);
+  }).start();
 });
 
 // inject bower components

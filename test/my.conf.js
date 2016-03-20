@@ -20,18 +20,18 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      JASMINE,
+      JASMINE_ADAPTER,
+      REQUIRE,
+      REQUIRE_ADAPTER,
 
-
-      {pattern: 'app/script/**/*.js', included: false},
-      {pattern: 'app/script/*.js', included: false},
-      {pattern: 'app/vender/domready/ready.js', included: false},
+      {pattern: 'app/script/*/*.js', included: false},
       {pattern: 'test/mock/**/*.js', included: false},
       {pattern: 'app/vender/**/*.js', included: false},
       {pattern: 'test/spec/**/*.js', included: false},
       // bower:js
       // endbower
-      'test/spec/main.js',
-
+      'test/spec/main.js'
     ],
 
     // list of files / patterns to exclude

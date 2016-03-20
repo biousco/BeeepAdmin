@@ -1,23 +1,26 @@
 'use strict';
 
-describe('Controller: MainCtrl', function () {
+define(['angularMocks','controllers/module','controllers/my-ctrl-1'], function () {
+  describe('Controller: MainCtrl', function () {
 
-  // load the controller's module
-  beforeEach(module('beepAdminApp'));
+    // load the controller's module
+    beforeEach(module('beepAdminApp'));
 
-  var MainCtrl,
-    scope;
+    var MainCtrl,
+        scope;
 
-  // Initialize the controller and a mock scope
-  beforeEach(inject(function ($controller, $rootScope) {
-    scope = $rootScope.$new();
-    MainCtrl = $controller('MainCtrl', {
-      $scope: scope
-      // place here mocked dependencies
+    // Initialize the controller and a mock scope
+    beforeEach(inject(function ($controller, $rootScope) {
+      scope = $rootScope.$new();
+      MainCtrl = $controller('MyCtrl1', {
+        $scope: scope
+        // place here mocked dependencies
+      });
+    }));
+
+    it('should attach a list of awesomeThings to the scopesss', function () {
+      expect(scope.text).toBe('h');
     });
-  }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
   });
 });
+
