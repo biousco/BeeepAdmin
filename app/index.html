@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My AngularJS AngularJS + RequireJS App</title>
+  <link rel="stylesheet" href="styles/app.css">
+</head>
+<body>
+
+  <ul class="menu">
+    <li><a ui-sref="view1">view1</a></li>
+    <li><a ui-sref="view2">view2</a></li>
+  </ul>
+
+  <div ui-view></div>
+
+  <div>Angular Require seed app: v<span app-version></span></div>
+
+  <script src="vender/requirejs/require.js" data-main="script/main.js"></script>
+</body>
+</html>
