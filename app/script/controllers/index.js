@@ -5,6 +5,5 @@
  * which avails each controller of, for example, the `config` constants object.
  **/
 define([
-    './my-ctrl-1',
-    './my-ctrl-2'
+    './LoginCtrl'
 ], function () {});

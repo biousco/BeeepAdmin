@@ -1,3 +1,4 @@
+'use strict';
 define([
     'angular',
     'uiRouter',
@@ -6,8 +7,6 @@ define([
     './filters/index',
     './services/index'
 ], function (ng) {
-    'use strict';
-
     return ng.module('beepAdminApp', [
         'app.services',
         'app.controllers',

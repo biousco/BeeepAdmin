@@ -13,8 +13,19 @@ require.config({
     uiRouter: {
       deps: ['angular']
     }
-  },
-  deps: [
-      './bootstrap'
-  ]
+  }
 });
+
+
+define([
+  'require',
+  'angular',
+  'app',
+  'routes'
+], function (require, ng) {
+  'use strict';
+  require(['domReady!'], function (document) {
+    ng.bootstrap(document, ['beepAdminApp']);
+  });
+});
+
