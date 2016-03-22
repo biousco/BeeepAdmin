@@ -3,7 +3,7 @@
 define(['angularMocks',
   'controllers/module',
   'controllers/my-ctrl-1',
-  'controllers/LoginCtrl',
+  '../../../app/script/operation/BannerManageCtrl/LoginCtrl',
   'services/module',
   'services/cgi'
 ], function () {

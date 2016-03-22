@@ -5,5 +5,10 @@
  * which avails each controller of, for example, the `config` constants object.
  **/
 define([
-    './LoginCtrl'
+    './LoginCtrl',
+  './goods/GoodsCtrl',
+  './goods/GoodsReleaseCtrl',
+  './goods/GoodsRackingCtrl',
+  './goods/GoodsOutdateCtrl',
+  './operation/BannerManageCtrl'
 ], function () {});
