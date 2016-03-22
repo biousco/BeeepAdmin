@@ -10,5 +10,11 @@ define([
   './goods/GoodsReleaseCtrl',
   './goods/GoodsRackingCtrl',
   './goods/GoodsOutdateCtrl',
-  './operation/BannerManageCtrl'
+  './goods/GoodsTrialCtrl',
+  './operation/BannerManageCtrl',
+  './article/ArticleManageCtrl',
+  './article/ArticlePostCtrl',
+  './account/AccountMediaCtrl',
+  './account/AccountNormalCtrl',
+  './order/OrderALlListCtrl'
 ], function () {});

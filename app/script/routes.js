@@ -10,6 +10,7 @@ define(['./app'], function (app) {
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
+      //商品
       .state('goods', {
         url: '/goods',
         templateUrl: 'views/goods/index.html',
@@ -30,6 +31,16 @@ define(['./app'], function (app) {
         templateUrl: 'views/goods/outdate.html',
         controller: 'GoodsOutdateCtrl'
       })
+      .state('goods.trial', {
+        url: '/trial',
+        templateUrl: 'views/goods/trial.html',
+        controller: 'GoodsTrialCtrl'
+      })
+      .state('goods.newtrial', {
+        url: '/newtrial',
+        templateUrl: 'views/goods/newtrial.html'
+      })
+      //运营
       .state('operation', {
         abstract: true,
         url: '/operation',
@@ -39,7 +50,48 @@ define(['./app'], function (app) {
         url: '/bannermanage',
         templateUrl: 'views/operation/bannermanage.html',
         controller: 'BannerManageCtrl'
+      })
+      //文章
+      .state('article', {
+        url: '/article',
+        templateUrl: 'views/article/index.html'
+      })
+      .state('article.manage', {
+        url: '/manage',
+        templateUrl: 'views/article/manage.html',
+        controller: 'ArticleManageCtrl'
+      })
+      .state('article.post', {
+        url: '/post',
+        templateUrl: 'views/article/post.html',
+        controller: 'ArticlePostCtrl'
+      })
+      //用户
+      .state('account', {
+        url: '/account',
+        templateUrl: 'views/account/index.html'
+      })
+      .state('account.normal', {
+        url: '/normal',
+        templateUrl: 'views/account/normal.html',
+        controller: 'AccountNormalCtrl'
+      })
+      .state('account.media', {
+        url: '/media',
+        templateUrl: 'views/account/media.html',
+        controller: 'AccountMediaCtrl'
+      })
+      //订单
+      .state('order', {
+        abstract: true,
+        url: '/order',
+        template: '<ui-view/>'
+      })
+      .state('order.alllist', {
+        url: '/alllist',
+        templateUrl: 'views/order/alllist.html',
+        controller: 'OrderAllListCtrl'
       });
-    
+
   })
 });
