@@ -3,20 +3,36 @@
 <head>
   <meta charset="utf-8">
   <title>My AngularJS AngularJS + RequireJS App</title>
-  <link rel="stylesheet" href="styles/app.css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="vender/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/metronic/global/css/components-md.css">
+  <link rel="stylesheet" href="styles/metronic/layout/css/layout.min.css">
+  <link rel="stylesheet" href="styles/metronic/layout/css/themes/light.css">
 </head>
 <body>
 
-  <ul class="menu">
-    <li><a ui-sref="login">Login</a></li>
-    <li><a ui-sref="goods.racking">Goods</a></li>
-    <li><a ui-sref="order.alllist">Order</a></li>
-    <li><a ui-sref="operation.banner">Operation</a></li>
-    <li><a ui-sref="article.manage">Article</a></li>
-    <li><a ui-sref="account.normal">Account</a></li>
-  </ul>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ui-sref-active="active"><a ui-sref="login">Login</a></li>
+        <li ui-sref-active="active"><a ui-sref="goods">Goods</a></li>
+        <li ui-sref-active="active"><a ui-sref="order.alllist">Order</a></li>
+        <li ui-sref-active="active"><a ui-sref="operation.banner">Operation</a></li>
+        <li ui-sref-active="active"><a ui-sref="article.manage">Article</a></li>
+        <li ui-sref-active="active"><a ui-sref="account.normal">Account</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
+<div class="page-container">
   <div ui-view></div>
+</div>
+
+
+
+
 
   <script src="vender/requirejs/require.js" data-main="script/main.js"></script>
 </body>

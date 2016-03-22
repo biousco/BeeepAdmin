@@ -3,7 +3,9 @@ require.config({
     angular: '../vender/angular/angular',
     domReady: '../vender/domready/ready',
     jquery: '../vender/jquery/dist/jquery',
-    uiRouter: '../vender/angular-ui-router/release/angular-ui-router'
+    uiRouter: '../vender/angular-ui-router/release/angular-ui-router',
+    uiBootstrap: '../vender/angular-bootstrap/ui-bootstrap',
+    uitlps: '../vender/angular-bootstrap/ui-bootstrap-tpls.min'
   },
   shim: {
     angular: {
@@ -12,6 +14,12 @@ require.config({
     },
     uiRouter: {
       deps: ['angular']
+    },
+    uiBootstrap: {
+      deps: ['angular']
+    },
+    uitlps: {
+      deps: ['angular','uiBootstrap']
     }
   }
 });

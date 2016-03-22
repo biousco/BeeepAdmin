@@ -4,7 +4,7 @@
 define(['./../module'], function (controllers) {
   'use strict';
   controllers.controller('GoodsTrialCtrl', ['$scope','AdminService',function ($scope, AdminService) {
-
+    
 
 
   }]);

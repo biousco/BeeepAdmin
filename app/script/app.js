@@ -2,6 +2,8 @@
 define([
     'angular',
     'uiRouter',
+    'uiBootstrap',
+    'uitlps',
     './controllers/index',
     './directives/index',
     './filters/index',
@@ -12,6 +14,7 @@ define([
         'app.controllers',
         'app.filters',
         'app.directives',
-        'ui.router'
+        'ui.router',
+        'ui.bootstrap'
     ]);
 });

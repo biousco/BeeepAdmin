@@ -21,6 +21,11 @@ define(['./app'], function (app) {
         templateUrl: 'views/goods/release.html',
         controller: 'GoodsReleaseCtrl'
       })
+      .state('goods.update', {
+        url: '/update/:product_id',
+        templateUrl: 'views/goods/update.html',
+        controller: 'GoodsUpdateCtrl'
+      })
       .state('goods.racking', {
         url: '/racking',
         templateUrl: 'views/goods/racking.html',
@@ -32,13 +37,14 @@ define(['./app'], function (app) {
         controller: 'GoodsOutdateCtrl'
       })
       .state('goods.trial', {
-        url: '/trial',
+        url: '/trial/:product_id',
         templateUrl: 'views/goods/trial.html',
         controller: 'GoodsTrialCtrl'
       })
       .state('goods.newtrial', {
         url: '/newtrial',
-        templateUrl: 'views/goods/newtrial.html'
+        templateUrl: 'views/goods/newtrial.html',
+        controller: 'GoodsNewTrialCtrl'
       })
       //运营
       .state('operation', {

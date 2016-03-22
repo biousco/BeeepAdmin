@@ -1,14 +1,27 @@
+<link rel="stylesheet" href="styles/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
 <h3>商品信息</h3>
 
 <img src="" alt="">
 <p>这是商品的描述</p>
 
-<p>试用申请</p>
-<label for="">试用申请开始时间:</label>
-<input type="date">
-<label for="">试用申请截止时间</label>
-<input type="date">
-<label for="">试用数量</label>
-<input type="text">
+<h3>试用申请</h3>
+<div class="row">
+  <div class="col-md-6">
+    <p class="input-group">
+      <label for="">试用申请开始时间:</label>
+      <input type="text" class="form-control" ng-click="openStart()" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+    </p>
+    <p class="input-group">
+      <label for="">试用申请截止时间:</label>
+      <input type="text" class="form-control" ng-click="openEnd()" uib-datepicker-popup ng-model="dt" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+    </p>
+    <p class="input-group">
+      <label for="">试用数量</label>
+      <input type="number" class="form-control">
+    </p>
+    <p class="input-group">
+      <button class="btn">提交</button>
+    </p>
+  </div>
+</div>
 
-<button>提交</button>
