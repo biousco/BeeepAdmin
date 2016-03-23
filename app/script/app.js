@@ -9,6 +9,7 @@ define([
     './filters/index',
     './services/index'
 ], function (ng) {
+    console.log('hi')
     return ng.module('beepAdminApp', [
         'app.services',
         'app.controllers',

@@ -1,4 +1,5 @@
 require.config({
+  baseUrl: './script',
   paths: {
     angular: '../vender/angular/angular',
     domReady: '../vender/domready/ready',
@@ -13,27 +14,18 @@ require.config({
       exports: 'angular'
     },
     uiRouter: {
-      deps: ['angular']
+      deps: ['angular'],
+      exports: 'uiRouter'
     },
     uiBootstrap: {
-      deps: ['angular']
+      deps: ['angular'],
+      exports: 'uiBootstrap'
     },
     uitlps: {
       deps: ['angular','uiBootstrap']
     }
-  }
+  },
+  deps: ['./bootstrap']
 });
 
-
-define([
-  'require',
-  'angular',
-  'app',
-  'routes'
-], function (require, ng) {
-  'use strict';
-  require(['domReady!'], function (document) {
-    ng.bootstrap(document, ['beepAdminApp']);
-  });
-});
 
