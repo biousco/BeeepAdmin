@@ -3,7 +3,12 @@ define(['./app'], function (app) {
   app.config(function ($httpProvider) {
     $httpProvider.interceptors.push('ServiceInterceptor');
   });
-  return app.config(function ($stateProvider,$urlRouterProvider) {
+  app.config(function ($stateProvider,$urlRouterProvider) {
+
+    $urlRouterProvider
+      .when('/goods','/goods/release')
+      .when('/article','/article/manage')
+      .when('/account','/account/normal');
     $stateProvider
       .state('login', {
         url: '/login',
@@ -13,8 +18,7 @@ define(['./app'], function (app) {
       //商品
       .state('goods', {
         url: '/goods',
-        templateUrl: 'views/goods/index.html',
-        controller: 'GoodsCtrl'
+        templateUrl: 'views/goods/index.html'
       })
       .state('goods.release', {
         url: '/release',
@@ -103,6 +107,8 @@ define(['./app'], function (app) {
         templateUrl: 'views/order/alllist.html',
         controller: 'OrderAllListCtrl'
       });
+
+
 
   })
 });
