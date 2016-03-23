@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd05a15-a7b9-4da6-b934-d4865d2e951e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/favicon.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/routes.js" afterPath="$PROJECT_DIR$/app/script/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/index.html" afterPath="$PROJECT_DIR$/app/views/account/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/media.html" afterPath="$PROJECT_DIR$/app/views/account/media.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/normal.html" afterPath="$PROJECT_DIR$/app/views/account/normal.html" />
     </list>
@@ -31,25 +29,67 @@
     <splitter split-orientation="horizontal" split-proportion="0.5019405">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GoodsRackingCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js">
+          <file leaf-file-name="ArticleManageCtrl.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="293">
-                  <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="38" selection-end-column="8" />
+                <state relative-caret-position="480">
+                  <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
                   <folding>
-                    <element signature="e#254#266#0" expanded="true" />
-                    <element signature="e#734#746#0" expanded="true" />
-                    <element signature="e#882#896#0" expanded="true" />
+                    <element signature="e#255#265#0" expanded="true" />
+                    <element signature="e#321#331#0" expanded="true" />
+                    <element signature="e#797#807#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/index.js">
+          <file leaf-file-name="AccountMediaCtrl.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+                <state relative-caret-position="112">
+                  <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="41" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                    <element signature="e#236#248#0" expanded="true" />
+                    <element signature="e#682#692#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AccountNormalCtrl.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="80">
+                  <caret line="5" column="124" selection-start-line="5" selection-start-column="124" selection-end-line="5" selection-end-column="124" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                    <element signature="e#237#249#0" expanded="true" />
+                    <element signature="e#683#693#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="media.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/account/media.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="544">
+                  <caret line="34" column="73" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="normal.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/account/normal.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="496">
+                  <caret line="31" column="58" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="58" />
                   <folding />
                 </state>
               </provider>
@@ -65,85 +105,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="media.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/account/media.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="52" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="normal.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/account/normal.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="496">
-                  <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/article/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="256">
-                  <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ArticleManageCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#255#265#0" expanded="true" />
-                    <element signature="e#321#331#0" expanded="true" />
-                    <element signature="e#797#807#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/script/routes.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ArticleUpdateCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="128">
-                  <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="manage.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="manage.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/article/manage.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="160">
@@ -208,8 +170,6 @@
         <option value="$PROJECT_DIR$/app/script/controllers/article/index.html" />
         <option value="$PROJECT_DIR$/app/script/controllers/article/ArticlePost.js" />
         <option value="$PROJECT_DIR$/app/script/controllers/account/index.html" />
-        <option value="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" />
-        <option value="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" />
         <option value="$PROJECT_DIR$/app/views/goods/index.html" />
         <option value="$PROJECT_DIR$/app/script/controllers/goods/GoodsOutdateCtrl.js" />
         <option value="$PROJECT_DIR$/app/script/controllers/module.js" />
@@ -245,10 +205,12 @@
         <option value="$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js" />
         <option value="$PROJECT_DIR$/app/script/controllers/index.js" />
         <option value="$PROJECT_DIR$/app/views/account/index.html" />
-        <option value="$PROJECT_DIR$/app/views/account/media.html" />
-        <option value="$PROJECT_DIR$/app/views/account/normal.html" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/script/routes.js" />
+        <option value="$PROJECT_DIR$/app/views/account/normal.html" />
+        <option value="$PROJECT_DIR$/app/views/account/media.html" />
+        <option value="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" />
+        <option value="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" />
       </list>
     </option>
   </component>
@@ -463,6 +425,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beepAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beepAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="article" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -551,7 +535,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
+              <option name="myItemId" value="article" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beepAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="beepAdmin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="account" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -659,7 +669,7 @@
       <workItem from="1458489380065" duration="1273000" />
       <workItem from="1458528895796" duration="6738000" />
       <workItem from="1458614879160" duration="24035000" />
-      <workItem from="1458659017526" duration="8611000" />
+      <workItem from="1458659017526" duration="9210000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1458456324682</created>
@@ -745,11 +755,18 @@
       <option name="project" value="LOCAL" />
       <updated>1458726160952</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="调整路由状态">
+      <created>1458739511003</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1458739511003</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40657000" />
+    <option name="totallyTimeSpent" value="41256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -827,7 +844,8 @@
     <MESSAGE value="CSS图片" />
     <MESSAGE value="运营模块" />
     <MESSAGE value="文章模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="文章模块" />
+    <MESSAGE value="调整路由状态" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整路由状态" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -836,21 +854,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/script/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/styles/metronic/layout/css/themes/blue.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/vender/angular-bootstrap/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1005,14 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/common/modal-alllist-articlePosted.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/goods/update.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1099,22 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/common/modal-alllist-sentGoods.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/common/modal-createBanner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/operation/bannermanage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1169,22 +1148,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="38" selection-end-column="8" />
-          <folding>
-            <element signature="e#254#266#0" expanded="true" />
-            <element signature="e#734#746#0" expanded="true" />
-            <element signature="e#882#896#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/article/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1197,10 +1188,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/article/index.html">
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="544">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="38" selection-end-column="8" />
+          <folding>
+            <element signature="e#254#266#0" expanded="true" />
+            <element signature="e#734#746#0" expanded="true" />
+            <element signature="e#882#896#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/article/manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="71" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -1213,34 +1216,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/article/manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="71" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account/media.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account/normal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
+        <state relative-caret-position="480">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding>
             <element signature="e#255#265#0" expanded="true" />
             <element signature="e#321#331#0" expanded="true" />
@@ -1249,19 +1228,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/views/account/normal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        <state relative-caret-position="496">
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/routes.js">
+    <entry file="file://$PROJECT_DIR$/app/views/common/modal-alllist-articlePosted.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        <state relative-caret-position="16">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/common/modal-createBanner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/common/modal-alllist-sentGoods.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="23" column="49" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="41" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#236#248#0" expanded="true" />
+            <element signature="e#682#692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account/media.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="73" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="124" selection-start-line="5" selection-start-column="124" selection-end-line="5" selection-end-column="124" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#237#249#0" expanded="true" />
+            <element signature="e#683#693#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
