@@ -3,17 +3,15 @@
     baseUrl: './script',
     dir:'./.build',
     paths: {
-      angular: '../vender/angular/angular',
+      angular: '../vender/angular/angular.min',
       domReady: '../vender/domready/ready',
-      jquery: '../vender/jquery/dist/jquery',
-      uiRouter: '../vender/angular-ui-router/release/angular-ui-router',
-      uiBootstrap: '../vender/angular-bootstrap/ui-bootstrap',
+      uiRouter: '../vender/angular-ui-router/release/angular-ui-router.min',
+      uiBootstrap: '../vender/angular-bootstrap/ui-bootstrap.min',
       uitlps: '../vender/angular-bootstrap/ui-bootstrap-tpls.min',
       xeditable: '../vender/angular-xeditable/dist/js/xeditable.min'
     },
     shim: {
       angular: {
-        deps: ['jquery'],
         exports: 'angular'
       },
       uiRouter: {
@@ -32,7 +30,7 @@
         exports: 'xeditable'
       }
     },
-    fileExclusionRegExp: /css|^(r|build)\.js|node_modules|test|idea|git/,
+    fileExclusionRegExp: /^(r|build)\.js|node_modules|test|idea|git/,
     modules:[
     {
          name: "bootstrap",

@@ -2,50 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd05a15-a7b9-4da6-b934-d4865d2e951e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/img/clear.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/CHANGELOG.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/LICENSE-MIT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/inputs-ext/address/address.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/inputs-ext/address/address.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/bootstrap-wysihtml5-0.0.2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/bootstrap-wysihtml5-0.0.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/bootstrap-wysihtml5-0.0.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysihtml5-0.3.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysihtml5-0.3.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/bootstrap-wysihtml5-0.0.2/wysiwyg-color.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/wysihtml5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vender/angular-xeditable/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vender/angular-xeditable/CHANGELOG.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vender/angular-xeditable/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vender/angular-xeditable/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vender/angular-xeditable/dist/css/xeditable.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vender/angular-xeditable/dist/css/xeditable.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vender/angular-xeditable/dist/js/xeditable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vender/angular-xeditable/dist/js/xeditable.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/vender/angular-xeditable/readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/common/modal-account-detail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/app.js" afterPath="$PROJECT_DIR$/app/script/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/goods/GoodsNewTrialCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/goods/GoodsNewTrialCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/goods/GoodsOutdateCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/goods/GoodsOutdateCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/operation/BannerManageCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/operation/BannerManageCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/main.js" afterPath="$PROJECT_DIR$/app/script/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/routes.js" afterPath="$PROJECT_DIR$/app/script/routes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/article/manage.html" afterPath="$PROJECT_DIR$/app/views/article/manage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/goods/newtrial.html" afterPath="$PROJECT_DIR$/app/views/goods/newtrial.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/goods/racking.html" afterPath="$PROJECT_DIR$/app/views/goods/racking.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/goods/trial.html" afterPath="$PROJECT_DIR$/app/views/goods/trial.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/operation/bannermanage.html" afterPath="$PROJECT_DIR$/app/views/operation/bannermanage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.js" afterPath="$PROJECT_DIR$/build.js" />
     </list>
     <ignored path="beepAdmin.iws" />
@@ -108,8 +66,18 @@
           <file leaf-file-name="BannerManageCtrl.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/script/controllers/operation/BannerManageCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+                <state relative-caret-position="256">
+                  <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/script/main.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="512">
+                  <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -135,21 +103,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GoodsNewTrialCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsNewTrialCtrl.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="592">
-                  <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ArticleManageCtrl.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="ArticleManageCtrl.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
-                  <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+                <state relative-caret-position="224">
+                  <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
                   <folding>
                     <element signature="e#276#286#0" expanded="true" />
                     <element signature="e#342#352#0" expanded="true" />
@@ -169,16 +127,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/routes.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
@@ -188,6 +136,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="592">
                   <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="build.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/build.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="624">
+                  <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -203,7 +161,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AccountMediaCtrl.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="AccountMediaCtrl.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="192">
@@ -227,6 +185,16 @@
                     <element signature="e#237#249#0" expanded="true" />
                     <element signature="e#691#701#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/gulpfile.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="750">
+                  <caret line="211" column="3" selection-start-line="211" selection-start-column="3" selection-end-line="211" selection-end-column="3" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -276,7 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/script/controllers/GoodsCtrl.js" />
         <option value="$PROJECT_DIR$/app/script/controllers/goods/GoodsReleaseCtrl.js" />
         <option value="$PROJECT_DIR$/app/views/goods/release.html" />
         <option value="$PROJECT_DIR$/app/views/operation/index.html" />
@@ -310,7 +277,6 @@
         <option value="$PROJECT_DIR$/app/views/account/normal.html" />
         <option value="$PROJECT_DIR$/app/views/account/media.html" />
         <option value="$PROJECT_DIR$/app/script/app.js" />
-        <option value="$PROJECT_DIR$/app/script/main.js" />
         <option value="$PROJECT_DIR$/app/views/goods/racking.html" />
         <option value="$PROJECT_DIR$/app/script/routes.js" />
         <option value="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css" />
@@ -327,6 +293,8 @@
         <option value="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" />
         <option value="$PROJECT_DIR$/app/views/common/modal-account-detail.html" />
         <option value="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" />
+        <option value="$PROJECT_DIR$/app/script/main.js" />
+        <option value="$PROJECT_DIR$/build.js" />
       </list>
     </option>
   </component>
@@ -559,191 +527,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vender" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metronic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="metronic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="global" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="article" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beepAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="account" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -852,7 +636,7 @@
       <workItem from="1458489380065" duration="1273000" />
       <workItem from="1458528895796" duration="6738000" />
       <workItem from="1458614879160" duration="24035000" />
-      <workItem from="1458659017526" duration="15026000" />
+      <workItem from="1458659017526" duration="15753000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1458456324682</created>
@@ -952,11 +736,18 @@
       <option name="project" value="LOCAL" />
       <updated>1458740109890</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="更新视图/控制器&#10;添加xditable">
+      <created>1458749963544</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1458749963544</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47072000" />
+    <option name="totallyTimeSpent" value="47799000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -976,7 +767,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5016251" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25893825" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23185265" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1036,7 +827,8 @@
     <MESSAGE value="文章模块" />
     <MESSAGE value="调整路由状态" />
     <MESSAGE value="账号管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="账号管理" />
+    <MESSAGE value="更新视图/控制器&#10;添加xditable" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新视图/控制器&#10;添加xditable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1045,14 +837,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/styles/metronic/global/css/components-md.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="6241" column="148" selection-start-line="6241" selection-start-column="148" selection-end-line="6241" selection-end-column="148" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/script/services/serviceConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -1138,14 +922,6 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="131" column="55" selection-start-line="131" selection-start-column="55" selection-end-line="131" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1273,14 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/script/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1332,14 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsNewTrialCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
@@ -1369,28 +1129,6 @@
         <state relative-caret-position="512">
           <caret line="32" column="59" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="59" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsOutdateCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="5" column="140" selection-start-line="5" selection-start-column="140" selection-end-line="5" selection-end-column="140" />
-          <folding>
-            <element signature="e#722#734#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="e#274#286#0" expanded="true" />
-            <element signature="e#757#769#0" expanded="true" />
-            <element signature="e#905#919#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1428,31 +1166,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/operation/BannerManageCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/article/manage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="592">
           <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="11" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding>
-            <element signature="e#276#286#0" expanded="true" />
-            <element signature="e#342#352#0" expanded="true" />
-            <element signature="e#818#828#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1485,6 +1203,80 @@
             <element signature="e#236#248#0" expanded="true" />
             <element signature="e#690#700#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="211" column="3" selection-start-line="211" selection-start-column="3" selection-end-line="211" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <element signature="e#276#286#0" expanded="true" />
+            <element signature="e#342#352#0" expanded="true" />
+            <element signature="e#818#828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="e#274#286#0" expanded="true" />
+            <element signature="e#757#769#0" expanded="true" />
+            <element signature="e#905#919#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsOutdateCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="5" column="140" selection-start-line="5" selection-start-column="140" selection-end-line="5" selection-end-column="140" />
+          <folding>
+            <element signature="e#722#734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/operation/BannerManageCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
