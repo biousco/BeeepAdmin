@@ -72,6 +72,11 @@ define(['./app'], function (app) {
         templateUrl: 'views/article/post.html',
         controller: 'ArticlePostCtrl'
       })
+      .state('article.update', {
+        url: '/update/:article_id',
+        templateUrl: 'views/article/update.html',
+        controller: 'ArticleUpdateCtrl'
+      })
       //用户
       .state('account', {
         url: '/account',

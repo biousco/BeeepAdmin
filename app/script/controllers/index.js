@@ -16,6 +16,7 @@ define([
   './operation/BannerManageCtrl',
   './article/ArticleManageCtrl',
   './article/ArticlePostCtrl',
+  './article/ArticleUpdateCtrl',
   './account/AccountMediaCtrl',
   './account/AccountNormalCtrl',
   './order/OrderALlListCtrl',
