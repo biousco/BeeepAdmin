@@ -33,11 +33,11 @@ define(['./../module'], function (controllers) {
 
     $scope.toggleMin();
 
-    $scope.open1 = function() {
+    $scope.openStart = function() {
       $scope.popup1.opened = true;
     };
 
-    $scope.open2 = function() {
+    $scope.openEnd = function() {
       $scope.popup2.opened = true;
     };
 

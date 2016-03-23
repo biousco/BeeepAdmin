@@ -8,7 +8,7 @@ define(['./../module'], function (controllers) {
     /** 查看详情 **/
     $scope.showDetail = function () {
       var modalInstance = $uibModal.open({
-        templateUrl: 'views/common/modal-simple.html',
+        templateUrl: 'views/common/modal-account-detail.html',
         controller: 'SimpleDialogInstanceCtrl',
         resolve: {
           modal : {

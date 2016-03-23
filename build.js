@@ -8,7 +8,8 @@
       jquery: '../vender/jquery/dist/jquery',
       uiRouter: '../vender/angular-ui-router/release/angular-ui-router',
       uiBootstrap: '../vender/angular-bootstrap/ui-bootstrap',
-      uitlps: '../vender/angular-bootstrap/ui-bootstrap-tpls.min'
+      uitlps: '../vender/angular-bootstrap/ui-bootstrap-tpls.min',
+      xeditable: '../vender/angular-xeditable/dist/js/xeditable.min'
     },
     shim: {
       angular: {
@@ -25,21 +26,17 @@
       },
       uitlps: {
         deps: ['angular','uiBootstrap']
+      },
+      xeditable: {
+        deps: ['angular'],
+        exports: 'xeditable'
       }
     },
     fileExclusionRegExp: /css|^(r|build)\.js|node_modules|test|idea|git/,
     modules:[
-    // {
-    //     name: "script/app",
-    //     exclude: ['angular','jquery','uiRouter','uiBootstrap','uitlps']
-    // },
-    // {
-    //     name: "script/controllers/index",
-    //     exclude: ['angular','uiRouter','uiBootstrap','uitlps']
-    // }
     {
          name: "bootstrap",
-         exclude: ['angular','uiRouter','uiBootstrap','uitlps']
+         exclude: ['angular','uiRouter','uiBootstrap','uitlps','xeditable']
     }
     ],
     optimize: "none"

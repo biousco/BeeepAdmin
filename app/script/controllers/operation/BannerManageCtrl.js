@@ -5,10 +5,12 @@ define(['./../module'], function (controllers) {
   'use strict';
   controllers.controller('BannerManageCtrl', ['$scope','AdminService','$uibModal', function ($scope, AdminService, $uibModal) {
 
+    $scope.hc = 13;
+
+    
     /** 下线banner **/
     $scope.setoffBanner = function () {
       var modalInstance = $uibModal.open({
-        animation: true,
         templateUrl: 'views/common/modal-simple.html',
         controller: 'SimpleDialogInstanceCtrl',
         resolve: {
@@ -29,7 +31,6 @@ define(['./../module'], function (controllers) {
     /** 编辑banner **/
     $scope.editBanner = function () {
       var modalInstance = $uibModal.open({
-        animation: true,
         templateUrl: 'views/common/modal-createBanner.html',
         controller: 'BannerInstanceCtrl',
         resolve: {
@@ -48,7 +49,6 @@ define(['./../module'], function (controllers) {
     /** 创建banner **/
     $scope.createBanner = function () {
       var modalInstance = $uibModal.open({
-        animation: true,
         templateUrl: 'views/common/modal-createBanner.html',
         controller: 'BannerInstanceCtrl',
         resolve: {

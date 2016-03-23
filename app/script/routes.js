@@ -3,6 +3,9 @@ define(['./app'], function (app) {
   app.config(function ($httpProvider) {
     $httpProvider.interceptors.push('ServiceInterceptor');
   });
+  app.run(function(editableOptions) {
+    editableOptions.theme = 'bs3';
+  });
   app.config(function ($stateProvider,$urlRouterProvider) {
 
     $urlRouterProvider

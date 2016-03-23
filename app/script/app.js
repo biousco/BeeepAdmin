@@ -4,18 +4,19 @@ define([
     'uiRouter',
     'uiBootstrap',
     'uitlps',
+    'xeditable',
     './controllers/index',
     './directives/index',
     './filters/index',
     './services/index'
 ], function (ng) {
-    console.log('hi')
     return ng.module('beepAdminApp', [
         'app.services',
         'app.controllers',
         'app.filters',
         'app.directives',
         'ui.router',
-        'ui.bootstrap'
+        'ui.bootstrap',
+        'xeditable'
     ]);
 });

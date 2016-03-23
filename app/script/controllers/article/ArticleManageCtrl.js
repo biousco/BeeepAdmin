@@ -5,6 +5,8 @@ define(['./../module'], function (controllers) {
   'use strict';
   controllers.controller('ArticleManageCtrl', ['$scope','AdminService','$uibModal','$state' ,function ($scope, AdminService, $uibModal, $state) {
 
+    $scope.hc = 33;
+
     /** 预览 **/
     $scope.previewArticle = function () {
 

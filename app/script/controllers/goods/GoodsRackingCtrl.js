@@ -5,15 +5,16 @@ define(['./../module'], function (controllers) {
   'use strict';
   controllers.controller('GoodsRackingCtrl', ['$scope','AdminService','$uibModal','$state', function ($scope, AdminService, $uibModal, $state) {
 
+    $scope.hc = 14;
     /** 下架商品 **/
     $scope.banGoods = function (product_id) {
       var modalInstance = $uibModal.open({
         animation: true,
         templateUrl: 'views/common/modal-simple.html',
-        controller: 'GoodsModalInstanceCtrl',
+        controller: 'SimpleDialogInstanceCtrl',
         resolve: {
           modal : {
-            title: "确认下架该商品"
+            title: "确认下架改商品？"
           }
         }
       });

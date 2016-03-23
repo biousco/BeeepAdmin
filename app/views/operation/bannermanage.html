@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css">
+
 <div class="page-content" style="padding: 20px;">
   <h1>banner管理</h1>
   <button class="btn btn-primary" ng-click="createBanner()">新增</button>
@@ -21,7 +23,7 @@
       <td>2015-05-15</td>
       <td>2016-02-25</td>
       <td>上线</td>
-      <td>5<input type="text"></td>
+      <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
       <td>
         <button class="btn btn-primary" ng-click="setoffBanner()">下线</button>
         <button class="btn btn-primary" ng-click="editBanner()">编辑</button>
