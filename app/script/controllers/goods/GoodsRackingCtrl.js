@@ -43,13 +43,5 @@ define(['./../module'], function (controllers) {
 
   }]);
 
-  controllers.controller('GoodsModalInstanceCtrl', function ($scope, $uibModalInstance, modal) {
-    $scope.modal = modal;
-    $scope.ok = function () {
-      $uibModalInstance.close(true);
-    };
-    $scope.cancel = function () {
-      $uibModalInstance.dismiss('cancel');
-    }
-  })
+
 });
