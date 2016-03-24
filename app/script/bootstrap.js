@@ -2,7 +2,7 @@ require([
   'require',
   'angular',
   './app',
-  './routes',
+  './appconfig',
   './constant'
 ], function (require, ng) {
   'use strict';

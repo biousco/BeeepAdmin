@@ -22,8 +22,8 @@ define(['./module'], function (services) {
 
   }]);
 
-  services.factory('ProductService', ['$http',
-    function ($http) {
+  services.factory('ProductService', ['$http', 'cgiList',
+    function ($http, cgiList) {
 
       return {
         addProduct: function (param) {
@@ -74,7 +74,7 @@ define(['./module'], function (services) {
     }
   ]);
 
-  services.factory('ReviewService', ['$http', function ($http) {
+  services.factory('ReviewService', ['$http', 'cgiList', function ($http, cgiList) {
 
     return {
       addReview: function (param) {
@@ -124,7 +124,7 @@ define(['./module'], function (services) {
 
   }]);
 
-  services.factory('TrialService', ['$http', function ($http) {
+  services.factory('TrialService', ['$http', 'cgiList', function ($http, cgiList) {
 
     return {
       getTrialList: function () {
@@ -148,7 +148,7 @@ define(['./module'], function (services) {
   }]);
 
 
-  services.factory('UserService', ['$http', function ($http) {
+  services.factory('UserService', ['$http', 'cgiList', function ($http, cgiList) {
 
     return {
 
