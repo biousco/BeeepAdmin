@@ -91,7 +91,6 @@ define(['./module'], function (services) {
           url: cgiList.deleteReview,
           method: 'POST',
           data: param
-
         });
       },
 

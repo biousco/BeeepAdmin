@@ -3,7 +3,18 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('GoodsOutdateCtrl', ['$scope','AdminService','$uibModal','$state',function ($scope, AdminService, $uibModal, $state) {
+  controllers.controller('GoodsOutdateCtrl', ['$scope','ProductService','$uibModal','$state',function ($scope, ProductService, $uibModal, $state) {
+
+
+    /** 获取所有记录 **/
+    $scope.getProductList = function () {
+      ProductService.getProductList().success(function (data) {
+        if(data.ret_code = 0) {
+          $scope.product_list = data.data;
+        }
+      })
+    };
+
 
     $scope.groundGoods = function (product_id) {
       var modalInstance = $uibModal.open({

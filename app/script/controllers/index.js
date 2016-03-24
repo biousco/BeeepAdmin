@@ -5,7 +5,8 @@
  * which avails each controller of, for example, the `config` constants object.
  **/
 define([
-  './LoginCtrl',
+  './Auth/LoginCtrl',
+  './Auth/LogoutCtrl',
   './goods/GoodsCtrl',
   './goods/GoodsReleaseCtrl',
   './goods/GoodsRackingCtrl',

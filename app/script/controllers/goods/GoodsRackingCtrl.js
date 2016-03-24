@@ -3,13 +3,23 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('GoodsRackingCtrl', ['$scope','AdminService','$uibModal','$state', function ($scope, AdminService, $uibModal, $state) {
+  controllers.controller('GoodsRackingCtrl', ['$scope','ProductService','$uibModal','$state', function ($scope, ProductService, $uibModal, $state) {
 
     $scope.hc = 14;
+
+    /** 获取所有记录 **/
+    $scope.getProductList = function () {
+      ProductService.getProductList().success(function (data) {
+        if(data.ret_code = 0) {
+          $scope.product_list = data.data;
+        }
+      })
+    };
+
+
     /** 下架商品 **/
     $scope.banGoods = function (product_id) {
       var modalInstance = $uibModal.open({
-        animation: true,
         templateUrl: 'views/common/modal-simple.html',
         controller: 'SimpleDialogInstanceCtrl',
         resolve: {
@@ -21,7 +31,12 @@ define(['./../module'], function (controllers) {
 
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
-        console.log('yes');
+        var data = {product_id: product_id};
+        ProductService.deleteProduct(data).success(function (data) {
+          if(data.ret_code == 0) {
+            alert("下架成功！");
+          }
+        })
       }, function () {});
 
     };

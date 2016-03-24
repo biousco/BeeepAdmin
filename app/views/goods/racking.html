@@ -9,7 +9,7 @@
   </form>
 </div>
 
-<table class="table table-striped table-bordered table-hover dataTable">
+<table class="table table-striped table-bordered table-hover dataTable" ng-init="getProductList()">
   <thead>
   <tr>
     <td>商品ID</td>
@@ -34,7 +34,22 @@
     <td>
       <button class="btn btn-primary">预览</button>
       <button class="btn btn-primary" ng-click="updateGoods(12)">编辑</button>
-      <button class="btn btn-primary" ng-click="banGoods()">下架</button>
+      <button class="btn btn-primary" ng-click="banGoods(15)">下架</button>
+      <button class="btn btn-primary" ng-click="trialGoods(12)">试用管理</button>
+    </td>
+  </tr>
+  <tr ng-repeat="t in product_list">
+    <td></td>
+    <td ng-bind="t.name"></td>
+    <td><img ng-src="t.banner" class="img-thumbnail"></td>
+    <td>亚马逊</td>
+    <td>￥4521</td>
+    <td>2015-05-22</td>
+    <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
+    <td>
+      <button class="btn btn-primary">预览</button>
+      <button class="btn btn-primary" ng-click="updateGoods(12)">编辑</button>
+      <button class="btn btn-primary" ng-click="banGoods(15)">下架</button>
       <button class="btn btn-primary" ng-click="trialGoods(12)">试用管理</button>
     </td>
   </tr>

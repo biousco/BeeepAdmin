@@ -3,9 +3,17 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('ArticleManageCtrl', ['$scope','AdminService','$uibModal','$state' ,function ($scope, AdminService, $uibModal, $state) {
+  controllers.controller('ArticleManageCtrl', ['$scope','ReviewService','$uibModal','$state' ,function ($scope, ReviewService, $uibModal, $state) {
 
     $scope.hc = 33;
+
+    $scope.getAllReview = function () {
+      ReviewService.getReviewList().success(function (data) {
+        if(data.ret_code == 0) {
+          $scope.review_list = data.data;
+        }
+      })
+    };
 
     /** 预览 **/
     $scope.previewArticle = function () {
@@ -13,9 +21,8 @@ define(['./../module'], function (controllers) {
     };
 
     /** 删除 **/
-    $scope.deleteArticle = function () {
+    $scope.deleteArticle = function (review_id) {
       var modalInstance = $uibModal.open({
-        animation: true,
         templateUrl: 'views/common/modal-simple.html',
         controller: 'SimpleDialogInstanceCtrl',
         resolve: {
@@ -27,7 +34,12 @@ define(['./../module'], function (controllers) {
 
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
-        console.log('yes');
+        var data = {review_id: review_id};
+        ReviewService.deleteReview(data).success(function (data) {
+          if(data.ret_code == 0) {
+            alert('删除成功！');
+          }
+        })
       }, function () {});
     };
 

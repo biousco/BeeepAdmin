@@ -3,7 +3,7 @@
   <tbody>
   <tr>
     <td>商品名称</td>
-    <td><input type="text"></td>
+    <td><input type="text" required ng-model="name"></td>
   </tr>
   <tr>
     <td>商品描述</td>
@@ -20,7 +20,7 @@
   <tr>
     <td>商品平台</td>
     <td>
-      <select name="" id="">
+      <select name="buy_channel" ng-model-options="buy_channel" required>
         <option value="1">亚马逊</option>
         <option value="2">ebay</option>
       </select>
@@ -28,15 +28,15 @@
   </tr>
   <tr>
     <td>商品原链接</td>
-    <td><input type="text"></td>
+    <td><input type="text" ng-model="buy_link" required></td>
   </tr>
   <tr>
     <td>商品店铺名</td>
-    <td><input type="text"></td>
+    <td><input type="text" ng-model="buy_store" required></td>
   </tr>
   <tr>
     <td>商品优惠码</td>
-    <td><input type="text"></td>
+    <td><input type="text" ng-model="coupon" required></td>
   </tr>
   <tr>
     <td>商品价格</td>

@@ -1,9 +1,9 @@
 <h1>更新商品</h1>
-<table>
+<table ng-init="getProductDetail()">
   <tbody>
   <tr>
     <td>商品名称</td>
-    <td><input type="text"></td>
+    <td><input type="text" ng-bind="product_detail.name"></td>
   </tr>
   <tr>
     <td>商品描述</td>
@@ -28,11 +28,11 @@
   </tr>
   <tr>
     <td>商品原链接</td>
-    <td><input type="text"></td>
+    <td><input type="text" ng-bind="product_detail.buy_link"></td>
   </tr>
   <tr>
     <td>商品店铺名</td>
-    <td><input type="text"></td>
+    <td><input type="text" ng-bind="product_detail.buy_store"></td>
   </tr>
   <tr>
     <td>商品优惠码</td>
