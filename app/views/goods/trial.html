@@ -1,15 +1,18 @@
-<h2>试用管理</h2>
+<div class="mod-trial-header">
+  <h3>试用管理</h3>
+  <div class="mod-trial-switch">
+    <form action="">
+      <span class="desc">试用功能开关</span>
+      <input type="radio" value="开" name="trial" checked >开
+      <input type="radio" value="关" name="trial">关
+    </form>
+  </div>
+  <h4>试用开放列表<button class="mod-btn" ng-click="createTrial()">新增试用</button></h4>
 
-<form action="">
-  <label for="">试用功能开关</label>
-  <input type="radio" value="开" name="trial" checked >开
-  <input type="radio" value="关" name="trial">关
-</form>
+</div>
 
-<h2>试用开放列表</h2>
-<button class="btn btn-primary" ng-click="createTrial()">新增试用</button>
 
-<table  class="table table-striped table-bordered table-hover dataTable">
+<table  class="table table-hover g-mt20">
   <thead>
   <tr>
     <td>试用编号</td>
@@ -30,7 +33,29 @@
     <td>未到/申请中/已过期</td>
     <td>151</td>
     <td>
-      <button class="btn btn-primary" ng-click="showAllTrialList()">查看申请人</button>
+      <button class="mod-btn" ng-click="showAllTrialList()">查看申请人</button>
+    </td>
+  </tr>
+  <tr>
+    <td>1651651665</td>
+    <td>2015-01-22</td>
+    <td>2016-02-22</td>
+    <td>151</td>
+    <td>未到/申请中/已过期</td>
+    <td>151</td>
+    <td>
+      <button class="mod-btn" ng-click="showAllTrialList()">查看申请人</button>
+    </td>
+  </tr>
+  <tr>
+    <td>1651651665</td>
+    <td>2015-01-22</td>
+    <td>2016-02-22</td>
+    <td>151</td>
+    <td>未到/申请中/已过期</td>
+    <td>151</td>
+    <td>
+      <button class="mod-btn" ng-click="showAllTrialList()">查看申请人</button>
     </td>
   </tr>
   </tbody>

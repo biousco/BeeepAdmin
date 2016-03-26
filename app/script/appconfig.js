@@ -21,11 +21,40 @@ define(['./app'], function (app) {
         title: "已下架商品",
         route: "goods.outdate"
       }
-
+    ],
+    order: [
+      {
+        title: "全部订单",
+        route: "order.alllist"
+      }
+    ],
+    operation: [
+      {
+        title: "banner管理",
+        route: "operation.banner"
+      }
+    ],
+    article: [
+      {
+        title: "文章管理",
+        route: "article.manage"
+      },
+      {
+        title: "发表文章",
+        route: "article.post"
+      }
+    ],
+    account: [
+      {
+        title: "普通用户",
+        route: "account.normal"
+      },
+      {
+        title: "媒体用户",
+        route: "account.media"
+      }
     ]
   };
-
-
 
   app.config(function ($stateProvider,$urlRouterProvider) {
 
@@ -78,9 +107,10 @@ define(['./app'], function (app) {
       })
       //运营
       .state('operation', {
-        abstract: true,
-        url: '/operation',
-        template: '<ui-view/>'
+        url: "/operation",
+        templateUrl: 'views/common/modal-sidebar.html',
+        data: routerMap.operation,
+        controller: 'SidebarCtrl'
       })
       .state('operation.banner', {
         url: '/bannermanage',
@@ -90,7 +120,9 @@ define(['./app'], function (app) {
       //文章
       .state('article', {
         url: '/article',
-        templateUrl: 'views/article/index.html'
+        templateUrl: 'views/common/modal-sidebar.html',
+        data: routerMap.article,
+        controller: 'SidebarCtrl'
       })
       .state('article.manage', {
         url: '/manage',
@@ -110,7 +142,9 @@ define(['./app'], function (app) {
       //用户
       .state('account', {
         url: '/account',
-        templateUrl: 'views/account/index.html'
+        templateUrl: 'views/common/modal-sidebar.html',
+        data: routerMap.account,
+        controller: 'SidebarCtrl'
       })
       .state('account.normal', {
         url: '/normal',
@@ -124,9 +158,10 @@ define(['./app'], function (app) {
       })
       //订单
       .state('order', {
-        abstract: true,
         url: '/order',
-        template: '<ui-view/>'
+        templateUrl: 'views/common/modal-sidebar.html',
+        data: routerMap.order,
+        controller: 'SidebarCtrl'
       })
       .state('order.alllist', {
         url: '/alllist',

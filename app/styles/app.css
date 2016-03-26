@@ -1,3 +1,4 @@
+@import "mod.css";
 .navbar {
   height: 80px;
   border: none;
@@ -20,11 +21,22 @@
 .nav li {
   float: left;
 }
+.nav li.active a {
+  color: #000;
+  border-bottom: 3px solid #5e65fe;
+  padding-bottom: 27px;
+}
 .nav li a {
   display: block;
   line-height: 20px;
   padding: 30px;
   color: #666;
+  outline: none;
+}
+.nav li a:hover,
+.nav li a:focus {
+  color: #000;
+  background-color: transparent;
 }
 .page-sidebar .page-sidebar-menu > li:first-child {
   margin-top: 20px;
@@ -32,89 +44,25 @@
 .page-sidebar .page-sidebar-menu > li > a {
   padding: 20px;
   text-align: center;
-}
-.page-sidebar .page-sidebar-menu > li.active > a {
-  background: #FFF;
-}
-.mod-search-bar .u-wrapper {
-  display: inline-block;
-  width: 200px;
-  height: 36px;
-  background: #f0f0f0;
-  border-radius: 18px;
-  padding: 5px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 0;
-}
-.mod-search-bar .u-icon {
-  display: inline-block;
-  width: 36px;
-  height: 100%;
-  vertical-align: top;
-  text-align: center;
-}
-.mod-search-bar .u-icon i {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  background-image: url(../images/search-icon.png);
-  background-repeat: no-repeat;
-  margin-top: 5px;
-}
-.mod-search-bar .u-search {
-  display: inline-block;
-  width: 150px;
-  border: none;
-  background-color: #f0f0f0;
-  height: 100%;
-  font-size: 14px;
+  color: #999;
+  font-weight: normal;
   outline: none;
 }
-.mod-search-bar .u-label {
-  display: inline-block;
-  margin-left: 20px;
-  color: #a0a0a0;
-  font-weight: normal;
+.page-sidebar .page-sidebar-menu > li.active > a {
+  color: #5e65fe;
+  background: #FFF;
 }
 .g-mt30 {
   margin-top: 30px;
 }
-.mod-table > thead > tr > th,
-.mod-table > thead > tr > td {
-  padding: 20px;
-  line-height: 20px;
-  color: #000;
-  background-color: #fafafa;
-}
-.mod-table > tbody > tr > th,
-.mod-table > tbody > tr > td {
-  padding: 20px;
-  line-height: 20px;
-  color: #666;
-  background-color: #fff;
-  vertical-align: middle;
-}
-.mod-table > tbody > tr > th .name,
-.mod-table > tbody > tr > td .name {
-  color: #000;
-  display: block;
+.g-mt20 {
+  margin-top: 20px;
 }
 .editable-input {
   width: 30px !important;
   height: 36px;
   padding: 0;
   text-align: center;
-}
-.mod-btn {
-  color: #5e65fe;
-  border: none;
-  display: block;
-  background-color: transparent;
-}
-.mod-btn:hover {
-  text-decoration: underline;
 }
 .img-thumbnail {
   max-width: 120px;
