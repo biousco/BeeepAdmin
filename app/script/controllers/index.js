@@ -21,5 +21,6 @@ define([
   './account/AccountMediaCtrl',
   './account/AccountNormalCtrl',
   './order/OrderALlListCtrl',
-  './common/DialogCtrl'
+  './common/DialogCtrl',
+  './common/SidebarCtrl'
 ], function () {});

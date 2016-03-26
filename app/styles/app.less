@@ -1,0 +1,135 @@
+@theme-color: #5e65fe;
+
+.navbar {
+  height: 80px;
+  border: none;
+  margin-bottom: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+  .mod-logo {
+    width: 240px;
+    height: 80px;
+    float: left;
+    text-align: center;
+    img {
+      margin-top: 19px;
+    }
+  }
+}
+
+.nav {
+  overflow: hidden;
+  li {
+    float: left;
+    a {
+      display: block;
+      line-height: 20px;
+      padding: 30px;
+      color: #666;
+    }
+  }
+}
+.page-sidebar .page-sidebar-menu {
+  &>li:first-child {
+    margin-top: 20px;
+  }
+  &>li>a {
+    padding: 20px;
+    text-align: center;
+  }
+  &>li.active > a {
+    background: #FFF;
+  }
+}
+
+.mod-search-bar {
+  .u-wrapper {
+    display: inline-block;
+    width: 200px;
+    height: 36px;
+    background: #f0f0f0;
+    border-radius: 18px;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 0;
+  }
+  .u-icon {
+    display: inline-block;
+    width: 36px;
+    height: 100%;
+    vertical-align: top;
+    text-align: center;
+    i {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background-image: url(../images/search-icon.png);
+      background-repeat: no-repeat;
+      margin-top: 5px;
+    }
+  }
+  .u-search {
+    display: inline-block;
+    width: 150px;
+    border: none;
+    background-color: #f0f0f0;
+    height: 100%;
+    font-size: 14px;
+    outline: none;
+  }
+  .u-label {
+    display: inline-block;
+    margin-left: 20px;
+    color: #a0a0a0;
+    font-weight: normal;
+  }
+}
+
+.g-mt30 {
+  margin-top: 30px;
+}
+
+.mod-table > thead > tr > th,
+.mod-table > thead > tr > td {
+  padding: 20px;
+  line-height: 20px;
+  color: #000;
+  background-color: #fafafa;
+}
+
+.mod-table > tbody > tr > th,
+.mod-table > tbody > tr > td {
+  padding: 20px;
+  line-height: 20px;
+  color: #666;
+  background-color: #fff;
+  vertical-align: middle;
+  .name {
+    color: #000;
+    display: block;
+  }
+}
+
+.editable-input {
+  width: 30px !important;
+  height: 36px;
+  padding: 0;
+  text-align: center;
+}
+
+.mod-btn {
+  color: @theme-color;
+  border: none;
+  display: block;
+  background-color: transparent;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.img-thumbnail {
+  max-width: 120px;
+  max-height: 80px;
+}

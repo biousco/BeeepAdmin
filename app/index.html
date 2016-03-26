@@ -3,33 +3,34 @@
 <head>
   <meta charset="utf-8">
   <title>My AngularJS AngularJS + RequireJS App</title>
-  <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css"/> -->
-  <link rel="stylesheet" href="vender/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/metronic/global/css/components-md.css">
-  <link rel="stylesheet" href="styles/metronic/layout/css/layout.min.css">
-  <link rel="stylesheet" href="styles/metronic/layout/css/themes/light.css">
+  <!-- build:css css/combined.css -->
+  <link rel="stylesheet" href="vender/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles/metronic/layout/css/layout.css">
+  <!-- endbuild -->
+  <link rel="stylesheet" href="styles/cube.css">
+  <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<nav class="navbar">
+      <div class="mod-logo">
+        <img src="images/logo.png">
+      </div>
       <ul class="nav navbar-nav">
-        <li ui-sref-active="active"><a ui-sref="login">Login</a></li>
-        <li ui-sref-active="active"><a ui-sref="goods">Goods</a></li>
-        <li ui-sref-active="active"><a ui-sref="order.alllist">Order</a></li>
-        <li ui-sref-active="active"><a ui-sref="operation.banner">Operation</a></li>
-        <li ui-sref-active="active"><a ui-sref="article">Article</a></li>
-        <li ui-sref-active="active"><a ui-sref="account">Account</a></li>
-        <li ng-controller="LogoutCtrl"><a ng-click="logout()">退出登录</a></li>
+        <!--<li ui-sref-active="active"><a ui-sref="login">Login</a></li>-->
+        <li ui-sref-active="active"><a ui-sref="goods">商品管理</a></li>
+        <li ui-sref-active="active"><a ui-sref="order.alllist">试用订单管理</a></li>
+        <li ui-sref-active="active"><a ui-sref="operation.banner">运营位管理</a></li>
+        <li ui-sref-active="active"><a ui-sref="article">文章管理</a></li>
+        <li ui-sref-active="active"><a ui-sref="account">用户管理</a></li>
+        <!--<li ng-controller="LogoutCtrl"><a ng-click="logout()">退出登录</a></li>-->
       </ul>
-    </div>
-  </div>
+
 </nav>
 
-<div class="page-container">
-  <div ui-view></div>
-</div>
+<div ui-view></div>
+
+
 
   <script src="vender/requirejs/require.js" data-main="script/main.js"></script>
 </body>

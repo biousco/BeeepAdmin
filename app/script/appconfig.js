@@ -6,6 +6,27 @@ define(['./app'], function (app) {
   app.run(function(editableOptions) {
     editableOptions.theme = 'bs3';
   });
+
+  var routerMap = {
+    goods: [
+      {
+        title: "发布商品",
+        route: "goods.release"
+      },
+      {
+        title: "已上架商品",
+        route: "goods.racking"
+      },
+      {
+        title: "已下架商品",
+        route: "goods.outdate"
+      }
+
+    ]
+  };
+
+
+
   app.config(function ($stateProvider,$urlRouterProvider) {
 
     $urlRouterProvider
@@ -21,7 +42,9 @@ define(['./app'], function (app) {
       //商品
       .state('goods', {
         url: '/goods',
-        templateUrl: 'views/goods/index.html'
+        templateUrl: 'views/common/modal-sidebar.html',
+        data: routerMap.goods,
+        controller: 'SidebarCtrl'
       })
       .state('goods.release', {
         url: '/release',

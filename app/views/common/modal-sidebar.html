@@ -1,0 +1,15 @@
+<div class="page-sidebar-wrapper">
+  <div class="page-sidebar navbar-collapse">
+    <div class="page-sidebar-menu page-header-fixed">
+      <ul class="page-sidebar-menu ">
+        <li class="nav-item" ui-sref-active="active" ng-repeat="t in route"><a ui-sref="{{t.route}}" ng-bind="t.title">t.title</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="page-content-wrapper">
+  <div class="page-content">
+    <div ui-view></div>
+  </div>
+</div>
