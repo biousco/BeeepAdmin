@@ -28,7 +28,8 @@ require.config({
       exports: 'xeditable'
     }
   },
-  deps: ['./bootstrap']
+  deps: ['./bootstrap'],
+  urlArgs: "bust=160326"
 });
 
 
