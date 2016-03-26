@@ -10,12 +10,12 @@ define(['./app'], function (app) {
   var routerMap = {
     goods: [
       {
-        title: "发布商品",
-        route: "goods.release"
-      },
-      {
         title: "已上架商品",
         route: "goods.racking"
+      },
+      {
+        title: "发布商品",
+        route: "goods.release"
       },
       {
         title: "已下架商品",
@@ -59,9 +59,10 @@ define(['./app'], function (app) {
   app.config(function ($stateProvider,$urlRouterProvider) {
 
     $urlRouterProvider
-      .when('/goods','/goods/release')
+      .when('/goods','/goods/racking')
       .when('/article','/article/manage')
       .when('/account','/account/normal');
+
     $stateProvider
       .state('login', {
         url: '/login',

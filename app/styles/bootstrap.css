@@ -1135,8 +1135,6 @@ img {
   padding: 4px;
   line-height: 1.42857143;
   background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -2276,7 +2274,7 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #eee;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
@@ -2295,6 +2293,7 @@ th {
 .table > thead > tr > td {
   padding: 20px;
   line-height: 20px;
+  padding-left: 30px;
   color: #000;
   background-color: #fafafa;
 }
@@ -2302,6 +2301,7 @@ th {
 .table > tbody > tr > th,
 .table > tbody > tr > td {
   padding: 20px;
+  padding-left: 30px;
   line-height: 20px;
   color: #666;
   background-color: #fff;

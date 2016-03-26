@@ -65,6 +65,5 @@
   text-align: center;
 }
 .img-thumbnail {
-  max-width: 120px;
-  max-height: 80px;
+  width: 120px;
 }

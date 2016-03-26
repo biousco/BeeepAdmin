@@ -1,17 +1,19 @@
 <link rel="stylesheet"
       href="styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css">
 
-<h1>文章管理</h1>
-
-<div class="search-bar">
+<div class="mod-search-bar">
   <form action="">
-    <label for="">搜索关键字</label>
-    <input type="text">
-    <button class="btn btn-primary">search</button>
+    <div class="u-wrapper">
+      <span class="u-icon">
+      <i></i>
+      </span>
+      <input type="text" id="search" class="u-search" placeholder="Search...">
+    </div>
+    <label for="search" class="u-label">搜索支持文章ID，名称</label>
   </form>
 </div>
 
-<table class="table table-striped table-bordered table-hover dataTable" ng-init="getAllReview()">
+<table class="table g-mt30" ng-init="getAllReview()">
   <thead>
   <tr>
     <td>文章ID</td>
@@ -36,9 +38,9 @@
     <td>100</td>
     <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
     <td>
-      <button class="btn btn-primary" ng-click="previewArticle(11)">预览</button>
-      <button class="btn btn-primary" ng-click="deleteArticle(11)">删除</button>
-      <button class="btn btn-primary" ng-click="editArticle(11)">编辑</button>
+      <button class="mod-btn" ng-click="previewArticle(11)">预览</button>
+      <button class="mod-btn" ng-click="deleteArticle(11)">删除</button>
+      <button class="mod-btn" ng-click="editArticle(11)">编辑</button>
     </td>
   </tr>
   <tr ng-repeat="t in review_list">
@@ -51,9 +53,9 @@
     <td>100</td>
     <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
     <td>
-      <button class="btn btn-primary" ng-click="previewArticle(11)">预览</button>
-      <button class="btn btn-primary" ng-click="deleteArticle(11)">删除</button>
-      <button class="btn btn-primary" ng-click="editArticle(11)">编辑</button>
+      <button class="mod-btn" ng-click="previewArticle(11)">预览</button>
+      <button class="mod-btn" ng-click="deleteArticle(11)">删除</button>
+      <button class="mod-btn" ng-click="editArticle(11)">编辑</button>
     </td>
   </tr>
   </tbody>

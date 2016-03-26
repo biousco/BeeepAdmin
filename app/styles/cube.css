@@ -655,7 +655,7 @@ dialog::backdrop {
 }
 
 .table-striped tbody tr:nth-child(odd) td {
-  background-color: #fafafa
+  background-color: #fcfcfc;
 }
 
 .type .table-hover tbody tr:hover td, .type .table-hover thead tr:hover th {

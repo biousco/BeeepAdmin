@@ -1,15 +1,16 @@
-
-    <h1>试用全部订单</h1>
-
-    <div class="search-bar">
-      <form action="">
-        <label for="">搜索关键字</label>
-        <input type="text">
-        <button class="btn btn-primary">search</button>
-      </form>
+<div class="mod-search-bar">
+  <form action="">
+    <div class="u-wrapper">
+      <span class="u-icon">
+      <i></i>
+      </span>
+      <input type="text" id="search" class="u-search" placeholder="Search...">
     </div>
+    <label for="search" class="u-label">搜索支持试用id、订单号、用户名、商品名、申请时间</label>
+  </form>
+</div>
 
-    <table class="table table-striped table-bordered table-hover dataTable" ng-init="getAllTrial()">
+    <table class="table mod-order-table g-mt30" ng-init="getAllTrial()">
       <thead>
       <tr>
         <td>商品</td>
@@ -19,8 +20,7 @@
         <td>用户名</td>
         <td>申请时间</td>
         <td>更新时间</td>
-        <td>状态</td>
-        <td>操作</td>
+        <td>状态/操作</td>
       </tr>
       </thead>
       <tbody>
@@ -53,11 +53,23 @@
       </tr>
 
       <tr>
-        <td colspan="9">
-          <p>订单号：1316541654165165165165</p>
-          <p>物流公司：顺丰啦啦啦</p>
-          <p>物流订单号：23214234234324324</p>
-          <p>收货地址：林哈哈 开绿灯解放的风景阿里贷款解放螺丝钉解放螺丝钉解放</p>
+        <td colspan="7">
+          <div class="mod-order-detail">
+            <div class="u-img">
+              <img src="http://placehold.it/120x80" alt="">
+            </div>
+            <div class="u-detail">
+              <p><span>订单号：</span>1316541654165165165165</p>
+              <p><span>物流公司：</span>顺丰啦啦啦</p>
+              <p><span>物流单号：</span>23214234234324324</p>
+              <p><span>收货地址：</span>林哈哈 开绿灯解放的风景阿里贷款解放螺丝钉解放螺丝钉解放</p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <button class="mod-btn">查看详情</button>
+          <button class="mod-btn" ng-click="checkSuccess()">审核成功</button>
+          <button class="mod-btn" ng-click="checkFail()">审核失败</button>
         </td>
       </tr>
       <tr>
@@ -78,12 +90,26 @@
         <td>2015-11-11</td>
         <td>2016-5-5</td>
         <td>
-          分为试用申请审核中
+          试用申请审核中
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="7">
+          <div class="mod-order-detail">
+            <div class="u-img">
+              <img src="http://placehold.it/120x80" alt="">
+            </div>
+            <div class="u-detail">
+              <p>订单号：1316541654165165165165</p>
+              <p>物流公司：顺丰啦啦啦</p>
+              <p>物流单号：23214234234324324</p>
+              <p>收货地址：林哈哈 开绿灯解放的风景阿里贷款解放螺丝钉解放螺丝钉解放</p>
+            </div>
+          </div>
         </td>
         <td>
-          <button class="btn btn-primary">查看详情</button>
-          <button class="btn btn-primary" ng-click="checkSuccess()">审核成功</button>
-          <button class="btn btn-primary" ng-click="checkFail()">审核失败</button>
+          <button class="mod-btn">查看详情</button>
         </td>
       </tr>
       <tr>
@@ -106,8 +132,25 @@
         <td>
           试用申请审核失败
         </td>
+      </tr>
+
+      <tr>
+        <td colspan="7">
+          <div class="mod-order-detail">
+            <div class="u-img">
+              <img src="http://placehold.it/120x80" alt="">
+            </div>
+            <div class="u-detail">
+              <p>订单号：1316541654165165165165</p>
+              <p>物流公司：顺丰啦啦啦</p>
+              <p>物流单号：23214234234324324</p>
+              <p>收货地址：林哈哈 开绿灯解放的风景阿里贷款解放螺丝钉解放螺丝钉解放</p>
+            </div>
+          </div>
+        </td>
         <td>
-          <button class="btn btn-primary">查看详情</button>
+          <button class="mod-btn">查看详情</button>
+          <button class="mod-btn" ng-click="sentGoods()">发货</button>
         </td>
       </tr>
       <tr>
@@ -130,9 +173,24 @@
         <td>
           试用申请审核成功-待发货
         </td>
+      </tr>
+
+      <tr>
+        <td colspan="7">
+          <div class="mod-order-detail">
+            <div class="u-img">
+              <img src="http://placehold.it/120x80" alt="">
+            </div>
+            <div class="u-detail">
+              <p>订单号：1316541654165165165165</p>
+              <p>物流公司：顺丰啦啦啦</p>
+              <p>物流单号：23214234234324324</p>
+              <p>收货地址：林哈哈 开绿灯解放的风景阿里贷款解放螺丝钉解放螺丝钉解放</p>
+            </div>
+          </div>
+        </td>
         <td>
-          <button class="btn btn-primary">查看详情</button>
-          <button class="btn btn-primary" ng-click="sentGoods()">发货</button>
+          <button class="mod-btn">查看详情</button>
         </td>
       </tr>
       <tr>
@@ -155,8 +213,26 @@
         <td>
           试用申请审核成功-已发货
         </td>
+      </tr>
+
+      <tr>
+        <td colspan="7">
+          <div class="mod-order-detail">
+            <div class="u-img">
+              <img src="http://placehold.it/120x80" alt="">
+            </div>
+            <div class="u-detail">
+              <p>订单号：1316541654165165165165</p>
+              <p>物流公司：顺丰啦啦啦</p>
+              <p>物流单号：23214234234324324</p>
+              <p>收货地址：林哈哈 开绿灯解放的风景阿里贷款解放螺丝钉解放螺丝钉解放</p>
+            </div>
+          </div>
+        </td>
         <td>
-          <button class="btn btn-primary">查看详情</button>
+          <button class="mod-btn">查看详情</button>
+          <button class="mod-btn" ng-click="sentArticleSuccess()">文章已发布</button>
+          <button class="mod-btn" ng-click="sentArticleFail()">文章审核失败</button>
         </td>
       </tr>
       <tr>
@@ -179,12 +255,10 @@
         <td>
           试用文章审核中
         </td>
-        <td>
-          <button class="btn btn-primary">查看详情</button>
-          <button class="btn btn-primary" ng-click="sentArticleSuccess()">文章已发布</button>
-          <button class="btn btn-primary" ng-click="sentArticleFail()">文章审核失败</button>
-        </td>
       </tr>
+
+
+
       </tbody>
     </table>
 
