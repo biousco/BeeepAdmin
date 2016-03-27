@@ -7,6 +7,10 @@ define(['./../module'], function (controllers) {
 
     $scope.hc = 14;
 
+    $scope.updateList = function () {
+      console.log('ddd')
+    };
+
     /** 获取所有记录 **/
     $scope.getProductList = function () {
       ProductService.getProductList().success(function (data) {

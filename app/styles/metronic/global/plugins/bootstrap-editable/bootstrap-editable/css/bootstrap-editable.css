@@ -20,6 +20,7 @@
    /* inline-block emulation for IE7*/
    zoom: 1;
    *display: inline;
+  margin-top: 8px;
 }
 
 .editable-buttons.editable-buttons-bottom {

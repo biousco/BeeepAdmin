@@ -6,7 +6,7 @@ require.config({
     uiRouter: '../vender/angular-ui-router/release/angular-ui-router.min',
     uiBootstrap: '../vender/angular-bootstrap/ui-bootstrap.min',
     uitlps: '../vender/angular-bootstrap/ui-bootstrap-tpls.min',
-    xeditable: '../vender/angular-xeditable/dist/js/xeditable.min'
+    xeditable: '../vender/angular-xeditable/dist/js/xeditable'
   },
   shim: {
     angular: {

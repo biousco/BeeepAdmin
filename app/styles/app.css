@@ -58,6 +58,9 @@
 .g-mt20 {
   margin-top: 20px;
 }
+.editable-controls .mod-btn {
+  display: inline-block;
+}
 .editable-input {
   width: 30px !important;
   height: 36px;

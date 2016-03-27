@@ -7,6 +7,20 @@
 .mod-btn:hover {
   text-decoration: underline;
 }
+.mod-btn .mod-confirm {
+  display: inline-block;
+  width: 18px;
+  height: 14px;
+  background-image: url(../images/btn-confirm.png);
+  text-align: center;
+}
+.mod-btn .mod-cancel {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url(../images/btn-cancel.png);
+  text-align: center;
+}
 .mod-search-bar .u-wrapper {
   display: inline-block;
   width: 200px;
