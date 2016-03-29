@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="vender/textAngular/dist/textAngular.css">
 <h1>发布商品</h1>
-<form ng-submit="releaseGoods()">
+<form ng-submit="releaseGoods()" name="releaseForm">
 <table>
   <tbody>
   <tr>
@@ -9,7 +9,7 @@
   </tr>
   <tr>
     <td>商品描述</td>
-    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+    <td><textarea ng-model="brief" cols="30" rows="10"></textarea></td>
   </tr>
   <tr>
     <td>商品图片</td>
@@ -17,14 +17,12 @@
   </tr>
   <tr>
     <td>商品详情</td>
-    <td><div class="ueditor" ng-model="htmlVariable"></div></td>
+    <td><div class="ueditor" ng-model="htmlContent"></div></td>
   </tr>
   <tr>
     <td>商品平台</td>
     <td>
-      <select name="buy_channel" required>
-        <option value="1">亚马逊</option>
-        <option value="2">ebay</option>
+      <select name="buy_channel" required ng-model="buy_channel" ng-options="t for t in buy_channel_list">
       </select>
     </td>
   </tr>
@@ -52,4 +50,5 @@
   </tr>
   </tbody>
 </table>
+  <button type="submit">提交表单</button>
 </form>

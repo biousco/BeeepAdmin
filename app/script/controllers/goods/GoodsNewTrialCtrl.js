@@ -33,13 +33,7 @@ define(['./../module'], function (controllers) {
 
     $scope.toggleMin();
 
-    $scope.openStart = function() {
-      $scope.popup1.opened = true;
-    };
 
-    $scope.openEnd = function() {
-      $scope.popup2.opened = true;
-    };
 
     $scope.setDate = function(year, month, day) {
       $scope.dt = new Date(year, month, day);

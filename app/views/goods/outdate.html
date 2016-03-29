@@ -15,7 +15,7 @@
   <tbody>
   <tr ng-repeat="t in product_list">
     <td><span class="name" ng-bind="t.name">4k Cameral</span>{{ t.id }}</td>
-    <td><img ng-src="t.banner" class="img-thumbnail"></td>
+    <td><img ng-src="{{t.banner}}" class="img-thumbnail"></td>
     <td ng-bind="t.buy_channel">亚马逊</td>
     <td ng-bind="t.price">￥4521</td>
     <td ng-bind="t.create_time">2015-05-22</td>

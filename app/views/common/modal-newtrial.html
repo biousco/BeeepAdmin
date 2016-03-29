@@ -1,31 +1,30 @@
 <link rel="stylesheet" href="styles/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
 
 
-<div class="mod-newtrial" ng-controller="GoodsNewTrialCtrl">
+<div class="mod-newtrial">
 
   <h4>新增试用</h4>
   <div class="close-btn" ng-click="cancel()">
-    <a href="#"></a>
   </div>
 
   <div class="u-goods-info">
-    <img src="http://placehold.it/120x80" alt="">
+    <img ng-src="{{ modal.banner }}" alt="">
     <div class="detail">
-      <p class="title">4k Camera</p>
-      <p>商品id</p>
-      <p>2651651561651651561561</p>
+      <p class="title" ng-bind="modal.name"></p>
+      <p ng-bind="modal.id"></p>
+      <p ng-bind="modal.brief"></p>
     </div>
   </div>
 
   <div class="u-form-group">
     <p class="u-group">
       <label for="" class="u-label">试用申请开始时间:</label>
-      <input type="text" class="u-input" ng-click="openStart()" uib-datepicker-popup ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+      <input type="text" class="u-input" ng-click="openStart()" uib-datepicker-popup ng-model="trial_startdate" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="关闭" />
       <span class="tips">Needed</span>
     </p>
     <p class="u-group">
       <label for="" class="u-label">试用申请截止时间:</label>
-      <input type="text" class="u-input" ng-click="openEnd()" uib-datepicker-popup ng-model="dt2" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+      <input type="text" class="u-input" ng-click="openEnd()" uib-datepicker-popup ng-model="trial_enddate" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="关闭" />
       <span class="tips">Needed</span>
     </p>
     <p class="u-group">
@@ -35,7 +34,7 @@
     </p>
   </div>
 
-  <button class="mod-btn btn-submit">提交</button>
+  <button class="mod-btn btn-submit" ng-click="submitTrial()">提交</button>
   <p class="u-alert">请填写完整的信息</p>
 
 </div>
