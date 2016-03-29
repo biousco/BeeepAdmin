@@ -28,34 +28,19 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>1022512</td>
-    <td>这是文章名称</td>
-    <td><img src="" alt=""></td>
-    <td>这是作者</td>
-    <td>2015-05-22</td>
-    <td>20</td>
-    <td>100</td>
-    <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
-    <td>
-      <button class="mod-btn" ng-click="previewArticle(11)">预览</button>
-      <button class="mod-btn" ng-click="deleteArticle(11)">删除</button>
-      <button class="mod-btn" ng-click="editArticle(11)">编辑</button>
-    </td>
-  </tr>
   <tr ng-repeat="t in review_list">
-    <td>1022512</td>
-    <td ng-bind="t.title">这是文章名称</td>
-    <td><img ng-src="t.banner"></td>
-    <td>这是作者</td>
-    <td>2015-05-22</td>
-    <td>20</td>
-    <td>100</td>
+    <td ng-bind="t.id"></td>
+    <td ng-bind="t.title"></td>
+    <td><img ng-src="{{t.banner}}" class="img-article"></td>
+    <td></td>
+    <td ng-bind="t.create_time"></td>
+    <td ng-bind="t.praise_num"></td>
+    <td></td>
     <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
     <td>
-      <button class="mod-btn" ng-click="previewArticle(11)">预览</button>
-      <button class="mod-btn" ng-click="deleteArticle(11)">删除</button>
-      <button class="mod-btn" ng-click="editArticle(11)">编辑</button>
+      <button class="mod-btn" ng-click="previewArticle(t.id)">预览</button>
+      <button class="mod-btn" ng-click="deleteArticle(t.id)">删除</button>
+      <button class="mod-btn" ng-click="editArticle(t.id)">编辑</button>
     </td>
   </tr>
   </tbody>

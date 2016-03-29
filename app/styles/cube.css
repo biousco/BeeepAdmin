@@ -623,26 +623,26 @@ dialog::backdrop {
   font-style: normal
 }
 
-.btn {
-  box-sizing: content-box;
-  display: inline-block;
-  border: 1px solid #ddd;
-  *border: 0 none;
-  border-radius: 2px;
-  *margin-right: .3em;
-  margin-bottom: 0;
-  padding: 0 10px;
-  *padding: 1px 10px;
-  width: auto;
-  height: 21px;
-  line-height: 21px;
-  font-size: 12px;
-  font-weight: 700;
-  cursor: pointer;
-  color: #5e65fe;
-  display: block;
-  background-color: transparent;
-}
+/*.btn {*/
+  /*box-sizing: content-box;*/
+  /*display: inline-block;*/
+  /*border: 1px solid #ddd;*/
+  /**border: 0 none;*/
+  /*border-radius: 2px;*/
+  /**margin-right: .3em;*/
+  /*margin-bottom: 0;*/
+  /*padding: 0 10px;*/
+  /**padding: 1px 10px;*/
+  /*width: auto;*/
+  /*height: 21px;*/
+  /*line-height: 21px;*/
+  /*font-size: 12px;*/
+  /*font-weight: 700;*/
+  /*cursor: pointer;*/
+  /*color: #5e65fe;*/
+  /*display: block;*/
+  /*background-color: transparent;*/
+/*}*/
 
 .table table th, .table th {
   border: 0 none;

@@ -5,6 +5,8 @@
   border: none;
   display: block;
   background-color: transparent;
+  outline: none;
+  min-width: 4em;
   &:hover {
     text-decoration: underline;
   }
@@ -22,6 +24,33 @@
     background-image: url(../images/btn-cancel.png);
     text-align: center;
   }
+}
+.mod-logo {
+  width: 240px;
+  height: 80px;
+  float: left;
+  text-align: center;
+}
+.mod-logo img {
+  margin-top: 19px;
+}
+.mod-logout {
+  position: absolute;
+  width: 84px;
+  height: 36px;
+  border-radius: 18px;
+  border: 1px solid #e7e7e7;
+  right: 20px;
+  top: 20px;
+  text-align: center;
+  cursor: pointer;
+  a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    line-height: 36px;
+  }
+
 }
 
 .mod-search-bar {
@@ -123,5 +152,121 @@
       display: inline-block;
       width: 6em;
     }
+  }
+}
+
+.mod-newtrial-wrapper .modal-dialog {
+  width: 540px;
+}
+.mod-newtrial {
+  position: relative;
+  padding: 0 10px 25px 10px;
+  h4 {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .close-btn {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/btn-close.png);
+    a {
+      display: block;
+      height: 100%;
+    }
+  }
+  .u-goods-info {
+    padding-top: 20px;
+    overflow: hidden;
+    padding-left: 15px;
+    & > img {
+      float: left;
+      width: 120px;
+      max-height: 80px;
+      margin-right: 20px;
+    }
+  }
+  .detail {
+    float: left;
+    .title {
+      color: #000;
+      font-size: 20px;
+      margin-bottom: 20px;
+      line-height: 20px;
+    }
+    p {
+      color: #999;
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  .u-form-group {
+    margin-top: 20px;
+    padding-left: 10px;
+    .u-group {
+      margin-bottom: 14px;
+      overflow: hidden;
+    }
+    .u-label {
+      font-size: 14px;
+      color: #000;
+      text-align: right;
+      width: 9em;
+      float: left;
+      line-height: 36px;
+    }
+    .u-input {
+      float: left;
+      margin-left: 15px;
+      width: 300px;
+      height: 36px;
+      background-color: #e6e6e6;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      text-indent: 12px;
+    }
+    .tips {
+      float: left;
+      line-height: 36px;
+      margin-left: 10px;
+      color: #ccc;
+      font-size: 12px;
+    }
+  }
+  .btn-submit {
+    display: block;
+    width: 160px;
+    height: 36px;
+    text-align: center;
+    margin: 28px auto 0;
+    line-height: 36px;
+    color: #FFF;
+    border-radius: 18px;
+    background-color: @theme-color;
+    &.disable {
+      background-color: #b3b3b3;
+    }
+  }
+  .u-alert {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #ff9900;
+  }
+}
+
+.mod-account-table {
+  .img-thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
   }
 }

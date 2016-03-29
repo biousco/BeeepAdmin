@@ -59,6 +59,7 @@ define(['./app'], function (app) {
   app.config(function ($stateProvider,$urlRouterProvider) {
 
     $urlRouterProvider
+      .when('','/login')
       .when('/goods','/goods/racking')
       .when('/article','/article/manage')
       .when('/account','/account/normal');
@@ -72,9 +73,16 @@ define(['./app'], function (app) {
       //商品
       .state('goods', {
         url: '/goods',
-        templateUrl: 'views/common/modal-sidebar.html',
         data: routerMap.goods,
-        controller: 'SidebarCtrl'
+        views: {
+          'header': {
+            templateUrl: 'views/common/mod-header.html'
+          },
+          "": {
+            templateUrl: 'views/common/modal-sidebar.html',
+            controller: 'SidebarCtrl'
+          }
+        }
       })
       .state('goods.release', {
         url: '/release',
@@ -109,9 +117,16 @@ define(['./app'], function (app) {
       //运营
       .state('operation', {
         url: "/operation",
-        templateUrl: 'views/common/modal-sidebar.html',
         data: routerMap.operation,
-        controller: 'SidebarCtrl'
+        views: {
+          'header': {
+            templateUrl: 'views/common/mod-header.html'
+          },
+          "": {
+            templateUrl: 'views/common/modal-sidebar.html',
+            controller: 'SidebarCtrl'
+          }
+        }
       })
       .state('operation.banner', {
         url: '/bannermanage',
@@ -121,9 +136,16 @@ define(['./app'], function (app) {
       //文章
       .state('article', {
         url: '/article',
-        templateUrl: 'views/common/modal-sidebar.html',
         data: routerMap.article,
-        controller: 'SidebarCtrl'
+        views: {
+          'header': {
+            templateUrl: 'views/common/mod-header.html'
+          },
+          "": {
+            templateUrl: 'views/common/modal-sidebar.html',
+            controller: 'SidebarCtrl'
+          }
+        }
       })
       .state('article.manage', {
         url: '/manage',
@@ -143,9 +165,16 @@ define(['./app'], function (app) {
       //用户
       .state('account', {
         url: '/account',
-        templateUrl: 'views/common/modal-sidebar.html',
         data: routerMap.account,
-        controller: 'SidebarCtrl'
+        views: {
+          'header': {
+            templateUrl: 'views/common/mod-header.html'
+          },
+          "": {
+            templateUrl: 'views/common/modal-sidebar.html',
+            controller: 'SidebarCtrl'
+          }
+        }
       })
       .state('account.normal', {
         url: '/normal',
@@ -160,9 +189,16 @@ define(['./app'], function (app) {
       //订单
       .state('order', {
         url: '/order',
-        templateUrl: 'views/common/modal-sidebar.html',
         data: routerMap.order,
-        controller: 'SidebarCtrl'
+        views: {
+          'header': {
+            templateUrl: 'views/common/mod-header.html'
+          },
+          "": {
+            templateUrl: 'views/common/modal-sidebar.html',
+            controller: 'SidebarCtrl'
+          }
+        }
       })
       .state('order.alllist', {
         url: '/alllist',

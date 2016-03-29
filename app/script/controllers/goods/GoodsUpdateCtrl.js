@@ -8,7 +8,7 @@ define(['./../module'], function (controllers) {
     $scope.product_id = $stateParams.product_id;
 
     $scope.getProductDetail = function () {
-      var data = {product_id: $scope.product_id};
+      var data = {id: $scope.product_id};
       ProductService.getProductDetail(data).success(function (data) {
         if(data.ret_code == 0) {
           $scope.product_detail = data.data;

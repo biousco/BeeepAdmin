@@ -1,15 +1,4 @@
-<div class="mod-search-bar">
-  <form action="">
-    <div class="u-wrapper">
-      <span class="u-icon">
-      <i></i>
-      </span>
-      <input type="text" id="search" class="u-search" placeholder="Search...">
-    </div>
-    <label for="search" class="u-label">搜索支持id、商品名称</label>
-  </form>
-</div>
-
+<mod-search-bar label-text="'搜索支持id、商品名称'" ng-enter="updateList()"></mod-search-bar>
 
 <table class="table table-hover dataTable g-mt30 mod-table" ng-init="getProductList()">
   <thead>
@@ -24,55 +13,16 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <td><span class="name">4k Cameral</span>1321321321321332</td>
-    <td><img src="http://placehold.it/50x50" class="img-thumbnail"></td>
-    <td>亚马逊</td>
-    <td>￥4521</td>
-    <td>2015-05-22</td>
-    <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
-    <td>
-      <button class="mod-btn" ng-click="updateGoods(12)">编辑</button>
-      <button class="mod-btn" ng-click="banGoods(15)">上架</button>
-    </td>
-  </tr>
-  <tr>
-    <td>1022512 <br> 这是命ID发骄傲的司法局抖擞</td>
-    <td><img src="http://placehold.it/50x50" class="img-thumbnail"></td>
-    <td>亚马逊</td>
-    <td>￥4521</td>
-    <td>2015-05-22</td>
-    <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
-    <td>
-      <button class="mod-btn" ng-click="updateGoods(12)">编辑</button>
-      <button class="mod-btn" ng-click="banGoods(15)">上架</button>
-    </td>
-  </tr>
-  <tr>
-    <td>1022512 <br> 这是命ID发骄傲的司法局抖擞</td>
-    <td><img src="http://placehold.it/50x50" class="img-thumbnail"></td>
-    <td>亚马逊</td>
-    <td>￥4521</td>
-    <td>2015-05-22</td>
-    <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
-    <td>
-      <button class="mod-btn" ng-click="updateGoods(12)">编辑</button>
-      <button class="mod-btn" ng-click="banGoods(15)">上架</button>
-    </td>
-  </tr>
   <tr ng-repeat="t in product_list">
-    <td></td>
-    <td ng-bind="t.name"></td>
+    <td><span class="name" ng-bind="t.name">4k Cameral</span>{{ t.id }}</td>
     <td><img ng-src="t.banner" class="img-thumbnail"></td>
-    <td>亚马逊</td>
-    <td>￥4521</td>
-    <td>2015-05-22</td>
-    <td><a href="" editable-text="hc" class="editable editable-click">{{hc}}</a></td>
+    <td ng-bind="t.buy_channel">亚马逊</td>
+    <td ng-bind="t.price">￥4521</td>
+    <td ng-bind="t.create_time">2015-05-22</td>
+    <td><a href="" editable-text="hc" class="editable editable-click" ng-bind="t.rank"></a></td>
     <td>
-      <button class="btn btn-primary">预览</button>
-      <button class="btn btn-primary" ng-click="updateGoods(12)">编辑</button>
-      <button class="btn btn-primary" ng-click="banGoods(15)">下架</button>
-      <button class="btn btn-primary" ng-click="trialGoods(12)">试用管理</button>
+      <button class="mod-btn" ng-click="updateGoods(t.id)">编辑</button>
+      <button class="mod-btn" ng-click="groundGoods(t.id)">上架</button>
     </td>
   </tr>
   </tbody>

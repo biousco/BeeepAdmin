@@ -6,9 +6,23 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('ArticlePostCtrl', ['$scope','AdminService',function ($scope, AdminService) {
+  controllers.controller('ArticlePostCtrl', ['$scope','ReviewService','$state',function ($scope, ReviewService,$state) {
 
-
+    $scope.postReview = function () {
+      var datas = {
+        title: $scope.title,
+        brief: $scope.brief,
+        content: $scope.content,
+        banner: $scope.banner,
+        product_id: $scope.product_id
+      };
+      ReviewService.addReview(datas).success(function (data) {
+        if(data.ret_code == 0) {
+          alert('发布成功！');
+          $state.go('article.manage');
+        }
+      });
+    }
 
   }]);
 });

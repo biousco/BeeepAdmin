@@ -11,12 +11,13 @@ define([
     './services/index'
 ], function (ng) {
     return ng.module('beepAdminApp', [
+      'ui.router',
+      'ui.bootstrap',
+      'xeditable',
         'app.services',
         'app.controllers',
         'app.filters',
-        'app.directives',
-        'ui.router',
-        'ui.bootstrap',
-        'xeditable'
+        'app.directives'
+
     ]);
 });

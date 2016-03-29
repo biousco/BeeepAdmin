@@ -3,7 +3,17 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('AccountNormalCtrl', ['$scope','AdminService','$uibModal',function ($scope, AdminService, $uibModal) {
+  controllers.controller('AccountNormalCtrl', ['$scope','UserService','$uibModal',function ($scope, UserService, $uibModal) {
+
+
+    /** 获取所有用户 **/
+    $scope.getAccountList = function () {
+      UserService.getUserList().success(function (data) {
+        if(data.ret_code == 0) {
+          $scope.accountList = data.data;
+        }
+      });
+    };
 
     /** 查看详情 **/
     $scope.showDetail = function () {

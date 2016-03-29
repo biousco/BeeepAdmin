@@ -3,14 +3,16 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('GoodsOutdateCtrl', ['$scope','ProductService','$uibModal','$state',function ($scope, ProductService, $uibModal, $state) {
+  controllers.controller('GoodsOutdateCtrl', ['$scope','ProductService','$uibModal','$state', '$filter', function ($scope, ProductService, $uibModal, $state, $filter) {
 
 
     /** 获取所有记录 **/
     $scope.getProductList = function () {
       ProductService.getProductList().success(function (data) {
-        if(data.ret_code = 0) {
-          $scope.product_list = data.data;
+        if(data.ret_code == 0) {
+          $scope.product_list = $filter('filter')(data.data, function (value, index) {
+            return value.is_delete == 1;
+          })
         }
       })
     };
@@ -30,7 +32,13 @@ define(['./../module'], function (controllers) {
 
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
-        console.log('yes');
+        var data = {id: product_id, is_delete: 0};
+        ProductService.deleteProduct(data).success(function (data) {
+          if(data.ret_code == 0) {
+            alert("上架成功！");
+            window.location.reload();
+          }
+        })
       }, function () {});
 
     };

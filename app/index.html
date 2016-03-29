@@ -12,22 +12,8 @@
 </head>
 <body>
 
-<nav class="navbar">
-      <div class="mod-logo">
-        <img src="images/logo.png">
-      </div>
-      <ul class="nav navbar-nav">
-        <!--<li ui-sref-active="active"><a ui-sref="login">Login</a></li>-->
-        <li ui-sref-active="active"><a ui-sref="goods">商品管理</a></li>
-        <li ui-sref-active="active"><a ui-sref="order.alllist">试用订单管理</a></li>
-        <li ui-sref-active="active"><a ui-sref="operation.banner">运营位管理</a></li>
-        <li ui-sref-active="active"><a ui-sref="article">文章管理</a></li>
-        <li ui-sref-active="active"><a ui-sref="account">用户管理</a></li>
-        <!--<li ng-controller="LogoutCtrl"><a ng-click="logout()">退出登录</a></li>-->
-      </ul>
 
-</nav>
-
+<div ui-view="header"></div>
 <div ui-view></div>
 
 

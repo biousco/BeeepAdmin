@@ -3,11 +3,11 @@
   <tbody>
   <tr>
     <td>商品名称</td>
-    <td><input type="text" ng-bind="product_detail.name"></td>
+    <td><input type="text" ng-model="product_detail.name"></td>
   </tr>
   <tr>
     <td>商品描述</td>
-    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+    <td><textarea name="" id="" cols="30" rows="10" ng-model="product_detail.brief"></textarea></td>
   </tr>
   <tr>
     <td>商品图片</td>
@@ -28,20 +28,20 @@
   </tr>
   <tr>
     <td>商品原链接</td>
-    <td><input type="text" ng-bind="product_detail.buy_link"></td>
+    <td><input type="text" ng-model="product_detail.buy_link"></td>
   </tr>
   <tr>
     <td>商品店铺名</td>
-    <td><input type="text" ng-bind="product_detail.buy_store"></td>
+    <td><input type="text" ng-model="product_detail.buy_store"></td>
   </tr>
   <tr>
     <td>商品优惠码</td>
-    <td><input type="text"></td>
+    <td><input type="text" ng-model="product_detail.coupon"></td>
   </tr>
   <tr>
     <td>商品价格</td>
     <td>
-      <input type="text">
+      <input type="text" ng-model="product_detail.price">
       <select name="" id="">
         <option value="1">美元</option>
         <option value="2">日元</option>

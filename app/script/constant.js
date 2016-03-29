@@ -4,15 +4,15 @@
 define(['./app'], function (app) {
   'use strict';
   app.constant('cgiList', {
-    AdminLogin: '/Admin/User/Login',
-    AdminLogout: '/Admin/User/Logout',
+    AdminLogin: '/Admin/Admin/Login',
+    AdminLogout: '/Admin/Admin/Logout',
     addProduct: '/Admin/Product/Add',
-    deleteProduct: '/Admin/Product/Delete',
-    getProductList:'/Admin/Product/List',
+    deleteProduct: '/Admin/Product/Update',
+    getProductList:'/Admin/Product/All',
     getProductDetail:'/Admin/Product/GetDetail',
     updateProduct:'/Admin/Product/Update',
     addReview: '/Admin/Review/Add',
-    deleteReview: '/Admin/Review/Delete',
+    deleteReview: '/Admin/Review/Update',
     getReviewList: '/Admin/Review/All',
     getReviewDetail: '/Admin/Review/GetDetail',
     updateReview: '/Admin/Review/Update',

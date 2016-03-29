@@ -1,7 +1,7 @@
 define(['./module'], function(services) {
   'use strict';
 
-  services.factory('ServiceInterceptor', ['$q', '$httpParamSerializerJQLike',  function ($q, $httpParamSerializerJQLike) {
+  services.factory('ServiceInterceptor', ['$q', '$httpParamSerializerJQLike', function ($q, $httpParamSerializerJQLike) {
     return {
       'request': function (config) {
         if(config.method == 'POST') {
@@ -17,8 +17,9 @@ define(['./module'], function(services) {
         if(typeof ret === "string")
           return response;
         if(typeof ret === "object") {
-          if (ret.ret_code !== 0) {
-            console.warn('Service Error');
+          if (ret.ret_code == 10000) {
+            //没有权限
+            window.location.href = '/';
           } else return response;
         }
       }

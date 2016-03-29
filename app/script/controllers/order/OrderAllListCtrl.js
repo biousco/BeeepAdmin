@@ -76,7 +76,7 @@ define(['./../module'], function (controllers) {
     $scope.getAllTrial = function () {
       TrialService.getTrialList().success(function (data) {
         if(data.ret_code == 0) {
-          $scope.trial_list = $scope.data.data;
+          $scope.trial_list = data.data;
           angular.forEach($scope.trial_list, function (value, key) {
             var _s = STATUS[value.status];
             value.status_title = _s.title;

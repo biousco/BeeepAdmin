@@ -1,0 +1,15 @@
+<nav class="navbar" ng-controller="LoginCtrl">
+  <div class="mod-logo">
+    <img src="images/logo.png">
+  </div>
+  <ul class="nav navbar-nav">
+    <li ui-sref-active="active"><a ui-sref="goods">商品管理</a></li>
+    <li ui-sref-active="active"><a ui-sref="order.alllist">试用订单管理</a></li>
+    <li ui-sref-active="active"><a ui-sref="operation.banner">运营位管理</a></li>
+    <li ui-sref-active="active"><a ui-sref="article">文章管理</a></li>
+    <li ui-sref-active="active"><a ui-sref="account">用户管理</a></li>
+  </ul>
+  <div class="mod-logout">
+    <a ng-click="logout()">登出</a>
+  </div>
+</nav>

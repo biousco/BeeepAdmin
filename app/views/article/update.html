@@ -1,9 +1,10 @@
 <h1>编辑文章</h1>
-<table  class="table table-bordered table-hover ">
+<form ng-submit="updateReview()">
+<table class="table table-bordered table-hover " ng-init="getReviewDetail()">
   <tbody>
   <tr>
     <td>文章名称</td>
-    <td><input type="text"></td>
+    <td><input type="text" ng-model="review_detail.title"></td>
   </tr>
   <tr>
     <td>文章作者</td>
@@ -11,23 +12,27 @@
   </tr>
   <tr>
     <td>文章描述</td>
-    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+    <td><textarea ng-model="review_detail.brief" cols="30" rows="10"></textarea></td>
   </tr>
   <tr>
     <td>文章原链接</td>
-    <td><input type="text"></td>
+    <td><input type="text" ng-model="review_detail.link"></td>
   </tr>
   <tr>
     <td>文章正文</td>
-    <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+    <td><textarea ng-model="review_detail.content" cols="30" rows="10"></textarea></td>
   </tr>
 <tr>
   <td>关联商品</td>
-  <td><input type="text"></td>
+  <td><input type="text" ng-model="review_detail.product_id"></td>
 </tr>
 <tr>
   <td>文章图片</td>
+  <td><img ng-src="{{review_detail.banner}}" alt=""></td>
   <td><input type="file"></td>
 </tr>
   </tbody>
 </table>
+
+<button type="submit">更新</button>
+</form>
