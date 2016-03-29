@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="vender/textAngular/dist/textAngular.css">
 <h1>发布商品</h1>
+<form ng-submit="releaseGoods()">
 <table>
   <tbody>
   <tr>
@@ -16,7 +17,7 @@
   </tr>
   <tr>
     <td>商品详情</td>
-    <td><div text-angular ng-model="htmlVariable"></div></td>
+    <td><div class="ueditor" ng-model="htmlVariable"></div></td>
   </tr>
   <tr>
     <td>商品平台</td>
@@ -51,3 +52,4 @@
   </tr>
   </tbody>
 </table>
+</form>

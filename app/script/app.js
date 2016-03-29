@@ -5,20 +5,18 @@ define([
     'uiBootstrap',
     'uitlps',
     'xeditable',
-    'textAngular',
-    'saveSelection',
+    'angularUeditor',
     './controllers/index',
     './directives/index',
     './filters/index',
     './services/index'
 ], function (ng) {
-    window.rangy = require('rangy');
-    require('textAngular');
+    window.ZeroClipboard = require('zeroClipboard');
     return ng.module('beepAdminApp', [
       'ui.router',
       'ui.bootstrap',
       'xeditable',
-      'textAngular',
+      'ng.ueditor',
         'app.services',
         'app.controllers',
         'app.filters',

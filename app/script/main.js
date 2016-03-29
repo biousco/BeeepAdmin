@@ -7,14 +7,10 @@ require.config({
     uiBootstrap: '../vender/angular-bootstrap/ui-bootstrap.min',
     uitlps: '../vender/angular-bootstrap/ui-bootstrap-tpls.min',
     xeditable: '../vender/angular-xeditable/dist/js/xeditable',
-
-
-
-    rangy: '../vender/rangy/rangy-core',
-    saveSelection: '../vender/rangy/rangy-selectionsaverestore',
-    sanitize: '../vender/textAngular/dist/textAngular-sanitize.min',
-    textAngularSetup: '../vender/textAngular/dist/textAngularSetup',
-    textAngular: '../vender/textAngular/dist/textAngular'
+    ueditor: '../vender/ueditor/ueditor.all.min',
+    ueditorConfig: '../vender/ueditor/ueditor.config',
+    angularUeditor: '../vender/angular-ueditor/dist/angular-ueditor',
+    zeroClipboard: '../vender/ueditor/third-party/zeroclipboard/ZeroClipboard.min'
   },
   shim: {
     angular: {
@@ -35,28 +31,16 @@ require.config({
       deps: ['angular'],
       exports: 'xeditable'
     },
-    rangy: {
-      exports: 'rangy'
+    zeroClipboard: {
+      exports: 'zeroClipboard'
     },
-    saveSelection: {
-      deps: ['rangy'],
-      exports: ['saveSelection']
+    ueditor: {
+      deps: ['ueditorConfig'],
+      exports: 'Editor'
     },
-    sanitize: {
-      deps: ['angular'],
-      exports: 'sanitize'
-    },
-    textAngularSetup: {
-      deps: ['angular'],
-      exports: 'textAngularSetup'
-    },
-    // saveSelection: {
-    //   deps: ['rangy'],
-    //   exports: 'saveSelection'
-    // },
-    textAngular: {
-      deps: ['angular','sanitize','textAngularSetup'],
-      exports: 'textAngular'
+    angularUeditor: {
+      deps: ['ueditor','ueditorConfig','zeroClipboard'],
+      exports: 'angularUeditor'
     }
   },
   deps: ['./bootstrap'],
