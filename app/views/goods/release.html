@@ -1,54 +1,75 @@
-<link rel="stylesheet" href="vender/textAngular/dist/textAngular.css">
-<h1>发布商品</h1>
-<form ng-submit="releaseGoods()" name="releaseForm">
-<table>
-  <tbody>
-  <tr>
-    <td>商品名称</td>
-    <td><input type="text" required ng-model="name"></td>
-  </tr>
-  <tr>
-    <td>商品描述</td>
-    <td><textarea ng-model="brief" cols="30" rows="10"></textarea></td>
-  </tr>
-  <tr>
-    <td>商品图片</td>
-    <td><input type="file"><p>图片要求:巴拉巴拉</p></td>
-  </tr>
-  <tr>
-    <td>商品详情</td>
-    <td><div class="ueditor" ng-model="htmlContent"></div></td>
-  </tr>
-  <tr>
-    <td>商品平台</td>
-    <td>
-      <select name="buy_channel" required ng-model="buy_channel" ng-options="t for t in buy_channel_list">
-      </select>
-    </td>
-  </tr>
-  <tr>
-    <td>商品原链接</td>
-    <td><input type="text" ng-model="buy_link" required></td>
-  </tr>
-  <tr>
-    <td>商品店铺名</td>
-    <td><input type="text" ng-model="buy_store" required></td>
-  </tr>
-  <tr>
-    <td>商品优惠码</td>
-    <td><input type="text" ng-model="coupon" required></td>
-  </tr>
-  <tr>
-    <td>商品价格</td>
-    <td>
-      <input type="text">
-      <select name="" id="">
-        <option value="1">美元</option>
-        <option value="2">日元</option>
-      </select>
-    </td>
-  </tr>
-  </tbody>
-</table>
-  <button type="submit">提交表单</button>
-</form>
+<div class="mod-release-box">
+  <h3>填写基本信息</h3>
+
+  <form ng-submit="releaseGoods()" name="releaseForm">
+    <div class="mod-release-form">
+      <div class="m-inputBox">
+        <p class="title">商品名称:</p>
+        <div class="input-wrap">
+          <input type="text" required ng-model="name">
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">商品描述:</p>
+        <div class="input-wrap">
+          <textarea ng-model="brief" class="desc"></textarea>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">商品图片:</p>
+        <div class="input-wrap preview-wrap">
+          <div class="img-preview"></div>
+          <input type="file"><p>jpg,png or gif 330X220</p>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">商品详情:</p>
+        <div class="input-wrap editor">
+          <div class="ueditor" ng-model="htmlContent"></div>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">商品原链接:</p>
+        <div class="input-wrap">
+          <input type="text" ng-model="buy_link" required>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">商品店铺名:</p>
+        <div class="input-wrap">
+          <input type="text" ng-model="buy_store" required>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">商品优惠码:</p>
+        <div class="input-wrap">
+          <input type="text" ng-model="coupon" required>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">商品平台:</p>
+        <div class="input-wrap select-wrap">
+          <select name="buy_channel" required ng-model="buy_channel" ng-options="t for t in buy_channel_list">
+          </select>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">商品价格:</p>
+        <div class="input-wrap select-wrap">
+          <select name="" id="">
+            <option value="1">美元</option>
+            <option value="2">日元</option>
+          </select>
+        </div>
+        <div class="input-wrap price-wrap">
+          <input type="text">
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="mod-btn btn-submit">创建商品</button>
+    <p class="u-alert">请填写完整的信息</p>
+
+  </form>
+
+</div>

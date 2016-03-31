@@ -1,36 +1,56 @@
-<h1>发布文章</h1>
-<form ng-submit="postReview()">
-<table class="table table-bordered table-hover">
-  <tbody>
-  <tr>
-    <td>文章名称</td>
-    <td><input type="text" ng-model="title" required></td>
-  </tr>
-  <tr>
-    <td>文章作者</td>
-    <td><input type="text" ng-model="author"></td>
-  </tr>
-  <tr>
-    <td>文章描述</td>
-    <td><textarea ng-model="brief" cols="30" rows="10" required></textarea></td>
-  </tr>
-  <tr>
-    <td>文章原链接</td>
-    <td><input type="text" required></td>
-  </tr>
-  <tr>
-    <td>文章正文</td>
-    <td><div class="ueditor" ng-model="content"></div></td>
-  </tr>
-<tr>
-  <td>关联商品</td>
-  <td><input type="text" ng-model="product_id" required></td>
-</tr>
-<tr>
-  <td>文章图片</td>
-  <td><input type="file" required></td>
-</tr>
-  </tbody>
-</table>
-  <button type="submit">提交</button>
-</form>
+<div class="mod-release-box">
+  <h3>发布文章</h3>
+
+  <form ng-submit="postReview()">
+    <div class="mod-release-form">
+      <div class="m-inputBox">
+        <p class="title">文章名称:</p>
+        <div class="input-wrap">
+          <input type="text" required ng-model="title">
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章作者:</p>
+        <div class="input-wrap">
+          <input type="text" required ng-model="author">
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章描述:</p>
+        <div class="input-wrap">
+          <textarea ng-model="brief" class="desc"></textarea>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章图片:</p>
+        <div class="input-wrap preview-wrap">
+          <div class="img-preview"></div>
+          <input type="file"><p>jpg,png or gif 330X220</p>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章正文:</p>
+        <div class="input-wrap editor">
+          <div class="ueditor" ng-model="content"></div>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章原链接:</p>
+        <div class="input-wrap">
+          <input type="text" ng-model="buy_link" required>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">关联商品:</p>
+        <div class="input-wrap">
+          <input type="text" ng-model="product_id" required>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="mod-btn btn-submit">提交</button>
+    <p class="u-alert">请填写完整的信息</p>
+
+  </form>
+
+</div>

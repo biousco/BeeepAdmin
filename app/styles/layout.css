@@ -1,0 +1,36 @@
+.page-sidebar {
+  width: 235px;
+  float: left;
+  position: relative;
+  margin-right: -100%;
+}
+.page-sidebar .page-sidebar-menu > li:first-child {
+  margin-top: 20px;
+}
+.page-sidebar .page-sidebar-menu > li {
+  display: block;
+}
+.page-sidebar .page-sidebar-menu > li > a {
+  display: block;
+  position: relative;
+  margin: 0;
+  border: none;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  color: #999;
+  font-weight: normal;
+  outline: none;
+}
+.page-content-wrapper {
+  float: left;
+  width: 100%;
+}
+.page-content-wrapper .page-content {
+  margin-left: 235px;
+  margin-top: 0;
+  min-height: 600px;
+  padding: 30px;
+  background: #f7f7f7;
+}

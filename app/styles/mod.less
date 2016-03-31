@@ -25,6 +25,37 @@
     text-align: center;
   }
 }
+.btn-submit {
+  display: block;
+  width: 160px;
+  height: 36px;
+  text-align: center;
+  margin: 28px auto 0;
+  line-height: 36px;
+  color: #FFF;
+  border-radius: 18px;
+  background-color: @theme-color;
+  &.disable {
+    background-color: #b3b3b3;
+  }
+}
+.btn-submit2 {
+  width: 160px;
+  height: 36px;
+  text-align: center;
+  line-height: 32px;
+  background-color: #fff;
+  border: 2px solid @theme-color;
+  border-radius: 18px;
+  color: @theme-color;
+}
+.u-alert {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #ff9900;
+}
+
 .mod-logo {
   width: 240px;
   height: 80px;
@@ -241,26 +272,6 @@
       font-size: 12px;
     }
   }
-  .btn-submit {
-    display: block;
-    width: 160px;
-    height: 36px;
-    text-align: center;
-    margin: 28px auto 0;
-    line-height: 36px;
-    color: #FFF;
-    border-radius: 18px;
-    background-color: @theme-color;
-    &.disable {
-      background-color: #b3b3b3;
-    }
-  }
-  .u-alert {
-    text-align: center;
-    font-size: 12px;
-    margin-top: 10px;
-    color: #ff9900;
-  }
 }
 
 .mod-account-table {
@@ -268,5 +279,174 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+  }
+}
+
+.mod-release-box {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8px 25px 35px;
+  &>h3 {
+    font-size: 22px;
+    color: #000;
+    line-height: 46px;
+    text-align: left;
+    height: 46px;
+    border-bottom: 1px solid #efefef;
+  }
+  .mod-release-form {
+    margin-top: 28px;
+  }
+  .m-inputBox {
+    overflow: hidden;
+    margin-bottom: 14px;
+  }
+  .title {
+    float: left;
+    color: #000;
+    margin-right: 13px;
+    text-align: right;
+    width: 100px;
+    line-height: 36px;
+    vertical-align: top;
+  }
+  .input-wrap {
+    float: left;
+    width: 800px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #e6e6e6;
+    box-sizing: border-box;
+    padding: 5px;
+    &.half {
+      width:400px;
+      margin-right:15px;
+    }
+  }
+  .select-wrap {
+    width:110px;
+    margin-right: 10px;
+    select {
+      width: 100%;
+      border: none;
+      background-color: #e6e6e6;
+    }
+  }
+  .preview-wrap {
+    height: 310px;
+  }
+  .price-wrap {
+    width: 110px;
+  }
+  .banner-wrap {
+    height: auto;
+    border-radius: 0;
+    padding: 0;
+    background-color: transparent;
+    .placehold {
+      width: 450px;
+      height: 168px;
+      background-color: #cccccc;
+      color: #FFF;
+      margin-bottom: 10px;
+      text-align: center;
+      line-height: 168px;
+    }
+  }
+  input,textarea {
+    width: 100%;
+    height: 100%;
+    background-color: #e6e6e6;
+    border: none;
+    outline: none;
+    text-indent: 5px;
+  }
+  input[type=file] {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    text-indent: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  .desc {
+    height: 80px;
+  }
+  .editor {
+    height: 600px;
+    .ueditor {
+      height: 80%;
+    }
+  }
+  .img-preview {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .prev_preview {
+    width: 360px;
+    height: 240px;
+    margin-bottom: 10px;
+  }
+  &.mod-banner {
+    .input-wrap {
+      width: 450px;
+    }
+    .btn-submit {
+      width: 280px;
+      margin-left: 185px;
+    }
+    .u-alert {
+      margin-left: 289px;
+    }
+  }
+}
+
+.mod-simple-modal {
+  width: 540px;
+  padding: 0 20px 30px;
+  background-color: #f7f7f7;
+  position: relative;
+  .u-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    border-bottom: 2px solid #eaeaea;
+  }
+  .content {
+    text-align: center;
+    & > img {
+      margin-top: 19px;
+      margin-bottom: 10px;
+    }
+    & > p {
+      margin-bottom: 22px;
+    }
+  }
+  .footer {
+    text-align: center;
+    .mod-btn {
+      display: inline-block;
+      width: 80px;
+      margin-top: 0;
+      &:first-child {
+        margin-right: 13px;
+      }
+    }
+  }
+  .close-btn {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/btn-close.png);
+    cursor: pointer;
   }
 }

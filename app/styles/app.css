@@ -1,6 +1,6 @@
 @import "mod.css";
+@import "layout.css";
 .navbar {
-  position: relative;
   height: 80px;
   border: none;
   margin-bottom: 0;

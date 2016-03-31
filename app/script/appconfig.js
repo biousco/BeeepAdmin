@@ -32,6 +32,10 @@ define(['./app'], function (app) {
       {
         title: "banner管理",
         route: "operation.banner"
+      },
+      {
+        title: "新增banner",
+        route: "operation.createbanner"
       }
     ],
     article: [
@@ -132,6 +136,11 @@ define(['./app'], function (app) {
         url: '/bannermanage',
         templateUrl: 'views/operation/bannermanage.html',
         controller: 'BannerManageCtrl'
+      })
+      .state('operation.createbanner', {
+        url: '/createbanner',
+        templateUrl: 'views/operation/createbanner.html',
+        controller: 'CreateBannerCtrl'
       })
       //文章
       .state('article', {

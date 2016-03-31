@@ -23,6 +23,36 @@
   background-image: url(../images/btn-cancel.png);
   text-align: center;
 }
+.btn-submit {
+  display: block;
+  width: 160px;
+  height: 36px;
+  text-align: center;
+  margin: 28px auto 0;
+  line-height: 36px;
+  color: #FFF;
+  border-radius: 18px;
+  background-color: #5e65fe;
+}
+.btn-submit.disable {
+  background-color: #b3b3b3;
+}
+.btn-submit2 {
+  width: 160px;
+  height: 36px;
+  text-align: center;
+  line-height: 32px;
+  background-color: #fff;
+  border: 2px solid #5e65fe;
+  border-radius: 18px;
+  color: #5e65fe;
+}
+.u-alert {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #ff9900;
+}
 .mod-logo {
   width: 240px;
   height: 80px;
@@ -228,28 +258,174 @@
   color: #ccc;
   font-size: 12px;
 }
-.mod-newtrial .btn-submit {
-  display: block;
-  width: 160px;
-  height: 36px;
-  text-align: center;
-  margin: 28px auto 0;
-  line-height: 36px;
-  color: #FFF;
-  border-radius: 18px;
-  background-color: #5e65fe;
-}
-.mod-newtrial .btn-submit.disable {
-  background-color: #b3b3b3;
-}
-.mod-newtrial .u-alert {
-  text-align: center;
-  font-size: 12px;
-  margin-top: 10px;
-  color: #ff9900;
-}
 .mod-account-table .img-thumb {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+.mod-release-box {
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8px 25px 35px;
+}
+.mod-release-box > h3 {
+  font-size: 22px;
+  color: #000;
+  line-height: 46px;
+  text-align: left;
+  height: 46px;
+  border-bottom: 1px solid #efefef;
+}
+.mod-release-box .mod-release-form {
+  margin-top: 28px;
+}
+.mod-release-box .m-inputBox {
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.mod-release-box .title {
+  float: left;
+  color: #000;
+  margin-right: 13px;
+  text-align: right;
+  width: 100px;
+  line-height: 36px;
+  vertical-align: top;
+}
+.mod-release-box .input-wrap {
+  float: left;
+  width: 800px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #e6e6e6;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.mod-release-box .input-wrap.half {
+  width: 400px;
+  margin-right: 15px;
+}
+.mod-release-box .select-wrap {
+  width: 110px;
+  margin-right: 10px;
+}
+.mod-release-box .select-wrap select {
+  width: 100%;
+  border: none;
+  background-color: #e6e6e6;
+}
+.mod-release-box .preview-wrap {
+  height: 310px;
+}
+.mod-release-box .price-wrap {
+  width: 110px;
+}
+.mod-release-box .banner-wrap {
+  height: auto;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+}
+.mod-release-box .banner-wrap .placehold {
+  width: 450px;
+  height: 168px;
+  background-color: #cccccc;
+  color: #FFF;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 168px;
+}
+.mod-release-box input,
+.mod-release-box textarea {
+  width: 100%;
+  height: 100%;
+  background-color: #e6e6e6;
+  border: none;
+  outline: none;
+  text-indent: 5px;
+}
+.mod-release-box input[type=file] {
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  text-indent: 0;
+}
+.mod-release-box textarea {
+  resize: none;
+}
+.mod-release-box .desc {
+  height: 80px;
+}
+.mod-release-box .editor {
+  height: 600px;
+}
+.mod-release-box .editor .ueditor {
+  height: 80%;
+}
+.mod-release-box .img-preview {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.mod-release-box .prev_preview {
+  width: 360px;
+  height: 240px;
+  margin-bottom: 10px;
+}
+.mod-release-box.mod-banner .input-wrap {
+  width: 450px;
+}
+.mod-release-box.mod-banner .btn-submit {
+  width: 280px;
+  margin-left: 185px;
+}
+.mod-release-box.mod-banner .u-alert {
+  margin-left: 289px;
+}
+.mod-simple-modal {
+  width: 540px;
+  padding: 0 20px 30px;
+  background-color: #f7f7f7;
+  position: relative;
+}
+.mod-simple-modal .u-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  height: 40px;
+  line-height: 40px;
+  color: #000;
+  border-bottom: 2px solid #eaeaea;
+}
+.mod-simple-modal .content {
+  text-align: center;
+}
+.mod-simple-modal .content > img {
+  margin-top: 19px;
+  margin-bottom: 10px;
+}
+.mod-simple-modal .content > p {
+  margin-bottom: 22px;
+}
+.mod-simple-modal .footer {
+  text-align: center;
+}
+.mod-simple-modal .footer .mod-btn {
+  display: inline-block;
+  width: 80px;
+  margin-top: 0;
+}
+.mod-simple-modal .footer .mod-btn:first-child {
+  margin-right: 13px;
+}
+.mod-simple-modal .close-btn {
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/btn-close.png);
+  cursor: pointer;
 }

@@ -15,6 +15,7 @@ define([
   './goods/GoodsNewTrialCtrl',
   './goods/GoodsUpdateCtrl',
   './operation/BannerManageCtrl',
+  './operation/CreateBannerCtrl',
   './article/ArticleManageCtrl',
   './article/ArticlePostCtrl',
   './article/ArticleUpdateCtrl',

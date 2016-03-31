@@ -9,10 +9,12 @@ var rimraf = require('rimraf');
 var wiredep = require('wiredep').stream;
 var runSequence = require('run-sequence');
 var karmaServer = require('karma').Server;
+var amdOptimize = require('gulp-amd-optimize');
+//var concat = require('gulp-concat');
 
 var yeoman = {
   app: require('./bower.json').appPath || 'app',
-  dist: 'dist'
+  dist: '.dist'
 };
 
 var paths = {
@@ -161,26 +163,57 @@ gulp.task('bower', function () {
 ///////////
 
 gulp.task('clean:dist', function (cb) {
-  rimraf('./dist', cb);
+  rimraf('./.dist', cb);
 });
+//
+// gulp.task('client:build', ['html', 'styles'], function () {
+//   var jsFilter = $.filter('**/*.js');
+//   var cssFilter = $.filter('**/*.css');
+//
+//   return gulp.src(paths.views.main)
+//     .pipe($.useref())
+//     // .pipe(jsFilter)
+//     // .pipe($.ngAnnotate())
+//     // .pipe($.uglify())
+//     // .pipe(jsFilter.restore())
+//     .pipe(cssFilter)
+//     .pipe($.minifyCss({cache: true}))
+//     // .pipe(cssFilter.restore())
+//     // .pipe($.rev())
+//     // .pipe($.revReplace())
+//     .pipe(gulp.dest(yeoman.dist));
+// });
+//
+// gulp.task('html', function () {
+//   return gulp.src(yeoman.app + '/views/**/*')
+//     .pipe(gulp.dest(yeoman.dist + '/views'));
+// });
+//
+// gulp.task('images', function () {
+//   return gulp.src(yeoman.app + '/images/**/*')
+//     .pipe($.cache($.imagemin({
+//         optimizationLevel: 5,
+//         progressive: true,
+//         interlaced: true
+//     })))
+//     .pipe(gulp.dest(yeoman.dist + '/images'));
+// });
+//
+// gulp.task('copy:extras', function () {
+//   return gulp.src(yeoman.app + '/*/.*', { dot: true })
+//     .pipe(gulp.dest(yeoman.dist));
+// });
+//
+// gulp.task('copy:fonts', function () {
+//   return gulp.src(yeoman.app + '/fonts/**/*')
+//     .pipe(gulp.dest(yeoman.dist + '/fonts'));
+// });
+//
+// gulp.task('build', ['clean:dist'], function () {
+//   runSequence(['images', 'copy:extras', 'copy:fonts', 'client:build']);
+// });
 
-gulp.task('client:build', ['html', 'styles'], function () {
-  var jsFilter = $.filter('**/*.js');
-  var cssFilter = $.filter('**/*.css');
-
-  return gulp.src(paths.views.main)
-    .pipe($.useref())
-    // .pipe(jsFilter)
-    // .pipe($.ngAnnotate())
-    // .pipe($.uglify())
-    // .pipe(jsFilter.restore())
-    .pipe(cssFilter)
-    .pipe($.minifyCss({cache: true}))
-    // .pipe(cssFilter.restore())
-    // .pipe($.rev())
-    // .pipe($.revReplace())
-    .pipe(gulp.dest(yeoman.dist));
-});
+// gulp.task('default', ['build']);
 
 gulp.task('html', function () {
   return gulp.src(yeoman.app + '/views/**/*')
@@ -197,18 +230,20 @@ gulp.task('images', function () {
     .pipe(gulp.dest(yeoman.dist + '/images'));
 });
 
-gulp.task('copy:extras', function () {
-  return gulp.src(yeoman.app + '/*/.*', { dot: true })
-    .pipe(gulp.dest(yeoman.dist));
+gulp.task('scripts:index', function () {
+  return gulp.src(yeoman.app + '/script/**/*.js')
+    .pipe(amdOptimize.src("./bootstrap",{
+      configFile: 'build.js'
+    }))
+    .pipe(gulp.dest(yeoman.dist + '/scripts'));
 });
 
-gulp.task('copy:fonts', function () {
-  return gulp.src(yeoman.app + '/fonts/**/*')
-    .pipe(gulp.dest(yeoman.dist + '/fonts'));
-});
+gulp.task('script:clean', function () {
+  
+})
+
+
 
 gulp.task('build', ['clean:dist'], function () {
-  runSequence(['images', 'copy:extras', 'copy:fonts', 'client:build']);
+  runSequence(['html','images']);
 });
-
-gulp.task('default', ['build']);

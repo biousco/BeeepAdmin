@@ -1,10 +1,12 @@
-<div class="modal-header" ng-if="modal.main-title">
-  <h3 class="modal-title">{{ modal.main-title }}</h3>
-</div>
-<div class="modal-body" ng-if="modal.title">
-  <p class="bootbox-body">{{ modal.title }}</p>
-</div>
-<div class="modal-footer">
-  <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
-  <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+<div class="mod-simple-modal">
+  <h4 class="u-title">Finish</h4>
+  <div class="close-btn" ng-click="cancel()"></div>
+  <div class="content">
+    <img src="images/tick.png" alt="">
+    <p ng-if="modal.title">{{ modal.title }}</p>
+  </div>
+  <div class="footer">
+    <button class="mod-btn btn-submit2" type="button" ng-click="cancel()">否</button>
+    <button class="mod-btn btn-submit" type="button" ng-click="ok()">是</button>
+  </div>
 </div>
