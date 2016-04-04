@@ -1,6 +1,21 @@
-<form role="form" ng-submit="adminLogin()">
-  <input type="text" name="name" ng-model="name" required>
-  <input type="password" name="pwd" ng-model="pwd" required>
-  <button type="submit" >登录</button>
-</form>
-
+<div class="mod-login-con">
+  <div class="content">
+    <div class="mod-logo">
+      <img src="images/logo.png">
+    </div>
+    <h1>后台登录</h1>
+    <form autocomplete="off" ng-submit="adminLogin()">
+    <div class="m-login-form">
+      <label for="username"><p>用户名</p></label>
+      <div class="input-wrapper">
+        <input type="text" name="name" ng-model="name" required>
+      </div>
+      <label for="password"><p>密码</p></label>
+      <div class="input-wrapper">
+        <input type="password" name="pwd" ng-model="pwd" required>
+      </div>
+      <button class="mod-btn btn-submit" type="submit">登录</button>
+    </div>
+    </form>
+  </div>
+</div>

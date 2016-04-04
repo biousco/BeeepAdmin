@@ -1,6 +1,6 @@
 <mod-search-bar label-text="'搜索支持uid，用户名，邮箱'" ng-enter="updateList()"></mod-search-bar>
 
-<table class="table g-mt30 mod-account-table">
+<table class="table g-mt30 mod-account-table" ng-init="getAccountList()">
   <thead>
   <tr>
     <td>uid</td>
@@ -17,7 +17,7 @@
   <tr ng-repeat="t in accountList">
     <td ng-bind="t.id"></td>
     <td ng-bind="t.name"></td>
-    <td><img ng-src="t.avater" alt="" class="img-thumb"></td>
+    <td><img ng-src="{{t.avater}}" alt="" class="img-thumb"></td>
     <td ng-bind="t.email"></td>
     <td>普通用户</td>
     <td>待验证/验证失败/验证成功</td>

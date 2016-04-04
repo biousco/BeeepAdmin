@@ -3,7 +3,7 @@
  */
 define(['../module'], function (controllers) {
   'use strict';
-  controllers.controller('LoginCtrl', ['$scope','AdminService', '$state', function ($scope, AdminService, $state) {
+  controllers.controller('LoginCtrl', ['$scope','AdminService', '$state', 'modAlert', function ($scope, AdminService, $state, modAlert) {
 
     $scope.isLogin = true;
     $scope.adminLogin = function () {
@@ -13,7 +13,7 @@ define(['../module'], function (controllers) {
           $scope.isLogin = true;
           $state.go('goods');
         } else {
-          alert('账户名或密码错误');
+          modAlert.fail('账户名或密码错误');
         }
       })
     };

@@ -18,8 +18,8 @@ define(['./../module'], function (controllers) {
       },
       {
         status: 2,
-        title: '试用申请审核成功-待发货',
-        operate: [0,3]
+        title: '试用申请审核成功-已发货',
+        operate: [0]
       },
       {
         status: 3,
@@ -38,7 +38,7 @@ define(['./../module'], function (controllers) {
       },
       {
         status: 6,
-        title: '试用申请审核成功-已发货',
+        title: '试用申请审核成功-未发货',
         operate: [0]
       }
     ];
@@ -50,23 +50,28 @@ define(['./../module'], function (controllers) {
       },
       {
         title: '审核成功',
-        func: 'checkSuccess'
+        func: 'checkSuccess',
+        target: 2
       },
       {
         title: '审核失败',
-        func: 'checkFail'
+        func: 'checkFail',
+        target: 1
       },
       {
         title: '发货',
-        func: 'setGoods'
+        func: 'setGoods',
+        target: 2
       },
       {
         title: '文章已发布',
-        func: 'sentArticleSuccess'
+        func: 'sentArticleSuccess',
+        target: 5
       },
       {
         title: '文章审核失败',
-        func: 'sentArticleFail'
+        func: 'sentArticleFail',
+        target: 4
       }
     ];
 
@@ -80,10 +85,17 @@ define(['./../module'], function (controllers) {
           angular.forEach($scope.trial_list, function (value, key) {
             var _s = STATUS[value.status];
             value.status_title = _s.title;
-            value.operation = _s.operate;
+            value.operation = [];
+            angular.forEach(_s.operate, function (values, key) {
+              value.operation.push(OPERATE[values]);
+            })
           });
         }
       })
+    };
+
+    $scope.updateStatus = function (trial_id, func) {
+      $scope[func](trial_id);
     };
 
 
@@ -101,10 +113,11 @@ define(['./../module'], function (controllers) {
 
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
-        var data = {trial_id: trial_id, status: 2};
+        var data = {id: trial_id, status: 2};
         TrialService.updateTrial(data).success(function (data) {
           if(data.ret_code == 0) {
-            alert('成功');
+            modAlert.success('审核成功');
+            $state.reload();
           }
         });
       }, function () {});
@@ -125,10 +138,10 @@ define(['./../module'], function (controllers) {
 
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
-        var data = {trial_id: trial_id, status: 1};
+        var data = {id: trial_id, status: 1};
         TrialService.updateTrial(data).success(function (data) {
           if(data.ret_code == 0) {
-            alert('成功');
+            modAlert.success('成功');
           }
         });
       }, function () {});
@@ -182,10 +195,10 @@ define(['./../module'], function (controllers) {
 
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
-        var data = {trial_id: trial_id, status: 4};
+        var data = {id: trial_id, status: 4};
         TrialService.updateTrial(data).success(function (data) {
           if(data.ret_code == 0) {
-            alert('成功');
+            modAlert.success('成功');
           }
         });
       }, function () {});

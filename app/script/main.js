@@ -7,7 +7,7 @@ require.config({
     uiBootstrap: '../vender/angular-bootstrap/ui-bootstrap.min',
     uitlps: '../vender/angular-bootstrap/ui-bootstrap-tpls.min',
     xeditable: '../vender/angular-xeditable/dist/js/xeditable',
-    ueditor: '../vender/ueditor/ueditor.all.min',
+    ueditor: '../vender/ueditor/ueditor.all',
     ueditorConfig: '../vender/ueditor/ueditor.config',
     angularUeditor: '../vender/angular-ueditor/dist/angular-ueditor.min',
     zeroClipboard: '../vender/ueditor/third-party/zeroclipboard/ZeroClipboard.min'
@@ -44,7 +44,7 @@ require.config({
     }
   },
   deps: ['./bootstrap'],
-  urlArgs: "bust=160326"
+  urlArgs: "bust=16040401"
 });
 
 

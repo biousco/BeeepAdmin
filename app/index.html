@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>My AngularJS AngularJS + RequireJS App</title>
-  <!-- build:css css/combined.css -->
+  <title>Beeep后台管理系统</title>
+  <!-- build:css styles/combined.css -->
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles/cube.css">
   <!-- endbuild -->
   <link rel="stylesheet" href="styles/app.css">
 </head>
 <body>
 
 
-<div ui-view="header"></div>
-<div ui-view></div>
+  <div ui-view="header"></div>
+  <div ui-view></div>
 
-
+  <div class="mod-alert" id="mod-alert"></div>
 
   <script src="vender/requirejs/require.js" data-main="script/main.js"></script>
 </body>

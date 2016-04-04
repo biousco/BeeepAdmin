@@ -18,8 +18,12 @@ define(['./app'], function (app) {
     updateReview: '/Admin/Review/Update',
     getTrialList:'/Admin/Trial/All',
     updateTrial:'/Admin/Trial/Update',
-    getUserList:'/Admin/User/Update',
-    getUserDetail:'/Admin/User/Update',
+    getUserList:'/Admin/User/All',
+    getUserDetail:'/Admin/User/GetDetail',
     updateUser:'/Admin/User/Update'
-  })
+  });
+  app.constant('CON_goodsRelate', {
+    'buy_channel': ['Amazon','Taobal','Ebay'],
+    'currency_type': ['美元']
+  });
 });

@@ -3,21 +3,15 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('GoodsRackingCtrl', ['$scope','ProductService','$uibModal','$state', '$filter', function ($scope, ProductService, $uibModal, $state, $filter) {
+  controllers.controller('GoodsRackingCtrl', ['$scope','ProductService','$uibModal','$state', '$filter', 'modAlert', function ($scope, ProductService, $uibModal, $state, $filter, modAlert) {
 
-    $scope.hc = 14;
 
-    $scope.updateList = function () {
-      console.log('ddd')
-    };
 
     /** 获取所有记录 **/
     $scope.getProductList = function () {
       ProductService.getProductList().success(function (data) {
         if(data.ret_code == 0) {
-          $scope.product_list = $filter('filter')(data.data, function (value, index) {
-            return value.is_delete == 0;
-          })
+          $scope.product_list = data.data;
         }
       })
     };
@@ -45,8 +39,8 @@ define(['./../module'], function (controllers) {
         var data = {id: product_id, is_delete: 1};
         ProductService.deleteProduct(data).success(function (data) {
           if(data.ret_code == 0) {
-            alert("下架成功！");
-            window.location.reload();
+            modAlert.success('下架成功!');
+            $state.go('goods.outdate');
           }
         })
       }, function () {});
@@ -66,6 +60,23 @@ define(['./../module'], function (controllers) {
         product_id: product_id
       })
     };
+
+    /** 更新排序因子 **/
+    $scope.updateRank = function (product_id, rank) {
+      var data = {id: product_id, rank: rank};
+      ProductService.deleteProduct(data).success(function (data) {
+        if(data.ret_code == 0) {
+          modAlert.success('排序更新成功!');
+          //$state.go('goods.outdate');
+        } else {
+          modAlert.success('排序更新失败!');
+        }
+      })
+    };
+
+    $scope.tipsRank = function () {
+      modAlert.success('更新中..');
+    }
 
 
 

@@ -56,13 +56,11 @@
       <div class="m-inputBox">
         <p class="title">商品价格:</p>
         <div class="input-wrap select-wrap">
-          <select name="" id="">
-            <option value="1">美元</option>
-            <option value="2">日元</option>
+          <select name="buy_channel" required ng-model="price_type" ng-options="t for t in currency_type">
           </select>
         </div>
         <div class="input-wrap price-wrap">
-          <input type="text">
+          <input type="text" ng-model="price" required name="price">
         </div>
       </div>
     </div>

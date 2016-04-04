@@ -1,6 +1,6 @@
 <mod-search-bar label-text="'搜索支持uid，用户名，邮箱'" ng-enter="updateList()"></mod-search-bar>
 
-<table class="table g-mt30 mod-account-table" >
+<table class="table g-mt30 mod-account-table" ng-init="getAccountList()">
   <thead>
   <tr>
     <td>uid</td>
@@ -16,13 +16,15 @@
   <tr ng-repeat="t in accountList">
     <td ng-bind="t.id"></td>
     <td ng-bind="t.name"></td>
-    <td><img ng-src="t.avater" alt="" class="img-thumb"></td>
+    <td><img ng-src="{{t.avater}}" alt="" class="img-thumb"></td>
     <td ng-bind="t.email"></td>
     <td>普通用户</td>
-    <td ng-bind="t.trial_hc"></td>
+    <td>
+      <a ng-bind="t.trial_hc" editable-text="t.trial_hc" class="editable editable-click"
+         onaftersave="updateRank(t.id,t.trial_hc)" onbeforesave="tipsRank()"></a>
+    </td>
     <td>
       <button class="mod-btn" ng-click="showDetail(t.id)">查看详情</button>
-      <button class="mod-btn" ng-click="banAccount(t.id)">封号</button>
     </td>
   </tr>
   </tbody>

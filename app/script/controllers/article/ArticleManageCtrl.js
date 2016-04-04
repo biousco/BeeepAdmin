@@ -10,9 +10,7 @@ define(['./../module'], function (controllers) {
     $scope.getAllReview = function () {
       ReviewService.getReviewList().success(function (data) {
         if(data.ret_code == 0) {
-          $scope.review_list = $filter('filter')(data.data, function (value, index) {
-            return value.is_delete == 0;
-          })
+          $scope.review_list = data.data;
         }
       })
     };

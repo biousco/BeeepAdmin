@@ -1,7 +1,7 @@
 define(['./module'], function(services) {
   'use strict';
 
-  services.factory('ServiceInterceptor', ['$q', '$httpParamSerializerJQLike', function ($q, $httpParamSerializerJQLike) {
+  services.factory('ServiceInterceptor', ['$q', '$httpParamSerializerJQLike','modAlert', function ($q, $httpParamSerializerJQLike, modAlert) {
     return {
       'request': function (config) {
         if(config.method == 'POST') {

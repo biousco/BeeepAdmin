@@ -3,7 +3,7 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('AccountNormalCtrl', ['$scope','UserService','$uibModal',function ($scope, UserService, $uibModal) {
+  controllers.controller('AccountNormalCtrl', ['$scope','UserService','$uibModal','modAlert',function ($scope, UserService, $uibModal, modAlert) {
 
 
     /** 获取所有用户 **/
@@ -51,5 +51,22 @@ define(['./../module'], function (controllers) {
       }, function () {});
     };
 
+
+    /** 更新试用额度 **/
+    $scope.updateRank = function (uid, trial_hc) {
+      var data = {id: uid, trial_hc: trial_hc};
+      UserService.updateUser(data).success(function (data) {
+        if(data.ret_code == 0) {
+          modAlert.success('试用额度更新成功!');
+          //$state.go('goods.outdate');
+        } else {
+          modAlert.success('试用额度更新失败： ' + data.ret_msg);
+        }
+      })
+    };
+
+    $scope.tipsRank = function () {
+      modAlert.success('更新中..');
+    }
   }]);
 });

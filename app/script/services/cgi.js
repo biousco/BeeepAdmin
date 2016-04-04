@@ -44,10 +44,11 @@ define(['./module'], function (services) {
           });
         },
 
-        getProductList: function () {
+        getProductList: function (param) {
           return $http({
             url: cgiList.getProductList,
-            method: 'POST'
+            method: 'POST',
+            data: param
           });
         },
 
@@ -56,7 +57,6 @@ define(['./module'], function (services) {
             url: cgiList.getProductDetail,
             method: 'POST',
             data: param
-
           });
         },
 
@@ -65,7 +65,6 @@ define(['./module'], function (services) {
             url: cgiList.updateProduct,
             method: 'POST',
             data: param
-
           });
         },
       };
@@ -94,10 +93,11 @@ define(['./module'], function (services) {
         });
       },
 
-      getReviewList: function () {
+      getReviewList: function (param) {
         return $http({
           url: cgiList.getReviewList,
-          method: 'POST'
+          method: 'POST',
+          data: param
         });
       },
 
@@ -151,10 +151,11 @@ define(['./module'], function (services) {
 
     return {
 
-      getUserList: function () {
+      getUserList: function (param) {
         return $http({
           url: cgiList.getUserList,
-          method: 'POST'
+          method: 'POST',
+          data: param
         });
       },
 

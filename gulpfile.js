@@ -163,7 +163,7 @@ gulp.task('bower', function () {
 ///////////
 
 gulp.task('clean:dist', function (cb) {
-  rimraf('./.dist', cb);
+  rimraf('./.build', cb);
 });
 //
 // gulp.task('client:build', ['html', 'styles'], function () {
@@ -215,32 +215,80 @@ gulp.task('clean:dist', function (cb) {
 
 // gulp.task('default', ['build']);
 
-gulp.task('html', function () {
-  return gulp.src(yeoman.app + '/views/**/*')
-    .pipe(gulp.dest(yeoman.dist + '/views'));
+// gulp.task('html', function () {
+//   return gulp.src(yeoman.app + '/views/**/*')
+//     .pipe(gulp.dest(yeoman.dist + '/views'));
+// });
+
+// gulp.task('images', function () {
+//   return gulp.src(yeoman.app + '/images/**/*')
+//     .pipe($.cache($.imagemin({
+//         optimizationLevel: 5,
+//         progressive: true,
+//         interlaced: true
+//     })))
+//     .pipe(gulp.dest(yeoman.dist + '/images'));
+// });
+
+// gulp.task('scripts:index', function () {
+//   return gulp.src(yeoman.app + '/script/**/*.js')
+//     .pipe(amdOptimize.src("./bootstrap",{
+//       configFile: 'build.js'
+//     }))
+//     .pipe(gulp.dest(yeoman.dist + '/scripts'));
+// });
+
+// gulp.task('script:clean', function () {
+
+// });
+
+
+
+gulp.task('runAMDbuild', $.shell.task([
+      'node r.js -o build.js'
+]));
+
+gulp.task('scripts', function () {
+  gulp.src('.build/script/bootstrap.js')
+    .pipe($.ngAnnotate())
+    .pipe($.uglify())
+    .pipe(gulp.dest('.build/script'));
+
+  return gulp.src('.build/vender/ueditor/ueditor.all.js')
+    .pipe($.uglify())
+    .pipe(gulp.dest('.build/vender/ueditor'));
 });
 
-gulp.task('images', function () {
-  return gulp.src(yeoman.app + '/images/**/*')
-    .pipe($.cache($.imagemin({
-        optimizationLevel: 5,
-        progressive: true,
-        interlaced: true
-    })))
-    .pipe(gulp.dest(yeoman.dist + '/images'));
+gulp.task('styless', function () {
+  return gulp.src('./.build/styles/*.css')
+    .pipe($.csso())
+    .pipe(gulp.dest('./.build/styles'));
 });
 
-gulp.task('scripts:index', function () {
-  return gulp.src(yeoman.app + '/script/**/*.js')
-    .pipe(amdOptimize.src("./bootstrap",{
-      configFile: 'build.js'
-    }))
-    .pipe(gulp.dest(yeoman.dist + '/scripts'));
-});
 
-gulp.task('script:clean', function () {
-  
-})
+gulp.task('htmls', function () {
+
+  var indexHtmlFilter = $.filter(['**/*', '!**/index.html'], { restore: true });
+
+  return gulp.src(['./.build/index.html'])
+    .pipe($.useref())
+
+    // .pipe(cssFilter)
+    // .pipe($.csso())
+    // .pipe(cssFilter.restore())
+
+    .pipe(indexHtmlFilter)
+    .pipe($.rev())
+    .pipe(indexHtmlFilter.restore())
+
+    .pipe($.rev.manifest())
+    .pipe($.revReplace())
+    .pipe(gulp.dest('./.build'));
+  });
+
+gulp.task('fuck', ['clean:dist','runAMDbuild','scripts'], function () {
+  runSequence(['html']);
+});
 
 
 

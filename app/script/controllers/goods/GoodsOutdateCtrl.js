@@ -3,16 +3,15 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('GoodsOutdateCtrl', ['$scope','ProductService','$uibModal','$state', '$filter', function ($scope, ProductService, $uibModal, $state, $filter) {
+  controllers.controller('GoodsOutdateCtrl', ['$scope','ProductService','$uibModal','$state', '$filter', 'modAlert', function ($scope, ProductService, $uibModal, $state, $filter, modAlert) {
 
 
     /** 获取所有记录 **/
     $scope.getProductList = function () {
-      ProductService.getProductList().success(function (data) {
+      var param = {is_delete: 1};
+      ProductService.getProductList(param).success(function (data) {
         if(data.ret_code == 0) {
-          $scope.product_list = $filter('filter')(data.data, function (value, index) {
-            return value.is_delete == 1;
-          })
+          $scope.product_list = data.data;
         }
       })
     };
@@ -35,8 +34,9 @@ define(['./../module'], function (controllers) {
         var data = {id: product_id, is_delete: 0};
         ProductService.deleteProduct(data).success(function (data) {
           if(data.ret_code == 0) {
-            alert("上架成功！");
-            window.location.reload();
+            modAlert.success("上架成功！");
+            $state.go('goods.racking');
+            //window.location.reload();
           }
         })
       }, function () {});

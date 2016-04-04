@@ -3,8 +3,9 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('GoodsUpdateCtrl', ['$scope','ProductService', '$stateParams', '$state',function ($scope, ProductService, $stateParams, $state) {
+  controllers.controller('GoodsUpdateCtrl', ['$scope','ProductService', '$stateParams', '$state','CON_goodsRelate',function ($scope, ProductService, $stateParams, $state, CON_goodsRelate) {
 
+    $scope.buy_channel_list = CON_goodsRelate.buy_channel;
     $scope.product_id = $stateParams.product_id;
 
     $scope.getProductDetail = function () {

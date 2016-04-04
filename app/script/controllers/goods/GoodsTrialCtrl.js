@@ -3,7 +3,8 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('GoodsTrialCtrl', ['$scope','TrialService','$state','$uibModal','$stateParams', 'ProductService', function ($scope, TrialService, $state, $uibModal, $stateParams, ProductService) {
+  controllers.controller('GoodsTrialCtrl', ['$scope','TrialService','$state','$uibModal','$stateParams', 'ProductService', 'modAlert',
+    function ($scope, TrialService, $state, $uibModal, $stateParams, ProductService, modAlert) {
 
     $scope.product_id = $stateParams.product_id;
 
@@ -13,6 +14,12 @@ define(['./../module'], function (controllers) {
           $scope.goodsDetail = data.data;
         }
       });
+      var param = {product_id: $scope.product_id};
+      TrialService.getTrialList(param).success(function (data) {
+        if(data.ret_code == 0) {
+          $scope.goodsTrialList = data.data;
+        }
+      })
     };
 
     $scope.createTrial = function () {
@@ -33,7 +40,7 @@ define(['./../module'], function (controllers) {
   }]);
 
 
-  controllers.controller('NewTrialModalCtrl', function ($scope, $uibModalInstance, goods, ProductService) {
+  controllers.controller('NewTrialModalCtrl', function ($scope, $uibModalInstance, goods, ProductService, modAlert) {
     $scope.modal = goods;
     $scope.ok = function () {
       $uibModalInstance.close(true);
@@ -60,11 +67,12 @@ define(['./../module'], function (controllers) {
         var dataSet = {
           id: goods.id,
           trial_startdate: $scope.trial_startdate,
-          trial_enddate: $scope.trial_enddate
+          trial_enddate: $scope.trial_enddate,
+          is_trial_available: 1
         };
         ProductService.updateProduct(dataSet).success(function (data) {
           if(data.ret_code == 0) {
-            alert('新增试用成功！');
+            modAlert.success('新增试用成功！');
             $uibModalInstance.close(true);
           }
         })

@@ -4,8 +4,8 @@
   <div class="mod-trial-switch">
     <form action="">
       <span class="desc">试用功能开关</span>
-      <input type="radio" value="开" name="trial" checked >开
-      <input type="radio" value="关" name="trial">关
+      <input type="radio" value="1" name="trial" ng-model="goodsDetail.is_trial_available">开
+      <input type="radio" value="0" name="trial" ng-model="goodsDetail.is_trial_available">关
     </form>
   </div>
   <h4>试用开放列表<button class="mod-btn" ng-click="createTrial()">新增试用</button></h4>
@@ -25,35 +25,13 @@
   </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>1651651665</td>
-    <td>2015-01-22</td>
-    <td>2016-02-22</td>
-    <td>151</td>
-    <td>未到/申请中/已过期</td>
-    <td>151</td>
-    <td>
-      <button class="mod-btn" ng-click="showAllTrialList()">查看申请人</button>
-    </td>
-  </tr>
-  <tr>
-    <td>1651651665</td>
-    <td>2015-01-22</td>
-    <td>2016-02-22</td>
-    <td>151</td>
-    <td>未到/申请中/已过期</td>
-    <td>151</td>
-    <td>
-      <button class="mod-btn" ng-click="showAllTrialList()">查看申请人</button>
-    </td>
-  </tr>
-  <tr>
-    <td>1651651665</td>
-    <td>2015-01-22</td>
-    <td>2016-02-22</td>
-    <td>151</td>
-    <td>未到/申请中/已过期</td>
-    <td>151</td>
+  <tr ng-repeat="t in goodsTrialList">
+    <td ng-bind="t.id"></td>
+    <td ng-bind="t.create_time"></td>
+    <td ng-bind="t.end_time"></td>
+    <td ng-bind="t.num"></td>
+    <td ng-bind="t.status_text">未到/申请中/已过期</td>
+    <td ng-bind="t.trial_num"></td>
     <td>
       <button class="mod-btn" ng-click="showAllTrialList()">查看申请人</button>
     </td>
