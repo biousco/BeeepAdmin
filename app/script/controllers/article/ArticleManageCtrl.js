@@ -3,7 +3,8 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('ArticleManageCtrl', ['$scope','ReviewService','$uibModal','$state' ,'$filter',function ($scope, ReviewService, $uibModal, $state, $filter) {
+  controllers.controller('ArticleManageCtrl', ['$scope','ReviewService','$uibModal','$state' ,'$filter','modAlert',
+    function ($scope, ReviewService, $uibModal, $state, $filter, modAlert) {
 
     $scope.hc = 33;
 
@@ -37,9 +38,8 @@ define(['./../module'], function (controllers) {
         var data = {id: review_id, is_delete: 1};
         ReviewService.deleteReview(data).success(function (data) {
           if(data.ret_code == 0) {
-            alert('删除成功！');
-            $deleteReview(review_id);
-            //window.location.reload();
+            modAlert.success('文章删除成功！');
+            $state.reload();
           }
         })
       }, function () {});
@@ -52,10 +52,20 @@ define(['./../module'], function (controllers) {
       })
     };
 
-    function $deleteReview(id) {
-      $scope.review_list = $filter('filter')($scope.review_list, function (value, index) {
-        return value.id != id;
+    /** 更新排序因子 **/
+    $scope.updateRank = function (id, rank) {
+      var data = {id: id, rank: parseInt(rank, 10)};
+      ReviewService.updateReview(data).success(function (data) {
+        if(data.ret_code == 0) {
+          modAlert.success('排序更新成功!');
+        } else {
+          modAlert.success('排序更新失败!');
+        }
       })
+    };
+
+    $scope.tipsRank = function () {
+      modAlert.success('更新中..');
     }
 
 

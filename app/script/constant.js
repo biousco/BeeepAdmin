@@ -7,7 +7,7 @@ define(['./app'], function (app) {
     AdminLogin: '/Admin/Admin/Login',
     AdminLogout: '/Admin/Admin/Logout',
     addProduct: '/Admin/Product/Add',
-    deleteProduct: '/Admin/Product/Update',
+    deleteProduct: '/Admin/Product/deleteProduct',
     getProductList:'/Admin/Product/All',
     getProductDetail:'/Admin/Product/GetDetail',
     updateProduct:'/Admin/Product/Update',

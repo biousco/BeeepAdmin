@@ -6,7 +6,8 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('ArticlePostCtrl', ['$scope','ReviewService','$state',function ($scope, ReviewService,$state) {
+  controllers.controller('ArticlePostCtrl', ['$scope','ReviewService','$state','modAlert',
+    function ($scope, ReviewService,$state, modAlert) {
 
     $scope.postReview = function () {
       var datas = {
@@ -18,7 +19,7 @@ define(['./../module'], function (controllers) {
       };
       ReviewService.addReview(datas).success(function (data) {
         if(data.ret_code == 0) {
-          alert('发布成功！');
+          modAlert.success('文章发布成功！');
           $state.go('article.manage');
         }
       });

@@ -66,6 +66,7 @@ define(['./app'], function (app) {
       .when('','/login')
       .when('/goods','/goods/racking')
       .when('/article','/article/manage')
+      .when('/operation','/operation/bannermanage')
       .when('/account','/account/normal');
 
     $stateProvider

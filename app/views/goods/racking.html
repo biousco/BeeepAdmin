@@ -19,7 +19,10 @@
     <td ng-bind="t.buy_channel">亚马逊</td>
     <td ng-bind="t.price">￥4521</td>
     <td ng-bind="t.create_time">2015-05-22</td>
-    <td><a editable-text="t.rank" class="editable editable-click" ng-bind="t.rank" onaftersave="updateRank(t.id,t.rank)" onbeforesave="tipsRank()"></a></td>
+    <td>
+      <a editable-text="t.rank" class="editable editable-click" ng-bind="t.rank"
+         onaftersave="updateRank(t.id,t.rank)" onbeforesave="tipsRank()"></a>
+    </td>
     <td>
       <button class="mod-btn" ng-click="previewGoods(t.buy_link)">预览</button>
       <button class="mod-btn" ng-click="updateGoods(t.id)">编辑</button>

@@ -40,7 +40,6 @@ define(['./module'], function (services) {
             url: cgiList.deleteProduct,
             method: 'POST',
             data: param
-
           });
         },
 

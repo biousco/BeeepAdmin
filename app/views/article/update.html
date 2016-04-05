@@ -1,38 +1,56 @@
-<h1>编辑文章</h1>
-<form ng-submit="updateReview()">
-<table class="table table-bordered table-hover " ng-init="getReviewDetail()">
-  <tbody>
-  <tr>
-    <td>文章名称</td>
-    <td><input type="text" ng-model="review_detail.title"></td>
-  </tr>
-  <tr>
-    <td>文章作者</td>
-    <td><input type="text"></td>
-  </tr>
-  <tr>
-    <td>文章描述</td>
-    <td><textarea ng-model="review_detail.brief" cols="30" rows="10"></textarea></td>
-  </tr>
-  <tr>
-    <td>文章原链接</td>
-    <td><input type="text" ng-model="review_detail.link"></td>
-  </tr>
-  <tr>
-    <td>文章正文</td>
-    <td><div class="ueditor" ng-model="review_detail.content" ></div></td>
-  </tr>
-<tr>
-  <td>关联商品</td>
-  <td><input type="text" ng-model="review_detail.product_id"></td>
-</tr>
-<tr>
-  <td>文章图片</td>
-  <td><img ng-src="{{review_detail.banner}}" alt=""></td>
-  <td><input type="file"></td>
-</tr>
-  </tbody>
-</table>
+<div class="mod-release-box" ng-init="getReviewDetail()">
+  <h3>编辑文章</h3>
 
-<button type="submit">更新</button>
-</form>
+  <form ng-submit="updateReview()">
+    <div class="mod-release-form">
+      <div class="m-inputBox">
+        <p class="title">文章名称:</p>
+        <div class="input-wrap">
+          <input type="text" required ng-model="review_detail.title">
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章作者:</p>
+        <div class="input-wrap">
+          <input type="text" required ng-model="review_detail.author">
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章描述:</p>
+        <div class="input-wrap">
+          <textarea ng-model="review_detail.brief" class="desc"></textarea>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章图片:</p>
+        <div class="input-wrap preview-wrap">
+          <div class="img-preview"></div>
+          <input type="file"><p>jpg,png or gif 330X220</p>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章正文:</p>
+        <div class="input-wrap editor">
+          <div class="ueditor" ng-model="review_detail.content"></div>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">文章原链接:</p>
+        <div class="input-wrap">
+          <input type="text" ng-model="review_detail.buy_link" required>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">关联商品:</p>
+        <div class="input-wrap">
+          <input type="text" ng-model="review_detail.product_id" required>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="mod-btn btn-submit">提交</button>
+    <p class="u-alert">请填写完整的信息</p>
+
+  </form>
+
+</div>

@@ -32,7 +32,7 @@ define(['./../module'], function (controllers) {
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
         var data = {id: product_id, is_delete: 0};
-        ProductService.deleteProduct(data).success(function (data) {
+        ProductService.updateProduct(data).success(function (data) {
           if(data.ret_code == 0) {
             modAlert.success("上架成功！");
             $state.go('goods.racking');
@@ -49,6 +49,22 @@ define(['./../module'], function (controllers) {
         product_id: product_id
       })
     };
+
+    /** 更新排序因子 **/
+    $scope.updateRank = function (product_id, rank) {
+      var data = {id: product_id, rank: parseInt(rank, 10)};
+      ProductService.updateProduct(data).success(function (data) {
+        if(data.ret_code == 0) {
+          modAlert.success('排序更新成功!');
+        } else {
+          modAlert.success('排序更新失败!');
+        }
+      })
+    };
+
+    $scope.tipsRank = function () {
+      modAlert.success('更新中..');
+    }
 
   }]);
 

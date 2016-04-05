@@ -3,7 +3,8 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('AccountMediaCtrl', ['$scope','UserService','$uibModal',function ($scope, UserService, $uibModal) {
+  controllers.controller('AccountMediaCtrl', ['$scope','UserService','$uibModal','modAlert',
+    function ($scope, UserService, $uibModal, modAlert) {
 
     /** 媒体用户 **/
     $scope.getAccountList = function () {
@@ -51,6 +52,22 @@ define(['./../module'], function (controllers) {
         console.log('yes');
       }, function () {});
     };
+
+    /** 更新排序因子 **/
+    $scope.updateRank = function (id, trial_hc) {
+      var data = {id: id, trial_hc: parseInt(trial_hc, 10)};
+      UserService.updateUser(data).success(function (data) {
+        if(data.ret_code == 0) {
+          modAlert.success('试用额度更新成功!');
+        } else {
+          modAlert.success('试用额度排序更新失败! ' + data.ret_msg);
+        }
+      })
+    };
+
+    $scope.tipsRank = function () {
+      modAlert.success('更新中..');
+    }
 
   }]);
 });

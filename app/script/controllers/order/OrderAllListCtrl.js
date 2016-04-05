@@ -3,7 +3,8 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('OrderAllListCtrl', ['$scope','TrialService','$uibModal', function ($scope, TrialService, $uibModal) {
+  controllers.controller('OrderAllListCtrl', ['$scope','TrialService','$uibModal', 'modAlert', '$state',
+    function ($scope, TrialService, $uibModal, modAlert , $state) {
 
     var STATUS = [
       {
@@ -141,7 +142,8 @@ define(['./../module'], function (controllers) {
         var data = {id: trial_id, status: 1};
         TrialService.updateTrial(data).success(function (data) {
           if(data.ret_code == 0) {
-            modAlert.success('成功');
+            modAlert.success('状态更新成功');
+            $state.reload();
           }
         });
       }, function () {});
@@ -198,7 +200,8 @@ define(['./../module'], function (controllers) {
         var data = {id: trial_id, status: 4};
         TrialService.updateTrial(data).success(function (data) {
           if(data.ret_code == 0) {
-            modAlert.success('成功');
+            modAlert.success('状态更新成功');
+            $state.reload();
           }
         });
       }, function () {});
