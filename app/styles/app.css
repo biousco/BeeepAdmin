@@ -43,8 +43,8 @@
   margin-top: 20px;
 }
 .page-sidebar .page-sidebar-menu > li > a {
-  padding: 20px;
-  text-align: center;
+  padding: 20px 20px 20px 53px;
+  text-align: left;
   color: #999;
   font-weight: normal;
   outline: none;
@@ -67,6 +67,10 @@
   height: 36px;
   padding: 0;
   text-align: center;
+}
+.word-break {
+  word-break: normal;
+  word-wrap: break-word;
 }
 .img-thumbnail {
   width: 120px;

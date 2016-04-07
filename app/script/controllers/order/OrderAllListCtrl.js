@@ -19,29 +19,30 @@ define(['./../module'], function (controllers) {
       },
       {
         status: 2,
+        title: '试用申请审核成功-待发货',
+        operate: [0,3]
+      },
+      {
+        status: 3,
         title: '试用申请审核成功-已发货',
         operate: [0]
       },
       {
-        status: 3,
+        status: 4,
         title: '试用文章审核中',
         operate: [0,4,5]
       },
       {
-        status: 4,
+        status: 5,
         title: '文章审核失败',
         operate: [0]
       },
       {
-        status: 5,
+        status: 6,
         title: '文章已发布',
         operate: [0]
-      },
-      {
-        status: 6,
-        title: '试用申请审核成功-未发货',
-        operate: [0]
       }
+
     ];
 
     var OPERATE = [
@@ -61,7 +62,7 @@ define(['./../module'], function (controllers) {
       },
       {
         title: '发货',
-        func: 'setGoods',
+        func: 'sentGoods',
         target: 2
       },
       {
@@ -95,8 +96,8 @@ define(['./../module'], function (controllers) {
       })
     };
 
-    $scope.updateStatus = function (trial_id, func) {
-      $scope[func](trial_id);
+    $scope.updateStatus = function (trial_id, func, trial) {
+      $scope[func](trial_id, trial);
     };
 
 
@@ -151,12 +152,14 @@ define(['./../module'], function (controllers) {
     };
 
     /** 发货 **/
-    $scope.sentGoods = function (product_id) {
+    $scope.sentGoods = function (trial_id, trial) {
       var modalInstance = $uibModal.open({
         templateUrl: 'views/common/modal-alllist-sentGoods.html',
-        controller: 'SimpleDialogInstanceCtrl',
+        controller: 'SentGoodsInstanceCtrl',
         resolve: {
-          modal : {}
+          modal : {
+            trial: trial
+          }
         }
       });
 
@@ -213,6 +216,33 @@ define(['./../module'], function (controllers) {
 
   controllers.controller('OrderModalInstanceCtrl', function ($scope, $uibModalInstance, modal) {
     $scope.modal = modal;
+    $scope.ok = function () {
+      $uibModalInstance.close(true);
+    };
+    $scope.cancel = function () {
+      $uibModalInstance.dismiss('cancel');
+    }
+  });
+
+  controllers.controller('SentGoodsInstanceCtrl', function ($scope, $uibModalInstance, modal, modAlert, TrialService) {
+    $scope.trial = modal.trial;
+
+    $scope.sentGoods = function () {
+      var data = {
+        id: $scope.trial.id,
+        express: $scope.trial.express,
+        express_number: $scope.trial.express_number
+      };
+      TrialService.updateTrial(data).success(function (data) {
+        if(data.ret_code == 0) {
+          modAlert.success('发货成功！');
+          $uibModalInstance.close(true);
+        } else {
+          modAlert.fail('发货失败...' + data.ret_msg);
+        }
+      })
+    };
+
     $scope.ok = function () {
       $uibModalInstance.close(true);
     };

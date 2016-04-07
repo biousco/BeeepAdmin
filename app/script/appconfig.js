@@ -143,6 +143,11 @@ define(['./app'], function (app) {
         templateUrl: 'views/operation/createbanner.html',
         controller: 'CreateBannerCtrl'
       })
+      .state('operation.editbanner', {
+        url: '/editbanner/:id',
+        templateUrl: 'views/operation/editbanner.html',
+        controller: 'EditBannerCtrl'
+      })
       //文章
       .state('article', {
         url: '/article',

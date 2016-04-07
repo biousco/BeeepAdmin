@@ -1,31 +1,40 @@
 <div class="mod-release-box">
   <h3>发布文章</h3>
 
-  <form ng-submit="postReview()">
+  <form ng-submit="postReview()" name="postForm">
     <div class="mod-release-form">
       <div class="m-inputBox">
         <p class="title">文章名称:</p>
         <div class="input-wrap">
           <input type="text" required ng-model="title">
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">文章作者:</p>
         <div class="input-wrap">
           <input type="text" required ng-model="author">
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">文章描述:</p>
         <div class="input-wrap">
-          <textarea ng-model="brief" class="desc"></textarea>
+          <textarea ng-model="brief" class="desc" required></textarea>
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">文章图片:</p>
         <div class="input-wrap preview-wrap">
-          <div class="img-preview"></div>
-          <input type="file"><p>jpg,png or gif 330X220</p>
+          <div class="img-preview">
+            <img src="{{ banner }}">
+          </div>
+          <div upload-button
+               url="/Admin/File/Upload" param="photo" id="photo" name="photo"
+               force-iframe-upload = 'true'
+               on-upload="onUpload(files)"
+               on-complete="fileCallback(response)"></div>
         </div>
       </div>
       <div class="m-inputBox">
@@ -33,23 +42,25 @@
         <div class="input-wrap editor">
           <div class="ueditor" ng-model="content"></div>
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">文章原链接:</p>
         <div class="input-wrap">
-          <input type="text" ng-model="buy_link" required>
+          <input type="text" ng-model="buy_link">
         </div>
       </div>
       <div class="m-inputBox">
         <p class="title">关联商品:</p>
         <div class="input-wrap">
-          <input type="text" ng-model="product_id" required>
+          <input type="text" ng-model="product_id">
         </div>
       </div>
     </div>
 
-    <button type="submit" class="mod-btn btn-submit">提交</button>
-    <p class="u-alert">请填写完整的信息</p>
+    <button type="submit" class="mod-btn btn-submit"
+            ng-class="{true: '', false: 'disable'}[postForm.$valid]" ng-disabled="!postForm.$valid">提交</button>
+    <p class="u-alert" ng-show="!postForm.$valid">请填写完整的信息</p>
 
   </form>
 

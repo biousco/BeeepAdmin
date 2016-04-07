@@ -8,7 +8,7 @@ define(['./../module'], function (controllers) {
 
     /** 获取所有用户 **/
     $scope.getAccountList = function () {
-      UserService.getUserList().success(function (data) {
+      UserService.getUserList({type: 0}).success(function (data) {
         if(data.ret_code == 0) {
           $scope.accountList = data.data;
         }

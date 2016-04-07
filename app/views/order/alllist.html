@@ -32,14 +32,14 @@
             </div>
             <div class="u-detail" >
               <p><span>订单号：</span>{{ t.address_info.ordernum }}</p>
-              <p><span>物流公司：</span>{{ t.address_info.company }}</p>
-              <p><span>物流单号：</span>{{ t.address_info.logistics }}</p>
+              <p><span>物流公司：</span>{{ t.express }}</p>
+              <p><span>物流单号：</span>{{ t.express_number }}</p>
               <p><span>收货地址：</span>{{ t.address_info.address }}</p>
             </div>
           </div>
         </td>
         <td>
-          <button class="mod-btn" ng-repeat="tt in t.operation" ng-click="updateStatus(t.id,tt.func)">{{ tt.title }}</button>
+          <button class="mod-btn" ng-repeat="tt in t.operation" ng-click="updateStatus(t.id,tt.func,t)">{{ tt.title }}</button>
         </td>
       </tr>
       <tr ng-repeat-end>
@@ -53,7 +53,7 @@
           {{ t.id }}
         </td>
         <td>
-          {{ t.trial_num }}
+          {{ t.num }}
         </td>
         <td>{{ t.user_name }}</td>
         <td>{{ t.create_time }}</td>

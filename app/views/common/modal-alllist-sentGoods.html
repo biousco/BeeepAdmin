@@ -1,25 +1,41 @@
 
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-      <h4 class="modal-title">填写发货信息</h4>
-    </div>
-    <div class="modal-body">
-      <div class="row">
-        <div class="col-md-12">
-          <h4>物流公司</h4>
-          <p>
-            <input type="text" class="col-md-12 form-control"> </p>
-          <h4>物流运单号</h4>
-          <p>
-            <input type="text" class="col-md-12 form-control"> </p>
-          <h4>邮件内容</h4>
-          <p>
-            <textarea name="" id="" cols="30" rows="10" class="col-md-12 form-control"></textarea>
-          </p>
+    <div class="mod-simple-modal ">
+      <h4 class="u-title">填写发货信息</h4>
+      <div class="close-btn" ng-click="cancel()"></div>
+
+      <form class="mod-release-box mod-sent-goods" name="sentGoodsForm" ng-submit="sentGoods()">
+        <div class="mod-release-form">
+
+          <div class="m-inputBox">
+            <p class="title">申请url：</p>
+            <div class="input-wrap">
+              <input type="text" ng-model="trial.special_url" required>
+            </div>
+          </div>
+
+          <div class="m-inputBox">
+            <p class="title">物流公司：</p>
+            <div class="input-wrap">
+              <input type="text" ng-model="trial.express" required>
+            </div>
+          </div>
+          <div class="m-inputBox">
+            <p class="title">物流运单号：</p>
+            <div class="input-wrap">
+              <input type="text" ng-model="trial.express_number" required>
+            </div>
+          </div>
+          <div class="m-inputBox">
+            <p class="title">邮件内容：</p>
+            <div class="input-wrap area">
+              <textarea name="mail_content"></textarea>
+            </div>
+          </div>
+
         </div>
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button type="button" data-dismiss="modal" class="btn dark btn-outline" ng-click="cancel()">Close</button>
-      <button type="button" class="btn red" ng-click="ok()">发送</button>
+
+        <button class="mod-btn btn-submit" type="submit"
+                ng-class="{true: '', false: 'disable'}[sentGoodsForm.$valid]" ng-disabled="!sentGoodsForm.$valid">提交</button>
+        <p class="u-alert" ng-show="!sentGoodsForm.$valid">请完善必填项</p>
+      </form>
     </div>

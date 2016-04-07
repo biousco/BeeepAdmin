@@ -3,8 +3,8 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('ArticleManageCtrl', ['$scope','ReviewService','$uibModal','$state' ,'$filter','modAlert',
-    function ($scope, ReviewService, $uibModal, $state, $filter, modAlert) {
+  controllers.controller('ArticleManageCtrl', ['$scope','ReviewService','$uibModal','$state' ,'$filter','modAlert','upload',
+    function ($scope, ReviewService, $uibModal, $state, $filter, modAlert, upload) {
 
     $scope.hc = 33;
 

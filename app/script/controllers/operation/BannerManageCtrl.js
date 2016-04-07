@@ -3,11 +3,19 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('BannerManageCtrl', ['$scope','AdminService','$uibModal', function ($scope, AdminService, $uibModal) {
+  controllers.controller('BannerManageCtrl', ['$scope','BannerService','$uibModal', 'modAlert', '$state',
+    function ($scope, BannerService, $uibModal, modAlert, $state) {
 
-    $scope.hc = 13;
+    $scope.init = function () {
+      BannerService.getBannerList().success(function (data) {
+        if(data.ret_code == 0) {
+          $scope.bannerList = data.data;
+        } else {
+          modAlert.fail('获取列表失败..请刷新重试');
+        }
+      })
+    };
 
-    
     /** 下线banner **/
     $scope.setoffBanner = function () {
       var modalInstance = $uibModal.open({
@@ -29,51 +37,31 @@ define(['./../module'], function (controllers) {
     };
 
     /** 编辑banner **/
-    $scope.editBanner = function () {
-      var modalInstance = $uibModal.open({
-        templateUrl: 'views/common/modal-createBanner.html',
-        controller: 'BannerInstanceCtrl',
-        resolve: {
-          modal : {
-            title: "更新banner"
-          }
-        }
+    $scope.editBanner = function (id) {
+      $state.go('operation.editbanner', {
+        id: id
       });
+    };
 
-      modalInstance.result.then(function (isBan) {
-        if(!isBan) return false;
-        console.log('yes');
-      }, function () {});
-    }
 
-    /** 创建banner **/
-    $scope.createBanner = function () {
-      var modalInstance = $uibModal.open({
-        templateUrl: 'views/common/modal-createBanner.html',
-        controller: 'BannerInstanceCtrl',
-        resolve: {
-          modal : {
-            title: "创建banner"
-          }
+
+    /** 更新排序因子 **/
+    $scope.updateRank = function (id, rank) {
+      var data = {id: id, rank: parseInt(rank, 10)};
+      BannerService.updateBanner(data).success(function (data) {
+        if(data.ret_code == 0) {
+          modAlert.success('排序更新成功!');
+        } else {
+          modAlert.success('排序更新失败!');
         }
-      });
+      })
+    };
 
-      modalInstance.result.then(function (isBan) {
-        if(!isBan) return false;
-        console.log('yes');
-      }, function () {});
+    $scope.tipsRank = function () {
+      modAlert.success('更新中..');
     }
 
   }]);
 
-  controllers.controller('BannerInstanceCtrl', function ($scope, $uibModalInstance, modal) {
-    $scope.modal = modal;
-    $scope.ok = function () {
-      $uibModalInstance.close(true);
-    };
-    $scope.cancel = function () {
-      $uibModalInstance.dismiss('cancel');
-    }
-  })
 
 });

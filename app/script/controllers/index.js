@@ -16,6 +16,7 @@ define([
   './goods/GoodsUpdateCtrl',
   './operation/BannerManageCtrl',
   './operation/CreateBannerCtrl',
+  './operation/EditBannerCtrl',
   './article/ArticleManageCtrl',
   './article/ArticlePostCtrl',
   './article/ArticleUpdateCtrl',

@@ -10,7 +10,8 @@ require.config({
     ueditor: '../vender/ueditor/ueditor.all',
     ueditorConfig: '../vender/ueditor/ueditor.config',
     angularUeditor: '../vender/angular-ueditor/dist/angular-ueditor.min',
-    zeroClipboard: '../vender/ueditor/third-party/zeroclipboard/ZeroClipboard.min'
+    zeroClipboard: '../vender/ueditor/third-party/zeroclipboard/ZeroClipboard.min',
+    angularupload: '../vender/angular-upload/angular-upload.min'
   },
   shim: {
     angular: {
@@ -41,10 +42,14 @@ require.config({
     angularUeditor: {
       deps: ['ueditor','ueditorConfig','zeroClipboard'],
       exports: 'angularUeditor'
+    },
+    angularupload: {
+      deps: ['angular'],
+      exports: 'angularupload'
     }
   },
   deps: ['./bootstrap'],
-  urlArgs: "bust=16040401"
+  urlArgs: "bust=16040501"
 });
 
 

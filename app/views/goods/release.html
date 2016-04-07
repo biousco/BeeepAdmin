@@ -8,42 +8,54 @@
         <div class="input-wrap">
           <input type="text" required ng-model="name">
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">商品描述:</p>
         <div class="input-wrap">
-          <textarea ng-model="brief" class="desc"></textarea>
+          <textarea ng-model="brief" class="desc" required></textarea>
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">商品图片:</p>
         <div class="input-wrap preview-wrap">
-          <div class="img-preview"></div>
-          <input type="file"><p>jpg,png or gif 330X220</p>
+          <div class="img-preview">
+            <img src="{{ banner }}">
+          </div>
+          <div upload-button
+               url="/Admin/File/Upload" param="photo" id="photo" name="photo"
+               force-iframe-upload = 'true'
+               on-upload="onUpload(files)"
+               on-complete="fileCallback(response)"></div>
+          <p>jpg,png or gif 330X220</p>
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">商品详情:</p>
         <div class="input-wrap editor">
           <div class="ueditor" ng-model="htmlContent"></div>
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">商品原链接:</p>
         <div class="input-wrap">
           <input type="text" ng-model="buy_link" required>
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">商品店铺名:</p>
         <div class="input-wrap">
-          <input type="text" ng-model="buy_store" required>
+          <input type="text" ng-model="buy_store" >
         </div>
       </div>
       <div class="m-inputBox">
         <p class="title">商品优惠码:</p>
         <div class="input-wrap">
-          <input type="text" ng-model="coupon" required>
+          <input type="text" ng-model="coupon">
         </div>
       </div>
       <div class="m-inputBox">
@@ -52,21 +64,24 @@
           <select name="buy_channel" required ng-model="buy_channel" ng-options="t for t in buy_channel_list">
           </select>
         </div>
+        <span class="require_tips">必填项</span>
       </div>
       <div class="m-inputBox">
         <p class="title">商品价格:</p>
         <div class="input-wrap select-wrap">
-          <select name="buy_channel" required ng-model="price_type" ng-options="t for t in currency_type">
+          <select name="price_unit" required ng-model="price_unit" ng-options="t for t in currency_type">
           </select>
         </div>
         <div class="input-wrap price-wrap">
           <input type="text" ng-model="price" required name="price">
         </div>
+        <span class="require_tips">必填项</span>
       </div>
     </div>
 
-    <button type="submit" class="mod-btn btn-submit">创建商品</button>
-    <p class="u-alert">请填写完整的信息</p>
+    <button type="submit" class="mod-btn btn-submit"
+            ng-class="{true: '', false: 'disable'}[releaseForm.$valid]" ng-disabled="!releaseForm.$valid">创建商品</button>
+    <p class="u-alert" ng-show="!releaseForm.$valid">请填写完整的信息</p>
 
   </form>
 

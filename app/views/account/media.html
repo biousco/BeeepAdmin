@@ -20,14 +20,14 @@
     <td><img ng-src="{{t.avater}}" alt="" class="img-thumb"></td>
     <td ng-bind="t.email"></td>
     <td>普通用户</td>
-    <td>待验证/验证失败/验证成功</td>
+    <td ng-bind="t.status_text"></td>
     <td>
       <a editable-text="t.trial_hc" class="editable editable-click" ng-bind="t.trial_hc"
          onaftersave="updateRank(t.id,t.trial_hc)" onbeforesave="tipsRank()"></a>
     </td>
     <td>
-      <button class="mod-btn" ng-click="showDetail(t.id)">查看详情</button>
-      <button class="mod-btn" ng-click="banAccount(t.id)">封号</button>
+      <button class="mod-btn" ng-repeat="tt in t.operate"
+              ng-click="funcHandler(t.id, tt.func, t)" ng-bind="tt.text"></button>
     </td>
   </tr>
   </tbody>

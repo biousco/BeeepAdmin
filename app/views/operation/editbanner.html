@@ -1,0 +1,34 @@
+<div class="mod-release-box mod-banner">
+  <h3>更新Banner</h3>
+  <form name="bannerCreateForm" ng-submit="updateBanner()" ng-init="init()">
+    <div class="mod-release-form">
+      <div class="m-inputBox">
+        <p class="title">上传图片：</p>
+        <div class="input-wrap banner-wrap">
+          <img ng-src="{{ banner_detail.image }}" alt="" class="placehold" src="{{ image }}">
+          <div upload-button
+               url="/Admin/File/Upload" param="photo" id="photo" name="photo"
+               force-iframe-upload = 'true'
+               on-upload="onUpload(files)"
+               on-complete="fileCallback(response)"></div>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">url：</p>
+        <div class="input-wrap">
+          <input type="text" name="link" ng-model="banner_detail.link" required>
+        </div>
+      </div>
+      <div class="m-inputBox">
+        <p class="title">发布时间：</p>
+        <div class="input-wrap">
+          <input type="text" name="time">
+        </div>
+      </div>
+    </div>
+
+    <button class="mod-btn btn-submit" type="submit"
+            ng-class="{true: '', false: 'disable'}[bannerCreateForm.$valid]" ng-disabled="!bannerCreateForm.$valid">更新</button>
+    <p class="u-alert" ng-show="!bannerCreateForm.$valid">请完善必填项</p>
+  </form>
+</div>

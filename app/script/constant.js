@@ -20,7 +20,12 @@ define(['./app'], function (app) {
     updateTrial:'/Admin/Trial/Update',
     getUserList:'/Admin/User/All',
     getUserDetail:'/Admin/User/GetDetail',
-    updateUser:'/Admin/User/Update'
+    updateUser:'/Admin/User/Update',
+    getBannerList: '/Admin/Banner/All',
+    addBaner: '/Admin/Banner/Add',
+    updateBanner: '/Admin/Banner/Update',
+    getBannerDetail: '/Admin/Banner/GetDetail',
+    uploadFile: '/Admin/File/Upload'
   });
   app.constant('CON_goodsRelate', {
     'buy_channel': ['Amazon','Taobal','Ebay'],

@@ -248,7 +248,7 @@ gulp.task('runAMDbuild', $.shell.task([
       'node r.js -o build.js'
 ]));
 
-gulp.task('scripts', function () {
+gulp.task('scripts', ['runAMDbuild'], function () {
   gulp.src('.build/script/bootstrap.js')
     .pipe($.ngAnnotate())
     .pipe($.uglify())
@@ -266,16 +266,12 @@ gulp.task('styless', function () {
 });
 
 
-gulp.task('htmls', function () {
+gulp.task('htmls', ['styless'], function () {
 
   var indexHtmlFilter = $.filter(['**/*', '!**/index.html'], { restore: true });
 
   return gulp.src(['./.build/index.html'])
     .pipe($.useref())
-
-    // .pipe(cssFilter)
-    // .pipe($.csso())
-    // .pipe(cssFilter.restore())
 
     .pipe(indexHtmlFilter)
     .pipe($.rev())
@@ -286,8 +282,8 @@ gulp.task('htmls', function () {
     .pipe(gulp.dest('./.build'));
   });
 
-gulp.task('fuck', ['clean:dist','runAMDbuild','scripts'], function () {
-  runSequence(['html']);
+gulp.task('fuck', ['clean:dist','scripts'], function () {
+  runSequence(['htmls']);
 });
 
 

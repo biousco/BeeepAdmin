@@ -122,6 +122,47 @@ define(['./module'], function (services) {
 
   }]);
 
+  services.factory('BannerService', ['$http', 'cgiList', function ($http, cgiList) {
+
+    return {
+      addBanner: function (param) {
+        return $http({
+          url: cgiList.addBaner,
+          method: 'POST',
+          data: param
+        });
+      },
+
+      getBannerList: function (param) {
+        return $http({
+          url: cgiList.getBannerList,
+          method: 'POST',
+          data: param
+        });
+      },
+
+      getBannerDetail: function (param) {
+        return $http({
+          url: cgiList.getBannerDetail,
+          method: 'POST',
+          data: param
+
+        });
+      },
+
+      updateBanner: function (param) {
+        return $http({
+          url: cgiList.updateBanner,
+          method: 'POST',
+          data: param
+
+        });
+      }
+
+    };
+
+  }]);
+
   services.factory('TrialService', ['$http', 'cgiList', function ($http, cgiList) {
 
     return {
@@ -174,9 +215,22 @@ define(['./module'], function (services) {
           data: param
 
         });
-      },
+      }
 
     };
-
   }]);
+
+
+  services.factory('UploadService', ['$http', 'cgiList', function ($http, cgiList) {
+
+    return {
+      uploadFile: function (param) {
+        return $http({
+          url: cgiList.uploadFile,
+          method: 'POST',
+          data: param
+        });
+      }
+    }
+  }])
 });

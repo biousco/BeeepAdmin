@@ -36,6 +36,10 @@
 }
 .btn-submit.disable {
   background-color: #b3b3b3;
+  cursor: not-allowed;
+}
+.btn-submit.disable:hover {
+  text-decoration: none;
 }
 .btn-submit2 {
   width: 160px;
@@ -78,6 +82,10 @@
   font-size: 14px;
   color: #333;
   line-height: 36px;
+}
+.table .mod-btn {
+  padding: 0;
+  text-align: left;
 }
 .mod-search-bar .u-wrapper {
   display: inline-block;
@@ -170,6 +178,10 @@
 .mod-order-detail .u-detail span {
   display: inline-block;
   width: 6em;
+}
+.mod-banner-table a.word-break {
+  display: inline-block;
+  width: 175px;
 }
 .mod-newtrial-wrapper .modal-dialog {
   width: 540px;
@@ -318,7 +330,7 @@
   background-color: #e6e6e6;
 }
 .mod-release-box .preview-wrap {
-  height: 310px;
+  height: auto;
 }
 .mod-release-box .price-wrap {
   width: 110px;
@@ -366,14 +378,24 @@
   height: 80%;
 }
 .mod-release-box .img-preview {
-  width: 100%;
-  height: 100%;
+  width: 360px;
+  height: auto;
   margin-bottom: 10px;
+}
+.mod-release-box .img-preview > img {
+  width: 100%;
 }
 .mod-release-box .prev_preview {
   width: 360px;
   height: 240px;
   margin-bottom: 10px;
+}
+.mod-release-box .require_tips {
+  vertical-align: top;
+  font-size: 14px;
+  color: #e6e6e6;
+  line-height: 36px;
+  margin-left: 5px;
 }
 .mod-release-box.mod-banner .input-wrap {
   width: 450px;
@@ -396,14 +418,28 @@
 .mod-release-box.mod-articlepost .input-wrap {
   width: 396px;
 }
+.mod-release-box.mod-sent-goods {
+  background-color: transparent;
+  padding: 0;
+}
+.mod-release-box.mod-sent-goods .title {
+  width: 85px;
+}
+.mod-release-box.mod-sent-goods .area {
+  height: 100px;
+}
+.mod-release-box.mod-sent-goods .input-wrap {
+  width: 380px;
+}
 .mod-simple-modal {
   width: 540px;
-  padding: 0 20px 30px;
+  padding: 1px 20px 30px;
   background-color: #f7f7f7;
   position: relative;
 }
 .mod-simple-modal .u-title {
   font-size: 14px;
+  margin-top: 0;
   margin-bottom: 8px;
   height: 40px;
   line-height: 40px;
@@ -509,6 +545,7 @@
   color: #FFF;
   background-color: #5e65fe;
   transition: height .5s ease;
+  z-index: 1000;
 }
 .mod-alert.show {
   height: 40px;
