@@ -16,20 +16,18 @@ define(['./../module'], function (controllers) {
     };
 
     /** 查看详情 **/
-    $scope.showDetail = function () {
+    $scope.showDetail = function (t) {
       var modalInstance = $uibModal.open({
         templateUrl: 'views/common/modal-account-detail.html',
         controller: 'SimpleDialogInstanceCtrl',
         resolve: {
-          modal : {
-            title: "确认封号吗"
-          }
-        }
+          modal : t
+        },
+        windowTopClass: 'mod-account-wrapper'
       });
 
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
-        console.log('yes');
       }, function () {});
     };
 

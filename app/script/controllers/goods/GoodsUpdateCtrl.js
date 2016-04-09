@@ -21,18 +21,18 @@ define(['./../module'], function (controllers) {
             $scope.product_detail = data.data;
             var textContent = html_decode(data.data.content);
 
-            var retry = function (data) {
+            var retry = function () {
 
               if($scope.isEditorReady) {
                 g_editor.execCommand('clearDoc');
                 g_editor.execCommand('inserthtml', textContent);
               } else {
-                setTimeout(function (data) {
-                  retry(data);
+                setTimeout(function () {
+                  retry();
                 }, 500);
               }
             };
-            retry(data);
+            retry();
           }
         })
       };
@@ -65,6 +65,20 @@ define(['./../module'], function (controllers) {
           })
         } else {
           console.log($scope.releaseForm, '表单不合法');
+        }
+      };
+
+      $scope.onUpload = function () {
+        modAlert.success('图片上传中...请稍后');
+      };
+
+      $scope.fileCallback = function (response) {
+        var data = JSON.parse(response.data);
+        if (data.ret_code == 0) {
+          $scope.product_detail.banner = data.photo_url;
+          modAlert.success('图片上传成功！');
+        } else {
+          modAlert.fail('图片上传失败...请重试：' + data.ret_msg);
         }
       };
 

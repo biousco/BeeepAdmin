@@ -12,7 +12,8 @@
       ueditor: '../vender/ueditor/ueditor.all.min',
       ueditorConfig: '../vender/ueditor/ueditor.config',
       angularUeditor: '../vender/angular-ueditor/dist/angular-ueditor.min',
-      zeroClipboard: '../vender/ueditor/third-party/zeroclipboard/ZeroClipboard.min'
+      zeroClipboard: '../vender/ueditor/third-party/zeroclipboard/ZeroClipboard.min',
+      angularupload: '../vender/angular-upload/angular-upload'
     },
     shim: {
       angular: {
@@ -43,13 +44,17 @@
       angularUeditor: {
         deps: ['ueditor','ueditorConfig','zeroClipboard'],
         exports: 'angularUeditor'
+      },
+      angularupload: {
+        deps: ['angular'],
+        exports: 'angularupload'
       }
     },
     fileExclusionRegExp: /^(r|build)\.js|node_modules|test|idea|git/,
     modules:[
     {
          name: "bootstrap",
-         exclude: ['angular','uiRouter','uiBootstrap','uitlps','xeditable','angularUeditor']
+         exclude: ['angular','uiRouter','uiBootstrap','uitlps','xeditable','angularUeditor','angularupload']
     }
     ],
     optimize: "none"

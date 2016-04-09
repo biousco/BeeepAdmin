@@ -165,6 +165,7 @@ define(['./../module'], function (controllers) {
 
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
+        $state.reload();
       }, function () {});
 
     };
@@ -231,7 +232,9 @@ define(['./../module'], function (controllers) {
       var data = {
         id: $scope.trial.id,
         express: $scope.trial.express,
-        express_number: $scope.trial.express_number
+        express_number: $scope.trial.express_number,
+        status: 3,
+        email_content: $scope.trial.email_content
       };
       TrialService.updateTrial(data).success(function (data) {
         if(data.ret_code == 0) {

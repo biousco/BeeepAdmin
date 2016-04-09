@@ -80,6 +80,7 @@ angular.module('lr.upload.directives').directive('uploadButton', [
 'use strict';
 angular.module('lr.upload.formdata', []).factory('formDataTransform', function () {
   return function formDataTransform(data) {
+
     var formData = new FormData();
     console.log(data);
     // Extract file elements from within config.data

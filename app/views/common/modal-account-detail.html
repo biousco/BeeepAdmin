@@ -1,44 +1,46 @@
-<div class="portlet blue-hoki box">
-  <div class="portlet-title">
-    <div class="caption">
-      <i class="fa fa-cogs"></i>Customer Information </div>
-  </div>
-  <div class="portlet-body">
-    <div class="row static-info">
-      <div class="col-md-5 name"> 用户名: </div>
-      <div class="col-md-7 value"> Jhon Doe </div>
+<div class="mod-simple-modal ">
+  <h4 class="u-title">用户详情</h4>
+  <div class="close-btn" ng-click="cancel()"></div>
+
+  <div class="mod-account-detail">
+    <div class="m-top">
+      <div class="avater">
+        <img ng-src="modal.avater">
+      </div>
+      <div class="u-item">
+        <p class="title">用户名：</p>
+        <p class="u-content" ng-bind="modal.name"></p>
+      </div>
+      <div class="u-item">
+        <p class="title">媒体：</p>
+        <p class="u-content" ng-bind="modal.media"></p>
+      </div>
+      <div class="u-item">
+        <p class="title">title：</p>
+        <p class="u-content" ng-bind="modal.title"></p>
+      </div>
+      <div class="u-item">
+        <p class="title">工作邮箱：</p>
+        <p class="u-content" ng-bind="modal.email"></p>
+      </div>
     </div>
-    <div class="row static-info">
-      <div class="col-md-5 name"> 媒体: </div>
-      <div class="col-md-7 value"> jhon@doe.com </div>
-    </div>
-    <div class="row static-info">
-      <div class="col-md-5 name"> title: </div>
-      <div class="col-md-7 value"> New York </div>
-    </div>
-    <div class="row static-info">
-      <div class="col-md-5 name"> 头像: </div>
-      <div class="col-md-7 value"> 12234389 </div>
-    </div>
-    <div class="row static-info">
-      <div class="col-md-5 name"> 个人简介: </div>
-      <div class="col-md-7 value"> 12234389 </div>
-    </div>
-    <div class="row static-info">
-      <div class="col-md-5 name"> 工作邮箱: </div>
-      <div class="col-md-7 value"> 12234389 </div>
-    </div>
-    <div class="row static-info">
-      <div class="col-md-5 name"> 验证信息: </div>
-      <div class="col-md-7 value"> 12234389 </div>
-    </div>
-    <div class="row static-info">
-      <div class="col-md-5 name"> facebook验证信息: </div>
-      <div class="col-md-7 value"> 12234389 </div>
-    </div>
-    <div class="row static-info">
-      <div class="col-md-5 name"> twitter验证信息: </div>
-      <div class="col-md-7 value"> 12234389 </div>
+    <div class="m-bottom">
+      <div class="u-item">
+        <p class="title">个人简介：</p>
+        <p class="u-content max2" ng-bind="modal.intro"></p>
+      </div>
+      <div class="u-item">
+        <p class="title">验证信息：</p>
+        <p class="u-content" ng-bind="modal.status"></p>
+      </div>
+      <div class="u-item">
+        <p class="title">Facebook 地址：</p>
+        <p class="u-content" ng-bind="modal.fb_address"></p>
+      </div>
+      <div class="u-item">
+        <p class="title">twitter 地址：</p>
+        <p class="u-content" ng-bind="modal.tw_address"></p>
+      </div>
     </div>
   </div>
 </div>

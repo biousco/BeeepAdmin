@@ -3,9 +3,6 @@
     <tr>
       <td>图片</td>
       <td>url</td>
-      <td>上线时间</td>
-      <td>下线时间</td>
-      <td>状态</td>
       <td>排序</td>
       <td>操作</td>
     </tr>
@@ -14,9 +11,6 @@
     <tr ng-repeat="t in bannerList">
       <td><img ng-src="{{ t.image }}" class="img-thumbnail"></td>
       <td><a ng-href="t.link" ng-bind="t.link" class="word-break"></a></td>
-      <td>2015-05-15</td>
-      <td>2016-02-25</td>
-      <td>上线</td>
       <td>
         <a href="" ng-bind="t.rank" editable-text="t.rank" class="editable editable-click"
            onaftersave="updateRank(t.id,t.rank)" onbeforesave="tipsRank()"></a>

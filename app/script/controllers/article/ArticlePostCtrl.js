@@ -6,8 +6,19 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('ArticlePostCtrl', ['$scope', 'ReviewService', '$state', 'modAlert',
-    function ($scope, ReviewService, $state, modAlert) {
+  controllers.controller('ArticlePostCtrl', ['$scope', 'ReviewService', '$state', 'modAlert', 'UserService',
+    function ($scope, ReviewService, $state, modAlert, UserService) {
+
+      $scope.getAuthor = function (id) {
+        UserService.getUserDetail({id: id}).success(function (data) {
+          if(data.ret_code == 0) {
+            $scope.Author = data.data;
+            modAlert.success('获取用户信息成功！');
+          } else {
+            modAlert.fail('获取用户信息失败：' + data.ret_msg);
+          }
+        })
+      }
 
       $scope.postReview = function () {
         var datas = {

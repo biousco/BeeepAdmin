@@ -21,7 +21,11 @@
         <p class="title">商品图片:</p>
         <div class="input-wrap preview-wrap">
           <img ng-src="{{ product_detail.banner }}" alt="" class="prev_preview">
-          <input type="file"><p>jpg,png or gif 330X220</p>
+          <div upload-button
+               url="/Admin/File/Upload" param="photo" id="photo" name="photo"
+               force-iframe-upload = 'true'
+               on-upload="onUpload(files)"
+               on-complete="fileCallback(response)">jpg,png or gif 330X220</div>
         </div>
         <span class="require_tips">必填项</span>
       </div>
