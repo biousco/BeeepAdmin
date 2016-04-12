@@ -10,10 +10,25 @@
         </div>
         <span class="require_tips">必填项</span>
       </div>
-      <div class="m-inputBox">
+      <div class="m-inputBox m-author-box">
         <p class="title">文章作者:</p>
-        <div class="input-wrap">
-          <input type="text" required ng-model="review_detail.author">
+        <div class="content-wrap">
+          <div class="item-wrap">
+            <div class="input-wrap author-wrap">
+              <input type="text" required ng-model="review_detail.user_id">
+            </div>
+            <button type="button" class="mod-btn" ng-enter="getAuthor(review_detail.user_id)" ng-click="getAuthor(review_detail.user_id)"></button>
+            <span class="require_tips">必填项</span>
+          </div>
+          <p class="tips">请输入作者对应用户ID后按 确定 或 回车键</p>
+          <div class="user-card" ng-show="Author">
+            <div class="mod-avater">
+              <img src="{{ Author.avater }}">
+            </div>
+            <p class="u-name" ng-bind="Author.name">用户名</p>
+            <p class="u-title" ng-bind="Author.title">Title</p>
+            <p class="u-title" ng-bind="Author.media">媒体名</p>
+          </div>
         </div>
       </div>
       <div class="m-inputBox">

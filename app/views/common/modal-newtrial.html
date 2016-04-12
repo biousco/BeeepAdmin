@@ -19,12 +19,18 @@
   <div class="u-form-group">
     <p class="u-group">
       <label for="" class="u-label">试用申请开始时间:</label>
-      <input type="text" class="u-input" ng-click="openStart()" uib-datepicker-popup ng-model="trial_startdate" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="关闭" />
+      <input type="text" class="u-input u-date" ng-click="openStart()" uib-datepicker-popup
+             ng-model="trial_startdate" is-open="popup1.opened" datepicker-options="dateOptionsStart"
+             ng-required="true" close-text="关闭" alt-input-formats="altInputFormats"/>
+      <input type="time" class="u-input u-time" ng-model="trial_starttime">
       <span class="tips">Needed</span>
     </p>
     <p class="u-group">
       <label for="" class="u-label">试用申请截止时间:</label>
-      <input type="text" class="u-input" ng-click="openEnd()" uib-datepicker-popup ng-model="trial_enddate" is-open="popup2.opened" datepicker-options="dateOptions" ng-required="true" close-text="关闭" />
+      <input type="text" class="u-input u-date" ng-click="openEnd()" uib-datepicker-popup
+             ng-model="trial_enddate" is-open="popup2.opened" datepicker-options="dateOptionsEnd"
+             ng-required="true" close-text="关闭" alt-input-formats="altInputFormats"/>
+      <input type="time" class="u-input u-time" ng-model="trial_endtime">
       <span class="tips">Needed</span>
     </p>
     <p class="u-group">

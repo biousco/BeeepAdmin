@@ -5,9 +5,6 @@
       <div class="m-inputBox">
         <p class="title">上传图片：</p>
         <div class="input-wrap banner-wrap">
-          <div class="placehold">
-            1600X600
-          </div>
           <img src="{{ image }}" alt="" class="placehold">
           <div upload-button
                url="/Admin/File/Upload" param="photo" id="photo" name="photo"
@@ -20,12 +17,6 @@
         <p class="title">url：</p>
         <div class="input-wrap">
           <input type="text" name="link" ng-model="link" required>
-        </div>
-      </div>
-      <div class="m-inputBox">
-        <p class="title">发布时间：</p>
-        <div class="input-wrap">
-          <input type="text" name="time">
         </div>
       </div>
     </div>

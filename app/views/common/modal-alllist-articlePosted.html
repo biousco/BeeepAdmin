@@ -2,17 +2,19 @@
     <div class="mod-simple-modal ">
       <h4 class="u-title">发布文章</h4>
       <div class="close-btn" ng-click="cancel()"></div>
-      <form class="mod-release-box mod-articlepost">
+
+      <form class="mod-release-box mod-articlepost" name="postArticle">
         <div class="mod-release-form">
           <div class="m-inputBox">
             <p class="title">文章url：</p>
             <div class="input-wrap">
-              <input type="text">
+              <input type="url" required ng-model="url">
             </div>
           </div>
         </div>
 
-        <button class="mod-btn btn-submit" type="button">提交</button>
-        <p class="u-alert">请完善必填项</p>
+        <button class="mod-btn btn-submit" type="submit"
+                ng-class="{true: '', false: 'disable'}[postArticle.$valid]" ng-disabled="!postArticle.$valid">提交</button>
+        <p class="u-alert" ng-show="!postArticle.$valid">请完善必填项</p>
       </form>
     </div>

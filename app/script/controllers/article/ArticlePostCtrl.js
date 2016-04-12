@@ -22,6 +22,7 @@ define(['./../module'], function (controllers) {
 
       $scope.postReview = function () {
         var datas = {
+          user_id: $scope.author,
           title: $scope.title,
           brief: $scope.brief,
           content: $scope.content,

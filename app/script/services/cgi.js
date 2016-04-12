@@ -72,6 +72,40 @@ define(['./module'], function (services) {
     }
   ]);
 
+  services.factory('BatchService', ['$http', 'cgiList',
+    function ($http, cgiList) {
+
+      return {
+        addBatch: function (param) {
+          return $http({
+            url: cgiList.addBatch,
+            method: 'POST',
+            data: param
+
+          });
+        },
+
+        getBatchList: function (param) {
+          return $http({
+            url: cgiList.getBatch,
+            method: 'POST',
+            data: param
+          });
+        },
+        
+        updateBatch: function (param) {
+          return $http({
+            url: cgiList.updateBatch,
+            method: 'POST',
+            data: param
+          });
+        }
+      };
+
+
+    }
+  ]);
+
   services.factory('ReviewService', ['$http', 'cgiList', function ($http, cgiList) {
 
     return {

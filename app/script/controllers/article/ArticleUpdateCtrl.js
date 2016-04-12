@@ -3,8 +3,8 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('ArticleUpdateCtrl', ['$scope', 'ReviewService', '$stateParams', '$state', 'modAlert', '$q',
-    function ($scope, ReviewService, $stateParams, $state, modAlert, $q) {
+  controllers.controller('ArticleUpdateCtrl', ['$scope', 'ReviewService', '$stateParams', '$state', 'modAlert', '$q', 'UserService',
+    function ($scope, ReviewService, $stateParams, $state, modAlert, $q, UserService) {
 
       $scope.review_id = $stateParams.article_id;
       $scope.isEditorReady = false;
@@ -36,6 +36,18 @@ define(['./../module'], function (controllers) {
               return textContent;
             });
             defer1.resolve(textContent);
+            $scope.getAuthor(data.data.user_id);
+          }
+        })
+      };
+
+      $scope.getAuthor = function (id) {
+        UserService.getUserDetail({id: id}).success(function (data) {
+          if(data.ret_code == 0) {
+            $scope.Author = data.data;
+            modAlert.success('获取用户信息成功');
+          } else {
+            modAlert.fail('获取用户信息失败：' + data.ret_msg);
           }
         })
       };
@@ -52,6 +64,7 @@ define(['./../module'], function (controllers) {
       $scope.updateReview = function () {
         var dataset = {
           id: $scope.review_id,
+          user_id: $scope.review_detail.user_id,
           title: $scope.review_detail.title,
           brief: $scope.review_detail.brief,
           content: $scope.review_detail.content,

@@ -25,10 +25,10 @@
   </tr>
   </thead>
   <tbody>
-  <tr ng-repeat="t in goodsTrialList">
+  <tr ng-repeat="t in goodsBatchList">
     <td ng-bind="t.id"></td>
-    <td ng-bind="t.create_time"></td>
-    <td ng-bind="t.end_time"></td>
+    <td ng-bind="t.trial_start_datetime"></td>
+    <td ng-bind="t.trial_end_datetime"></td>
     <td ng-bind="t.num"></td>
     <td ng-bind="t.status_text">未到/申请中/已过期</td>
     <td ng-bind="t.trial_num"></td>

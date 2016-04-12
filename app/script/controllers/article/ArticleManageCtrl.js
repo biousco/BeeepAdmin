@@ -9,7 +9,7 @@ define(['./../module'], function (controllers) {
     $scope.hc = 33;
 
     $scope.getAllReview = function () {
-      ReviewService.getReviewList().success(function (data) {
+      ReviewService.getReviewList({is_delete: 0}).success(function (data) {
         if(data.ret_code == 0) {
           $scope.review_list = data.data;
         }

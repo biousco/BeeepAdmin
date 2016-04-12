@@ -2,25 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5dd05a15-a7b9-4da6-b934-d4865d2e951e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/btn-confirm-dark.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/constant.js" afterPath="$PROJECT_DIR$/app/script/constant.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/article/ArticlePostCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/article/ArticlePostCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/goods/GoodsUpdateCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/goods/GoodsUpdateCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/order/OrderAllListCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/order/OrderAllListCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/main.js" afterPath="$PROJECT_DIR$/app/script/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js" afterPath="$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/script/services/cgi.js" afterPath="$PROJECT_DIR$/app/script/services/cgi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/mod.css" afterPath="$PROJECT_DIR$/app/styles/mod.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styles/mod.less" afterPath="$PROJECT_DIR$/app/styles/mod.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/vender/angular-upload/angular-upload.js" afterPath="$PROJECT_DIR$/app/vender/angular-upload/angular-upload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/account/normal.html" afterPath="$PROJECT_DIR$/app/views/account/normal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/article/post.html" afterPath="$PROJECT_DIR$/app/views/article/post.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/article/update.html" afterPath="$PROJECT_DIR$/app/views/article/update.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/common/modal-account-detail.html" afterPath="$PROJECT_DIR$/app/views/common/modal-account-detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/common/modal-alllist-sentGoods.html" afterPath="$PROJECT_DIR$/app/views/common/modal-alllist-sentGoods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/goods/update.html" afterPath="$PROJECT_DIR$/app/views/goods/update.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/operation/bannermanage.html" afterPath="$PROJECT_DIR$/app/views/operation/bannermanage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.js" afterPath="$PROJECT_DIR$/build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/common/modal-alllist-articlePosted.html" afterPath="$PROJECT_DIR$/app/views/common/modal-alllist-articlePosted.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/common/modal-newtrial.html" afterPath="$PROJECT_DIR$/app/views/common/modal-newtrial.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/goods/trial.html" afterPath="$PROJECT_DIR$/app/views/goods/trial.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/operation/createbanner.html" afterPath="$PROJECT_DIR$/app/views/operation/createbanner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/operation/editbanner.html" afterPath="$PROJECT_DIR$/app/views/operation/editbanner.html" />
     </list>
     <ignored path="beepAdmin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,42 +39,15 @@
     <favorites_list name="beepAdmin" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4747033">
+    <splitter split-orientation="horizontal" split-proportion="0.50968146">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="ArticlePostCtrl.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticlePostCtrl.js">
+          <file leaf-file-name="editbanner.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/operation/editbanner.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="208">
-                  <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+                <state relative-caret-position="96">
+                  <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AccountMediaCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="256">
-                  <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-                  <folding>
-                    <element signature="e#2057#2069#0" expanded="true" />
-                    <element signature="e#2856#2868#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="OrderAllListCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/order/OrderAllListCtrl.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2352">
-                  <caret line="149" column="21" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#3473#3483#0" expanded="true" />
-                    <element signature="e#3935#3948#0" expanded="true" />
-                    <element signature="e#4347#4361#0" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -83,11 +55,9 @@
           <file leaf-file-name="update.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/article/update.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+                <state relative-caret-position="384">
+                  <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
                   <folding>
-                    <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-                    <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
                     <element signature="n#div#2;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
                     <element signature="n#div#5;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
                     <element signature="n#div#6;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
@@ -96,31 +66,71 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="update.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/goods/update.html">
+          <file leaf-file-name="ArticleManageCtrl.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+                <state relative-caret-position="576">
+                  <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="AccountNormalCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js">
+          <file leaf-file-name="GoodsRackingCtrl.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="224">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="16" />
+                  <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="EditBannerCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/operation/EditBannerCtrl.js">
+          <file leaf-file-name="cgi.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/script/services/cgi.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+                <state relative-caret-position="303">
+                  <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GoodsTrialCtrl.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="270">
+                  <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="modal-alllist-articlePosted.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/common/modal-alllist-articlePosted.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="160">
+                  <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="trial.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/goods/trial.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="528">
+                  <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="constant.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/script/constant.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="208">
+                  <caret line="15" column="12" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -133,8 +143,28 @@
           <file leaf-file-name="post.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/article/post.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="320">
-                  <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+                <state relative-caret-position="789">
+                  <caret line="76" column="49" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="modal-newtrial.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/common/modal-newtrial.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="512">
+                  <caret line="32" column="71" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="modal-account-detail.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/common/modal-account-detail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="256">
+                  <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -143,8 +173,8 @@
           <file leaf-file-name="racking.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/goods/racking.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="128">
-                  <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
+                <state relative-caret-position="144">
+                  <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
                   <folding />
                 </state>
               </provider>
@@ -153,18 +183,8 @@
           <file leaf-file-name="ArticleUpdateCtrl.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="192">
-                  <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bannermanage.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/operation/bannermanage.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="416">
-                  <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                <state relative-caret-position="224">
+                  <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -183,8 +203,8 @@
           <file leaf-file-name="modal-simple.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/common/modal-simple.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <state relative-caret-position="192">
+                  <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -193,7 +213,7 @@
           <file leaf-file-name="DialogCtrl.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/script/controllers/common/DialogCtrl.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="208">
+                <state relative-caret-position="176">
                   <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
@@ -205,18 +225,18 @@
           <file leaf-file-name="media.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/account/media.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+                <state relative-caret-position="288">
+                  <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GoodsUpdateCtrl.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsUpdateCtrl.js">
+          <file leaf-file-name="createbanner.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/operation/createbanner.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1088">
-                  <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="82" selection-end-column="8" />
+                <state relative-caret-position="224">
+                  <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
                   <folding />
                 </state>
               </provider>
@@ -247,7 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/login.html" />
         <option value="$PROJECT_DIR$/app/script/services/index.js" />
         <option value="$PROJECT_DIR$/app/views/common/mod-alert.html" />
         <option value="$PROJECT_DIR$/app/script/controllers/Auth/LoginCtrl.js" />
@@ -255,49 +274,50 @@
         <option value="$PROJECT_DIR$/app/vender/ueditor/ueditor.all.js" />
         <option value="$PROJECT_DIR$/app/script/services/serviceConfig.js" />
         <option value="$PROJECT_DIR$/app/styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css" />
-        <option value="$PROJECT_DIR$/app/views/goods/trial.html" />
-        <option value="$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js" />
         <option value="$PROJECT_DIR$/app/styles/bootstrap.css" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/views/goods/outdate.html" />
         <option value="$PROJECT_DIR$/app/views/article/manage.html" />
         <option value="$PROJECT_DIR$/app/views/goods/racking.html" />
-        <option value="$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js" />
         <option value="$PROJECT_DIR$/app/script/controllers/goods/GoodsOutdateCtrl.js" />
-        <option value="$PROJECT_DIR$/app/script/constant.js" />
-        <option value="$PROJECT_DIR$/app/script/services/cgi.js" />
         <option value="$PROJECT_DIR$/app/script/app.js" />
-        <option value="$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js" />
         <option value="$PROJECT_DIR$/app/vender/ueditor/ueditor.config.js" />
         <option value="$PROJECT_DIR$/app/views/goods/release.html" />
         <option value="$PROJECT_DIR$/app/script/controllers/goods/GoodsReleaseCtrl.js" />
         <option value="$PROJECT_DIR$/app/script/controllers/operation/CreateBannerCtrl.js" />
-        <option value="$PROJECT_DIR$/app/views/common/modal-alllist-articlePosted.html" />
         <option value="$PROJECT_DIR$/app/views/order/alllist.html" />
         <option value="$PROJECT_DIR$/app/styles/app.less" />
-        <option value="$PROJECT_DIR$/app/views/operation/createbanner.html" />
         <option value="$PROJECT_DIR$/app/script/appconfig.js" />
         <option value="$PROJECT_DIR$/app/script/controllers/operation/BannerManageCtrl.js" />
         <option value="$PROJECT_DIR$/app/script/controllers/index.js" />
-        <option value="$PROJECT_DIR$/app/views/operation/editbanner.html" />
         <option value="$PROJECT_DIR$/app/script/controllers/operation/EditBannerCtrl.js" />
         <option value="$PROJECT_DIR$/app/views/account/media.html" />
-        <option value="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" />
         <option value="$PROJECT_DIR$/app/views/goods/update.html" />
         <option value="$PROJECT_DIR$/app/script/controllers/goods/GoodsUpdateCtrl.js" />
         <option value="$PROJECT_DIR$/app/vender/angular-upload/angular-upload.js" />
-        <option value="$PROJECT_DIR$/app/views/article/update.html" />
         <option value="$PROJECT_DIR$/app/script/main.js" />
         <option value="$PROJECT_DIR$/app/script/controllers/order/OrderAllListCtrl.js" />
         <option value="$PROJECT_DIR$/app/views/operation/bannermanage.html" />
-        <option value="$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js" />
         <option value="$PROJECT_DIR$/app/views/common/modal-alllist-sentGoods.html" />
         <option value="$PROJECT_DIR$/app/views/account/normal.html" />
         <option value="$PROJECT_DIR$/app/script/controllers/account/AccountNormalCtrl.js" />
-        <option value="$PROJECT_DIR$/app/views/common/modal-account-detail.html" />
-        <option value="$PROJECT_DIR$/app/styles/mod.less" />
-        <option value="$PROJECT_DIR$/app/script/controllers/article/ArticlePostCtrl.js" />
         <option value="$PROJECT_DIR$/app/views/article/post.html" />
+        <option value="$PROJECT_DIR$/app/views/common/modal-account-detail.html" />
+        <option value="$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js" />
+        <option value="$PROJECT_DIR$/app/views/operation/createbanner.html" />
+        <option value="$PROJECT_DIR$/app/views/operation/editbanner.html" />
+        <option value="$PROJECT_DIR$/app/script/controllers/article/ArticlePostCtrl.js" />
+        <option value="$PROJECT_DIR$/app/views/article/update.html" />
+        <option value="$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js" />
+        <option value="$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js" />
+        <option value="$PROJECT_DIR$/app/script/constant.js" />
+        <option value="$PROJECT_DIR$/app/script/services/cgi.js" />
+        <option value="$PROJECT_DIR$/app/views/goods/trial.html" />
+        <option value="$PROJECT_DIR$/app/styles/mod.less" />
+        <option value="$PROJECT_DIR$/app/views/common/modal-newtrial.html" />
+        <option value="$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js" />
+        <option value="$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js" />
+        <option value="$PROJECT_DIR$/app/views/common/modal-alllist-articlePosted.html" />
       </list>
     </option>
   </component>
@@ -454,6 +474,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -595,7 +616,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -732,7 +752,8 @@
       <workItem from="1459838797812" duration="2590000" />
       <workItem from="1459990072634" duration="31403000" />
       <workItem from="1460110854141" duration="634000" />
-      <workItem from="1460164025072" duration="6202000" />
+      <workItem from="1460164025072" duration="8456000" />
+      <workItem from="1460440664822" duration="8498000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1458456324682</created>
@@ -958,11 +979,18 @@
       <option name="project" value="LOCAL" />
       <updated>1460023872221</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update">
+      <created>1460172145511</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1460172145511</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205093000" />
+    <option name="totallyTimeSpent" value="215845000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -977,8 +1005,8 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1564805" sideWeight="0.50530034" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1564805" sideWeight="0.49469966" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1564805" sideWeight="0.5123675" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1564805" sideWeight="0.4876325" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1691254" sideWeight="0.44424778" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22943723" sideWeight="0.5021075" order="10" side_tool="true" content_ui="tabs" />
@@ -1045,27 +1073,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/goods/trial.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/script/controllers/common/SidebarCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1091,13 +1098,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="34" column="51" selection-start-line="34" selection-start-column="51" selection-end-line="34" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/constant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1129,13 +1129,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="31" column="11" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/vender/ueditor/php/controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
@@ -1147,13 +1140,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="44" column="40" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/services/cgi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1186,24 +1172,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/script/controllers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/common/modal-alllist-articlePosted.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1218,15 +1190,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="576">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/account/media.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,36 +1203,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/operation/createbanner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/operation/editbanner.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="89" selection-start-line="7" selection-start-column="89" selection-end-line="7" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/script/controllers/operation/EditBannerCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding>
-            <element signature="e#2057#2069#0" expanded="true" />
-            <element signature="e#2856#2868#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1284,21 +1222,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
           <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="82" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/article/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1314,9 +1237,9 @@
         <state relative-caret-position="2352">
           <caret line="149" column="21" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
           <folding>
-            <element signature="e#3473#3483#0" expanded="true" />
-            <element signature="e#3935#3948#0" expanded="true" />
-            <element signature="e#4347#4361#0" expanded="true" />
+            <element signature="e#3473#3483#0" expanded="false" />
+            <element signature="e#3935#3948#0" expanded="false" />
+            <element signature="e#4347#4361#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1325,7 +1248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,15 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="40" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/goods/racking.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1353,17 +1266,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/common/modal-simple.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/script/controllers/common/DialogCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
+        <state relative-caret-position="176">
           <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
@@ -1387,10 +1292,128 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/vender/angular-upload/angular-upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="862">
+          <caret line="77" column="3" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/goods/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/account/AccountMediaCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding>
+            <element signature="e#2018#2030#0" expanded="false" />
+            <element signature="e#2817#2829#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/operation/createbanner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/account/media.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/common/modal-simple.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticlePostCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/article/update.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#0;n#form#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleManageCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/services/cgi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/goods/trial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/operation/editbanner.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/styles/mod.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="570" column="3" selection-start-line="570" selection-start-column="3" selection-end-line="570" selection-end-column="3" />
+        <state relative-caret-position="183">
+          <caret line="220" column="21" selection-start-line="220" selection-start-column="21" selection-end-line="220" selection-end-column="21" />
           <folding>
             <element signature="e#33#529#0" expanded="false" />
             <element signature="e#170#207#0" expanded="false" />
@@ -1423,129 +1446,133 @@
             <element signature="e#2994#3030#0" expanded="false" />
             <element signature="e#3042#3116#0" expanded="false" />
             <element signature="e#3078#3112#0" expanded="false" />
-            <element signature="e#3137#3354#0" expanded="false" />
-            <element signature="e#3168#3230#0" expanded="false" />
-            <element signature="e#3243#3352#0" expanded="false" />
-            <element signature="e#3294#3348#0" expanded="false" />
-            <element signature="e#3642#5173#0" expanded="false" />
-            <element signature="e#3700#3826#0" expanded="false" />
-            <element signature="e#3840#4071#0" expanded="false" />
-            <element signature="e#4018#4067#0" expanded="false" />
-            <element signature="e#4088#4271#0" expanded="false" />
-            <element signature="e#4171#4267#0" expanded="false" />
-            <element signature="e#4282#4522#0" expanded="false" />
-            <element signature="e#4312#4413#0" expanded="false" />
-            <element signature="e#4420#4518#0" expanded="false" />
-            <element signature="e#4539#5171#0" expanded="false" />
-            <element signature="e#4600#4658#0" expanded="false" />
-            <element signature="e#4672#4808#0" expanded="false" />
-            <element signature="e#4822#5038#0" expanded="false" />
-            <element signature="e#5049#5167#0" expanded="false" />
-            <element signature="e#5194#5275#0" expanded="false" />
-            <element signature="e#5209#5273#0" expanded="false" />
-            <element signature="e#5294#9517#0" expanded="false" />
-            <element signature="e#5446#5590#0" expanded="false" />
-            <element signature="e#5611#5638#0" expanded="false" />
-            <element signature="e#5653#5705#0" expanded="false" />
-            <element signature="e#5715#5867#0" expanded="false" />
-            <element signature="e#5882#6104#0" expanded="false" />
-            <element signature="e#6049#6100#0" expanded="false" />
-            <element signature="e#6120#6277#0" expanded="false" />
-            <element signature="e#6174#6273#0" expanded="false" />
-            <element signature="e#6294#6317#0" expanded="false" />
-            <element signature="e#6332#6355#0" expanded="false" />
-            <element signature="e#6371#6662#0" expanded="false" />
-            <element signature="e#6479#6658#0" expanded="false" />
-            <element signature="e#6680#6810#0" expanded="false" />
-            <element signature="e#6830#6925#0" expanded="false" />
-            <element signature="e#6937#6960#0" expanded="false" />
-            <element signature="e#6969#6992#0" expanded="false" />
-            <element signature="e#7003#7067#0" expanded="false" />
-            <element signature="e#7037#7063#0" expanded="false" />
-            <element signature="e#7083#7188#0" expanded="false" />
-            <element signature="e#7158#7184#0" expanded="false" />
-            <element signature="e#7205#7272#0" expanded="false" />
-            <element signature="e#7289#7405#0" expanded="false" />
-            <element signature="e#7421#7611#0" expanded="false" />
-            <element signature="e#7439#7466#0" expanded="false" />
-            <element signature="e#7483#7536#0" expanded="false" />
-            <element signature="e#7550#7607#0" expanded="false" />
-            <element signature="e#7632#7770#0" expanded="false" />
-            <element signature="e#7696#7722#0" expanded="false" />
-            <element signature="e#7739#7766#0" expanded="false" />
-            <element signature="e#7790#7968#0" expanded="false" />
-            <element signature="e#7855#7881#0" expanded="false" />
-            <element signature="e#7892#7920#0" expanded="false" />
-            <element signature="e#7937#7964#0" expanded="false" />
-            <element signature="e#10351#11179#0" expanded="false" />
-            <element signature="e#10457#10622#0" expanded="false" />
-            <element signature="e#10634#10779#0" expanded="false" />
-            <element signature="e#10672#10730#0" expanded="false" />
-            <element signature="e#10741#10775#0" expanded="false" />
-            <element signature="e#10790#10967#0" expanded="false" />
-            <element signature="e#10829#10963#0" expanded="false" />
-            <element signature="e#10920#10957#0" expanded="false" />
-            <element signature="e#10981#11177#0" expanded="false" />
-            <element signature="e#11196#12291#0" expanded="false" />
-            <element signature="e#11327#11556#0" expanded="false" />
-            <element signature="e#11504#11552#0" expanded="false" />
-            <element signature="e#11562#11635#0" expanded="false" />
-            <element signature="e#11652#12289#0" expanded="false" />
-            <element signature="e#11664#11766#0" expanded="false" />
-            <element signature="e#11786#12285#0" expanded="false" />
-            <element signature="e#12045#12279#0" expanded="false" />
-            <element signature="e#12204#12271#0" expanded="false" />
-            <element signature="e#12304#12633#0" expanded="false" />
-            <element signature="e#12562#12585#0" expanded="false" />
-            <element signature="e#12595#12631#0" expanded="false" />
+            <element signature="e#3300#3409#0" expanded="false" />
+            <element signature="e#3351#3405#0" expanded="false" />
+            <element signature="e#3757#3883#0" expanded="false" />
+            <element signature="e#3897#4128#0" expanded="false" />
+            <element signature="e#4075#4124#0" expanded="false" />
+            <element signature="e#4145#4328#0" expanded="false" />
+            <element signature="e#4228#4324#0" expanded="false" />
+            <element signature="e#4339#4579#0" expanded="false" />
+            <element signature="e#4369#4470#0" expanded="false" />
+            <element signature="e#4477#4575#0" expanded="false" />
+            <element signature="e#4657#4715#0" expanded="false" />
+            <element signature="e#4729#4865#0" expanded="false" />
+            <element signature="e#4879#5095#0" expanded="false" />
+            <element signature="e#5106#5224#0" expanded="false" />
+            <element signature="e#5330#5411#0" expanded="false" />
+            <element signature="e#5345#5409#0" expanded="false" />
+            <element signature="e#5430#9653#0" expanded="false" />
+            <element signature="e#5582#5726#0" expanded="false" />
+            <element signature="e#5747#5774#0" expanded="false" />
+            <element signature="e#5789#5841#0" expanded="false" />
+            <element signature="e#5851#6003#0" expanded="false" />
+            <element signature="e#6018#6240#0" expanded="false" />
+            <element signature="e#6185#6236#0" expanded="false" />
+            <element signature="e#6256#6413#0" expanded="false" />
+            <element signature="e#6310#6409#0" expanded="false" />
+            <element signature="e#6430#6453#0" expanded="false" />
+            <element signature="e#6468#6491#0" expanded="false" />
+            <element signature="e#6507#6798#0" expanded="false" />
+            <element signature="e#6615#6794#0" expanded="false" />
+            <element signature="e#6816#6946#0" expanded="false" />
+            <element signature="e#6966#7061#0" expanded="false" />
+            <element signature="e#7073#7096#0" expanded="false" />
+            <element signature="e#7105#7128#0" expanded="false" />
+            <element signature="e#7139#7203#0" expanded="false" />
+            <element signature="e#7173#7199#0" expanded="false" />
+            <element signature="e#7219#7324#0" expanded="false" />
+            <element signature="e#7294#7320#0" expanded="false" />
+            <element signature="e#7341#7408#0" expanded="false" />
+            <element signature="e#7425#7541#0" expanded="false" />
+            <element signature="e#7557#7747#0" expanded="false" />
+            <element signature="e#7575#7602#0" expanded="false" />
+            <element signature="e#7619#7672#0" expanded="false" />
+            <element signature="e#7686#7743#0" expanded="false" />
+            <element signature="e#7768#7906#0" expanded="false" />
+            <element signature="e#7832#7858#0" expanded="false" />
+            <element signature="e#7875#7902#0" expanded="false" />
+            <element signature="e#7926#8104#0" expanded="false" />
+            <element signature="e#7991#8017#0" expanded="false" />
+            <element signature="e#8028#8056#0" expanded="false" />
+            <element signature="e#8073#8100#0" expanded="false" />
+            <element signature="e#10487#11315#0" expanded="false" />
+            <element signature="e#10593#10758#0" expanded="false" />
+            <element signature="e#10770#10915#0" expanded="false" />
+            <element signature="e#10808#10866#0" expanded="false" />
+            <element signature="e#10877#10911#0" expanded="false" />
+            <element signature="e#10926#11103#0" expanded="false" />
+            <element signature="e#10965#11099#0" expanded="false" />
+            <element signature="e#11056#11093#0" expanded="false" />
+            <element signature="e#11117#11313#0" expanded="false" />
+            <element signature="e#11332#12427#0" expanded="false" />
+            <element signature="e#11463#11692#0" expanded="false" />
+            <element signature="e#11640#11688#0" expanded="false" />
+            <element signature="e#11698#11771#0" expanded="false" />
+            <element signature="e#11788#12425#0" expanded="false" />
+            <element signature="e#11800#11902#0" expanded="false" />
+            <element signature="e#11922#12421#0" expanded="false" />
+            <element signature="e#12181#12415#0" expanded="false" />
+            <element signature="e#12340#12407#0" expanded="false" />
+            <element signature="e#12440#12769#0" expanded="false" />
+            <element signature="e#12698#12721#0" expanded="false" />
+            <element signature="e#12731#12767#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/common/modal-newtrial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="71" selection-start-line="32" selection-start-column="71" selection-end-line="32" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsRackingCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/script/controllers/goods/GoodsTrialCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/common/modal-account-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+        <state relative-caret-position="256">
+          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/vender/angular-upload/angular-upload.js">
+    <entry file="file://$PROJECT_DIR$/app/views/goods/racking.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="77" column="3" selection-start-line="77" selection-start-column="3" selection-end-line="77" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/goods/update.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticleUpdateCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/script/controllers/article/ArticlePostCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        <state relative-caret-position="144">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/article/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        <state relative-caret-position="789">
+          <caret line="76" column="49" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/common/modal-alllist-articlePosted.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding />
         </state>
       </provider>

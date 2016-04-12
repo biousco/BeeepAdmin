@@ -9,7 +9,7 @@ define(['./../module'], function (controllers) {
 
     /** 获取所有记录 **/
     $scope.getProductList = function () {
-      ProductService.getProductList().success(function (data) {
+      ProductService.getProductList({is_delete: 0}).success(function (data) {
         if(data.ret_code == 0) {
           $scope.product_list = data.data;
         }
