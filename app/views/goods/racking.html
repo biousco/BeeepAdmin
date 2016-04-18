@@ -1,6 +1,6 @@
-<mod-search-bar label-text="'搜索支持id、商品名称'" ng-enter="updateList()"></mod-search-bar>
+<mod-search-bar label-text="'搜索支持id'" ng-enter="searchList(keyWord)" key-word="keyWord"></mod-search-bar>
 
-<table class="table table-hover dataTable g-mt30 mod-table" ng-init="getProductList()">
+<table class="table g-mt30 mod-table" ng-init="getProductList()">
   <thead>
   <tr>
     <td>商品ID/名称</td>
@@ -14,7 +14,7 @@
   </thead>
   <tbody>
   <tr ng-repeat="t in product_list">
-    <td><span class="name" ng-bind="t.name">4k Cameral</span>{{ t.id }}</td>
+    <td><span class="name word-break" ng-bind="t.name">4k Cameral</span>{{ t.id }}</td>
     <td><img ng-src="{{t.banner}}" class="img-thumbnail"></td>
     <td ng-bind="t.buy_channel">亚马逊</td>
     <td ng-bind="t.price">￥4521</td>

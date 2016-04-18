@@ -1244,15 +1244,6 @@ h3 .small,
 .h3 .small {
   font-size: 65%;
 }
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 h4 small,
 .h4 small,
 h5 small,
@@ -1292,7 +1283,7 @@ h6,
   font-size: 12px;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0;
 }
 .lead {
   margin-bottom: 20px;

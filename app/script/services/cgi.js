@@ -92,7 +92,7 @@ define(['./module'], function (services) {
             data: param
           });
         },
-        
+
         updateBatch: function (param) {
           return $http({
             url: cgiList.updateBatch,
@@ -200,10 +200,11 @@ define(['./module'], function (services) {
   services.factory('TrialService', ['$http', 'cgiList', function ($http, cgiList) {
 
     return {
-      getTrialList: function () {
+      getTrialList: function (param) {
         return $http({
           url: cgiList.getTrialList,
-          method: 'POST'
+          method: 'POST',
+          data: param
         });
       },
 

@@ -88,6 +88,11 @@
 
 }
 
+.mod-table {
+  tbody > tr > td .name {
+     max-width: 200px;
+  }
+}
 .table .mod-btn {
   padding: 0;
   text-align: left;
@@ -198,6 +203,47 @@
     }
   }
 }
+.mod-orderdetail-pop {
+  @width: 965px;
+  .modal-dialog {
+    width: @width;
+  }
+  .mod-simple-modal {
+    width: @width;
+  }
+  .mod-orderdetail {
+    padding: 0 15px 30px;
+  }
+  .mod-order-table {
+    margin: 20px 15px 15px 15px;
+    width: auto;
+  }
+  .mod-more-detail {
+    font-size: 14px;
+    color: #000;
+    width: 100%;
+    padding-right: 20px;
+    box-sizing: border-box;
+    .item {
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .title {
+      float: left;
+      width: 130px;
+      text-align: right;
+      margin-right: 5px;
+    }
+    .content {
+      float: left;
+      width: 85%;
+    }
+    .reason {
+      color: #666666;
+    }
+  }
+}
+
 .mod-banner-table {
   a.word-break {
     display: inline-block;
@@ -253,17 +299,22 @@
   }
   .detail {
     float: left;
+    width: 300px;
     .title {
       color: #000;
       font-size: 20px;
       margin-bottom: 20px;
       line-height: 20px;
+      height: 40px;
+      overflow: hidden;
     }
     p {
       color: #999;
       text-align: left;
       font-size: 14px;
       line-height: 20px;
+      height: 40px;
+      overflow: hidden;
     }
   }
   .u-form-group {
@@ -731,5 +782,29 @@
   &.big {
     width: 100px;
     height: 100px;
+  }
+}
+.mod-common-popup {
+  position: relative;
+  padding: 0 10px 25px 10px;
+  h4 {
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  .close-btn {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/btn-close.png);
+    a {
+      display: block;
+      height: 100%;
+    }
   }
 }

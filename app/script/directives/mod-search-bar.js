@@ -9,7 +9,8 @@ define(['./module'], function (directives) {
       templateUrl: "views/common/mod-search-bar.html",
       replace: true,
       scope: {
-        labelText: '=labelText'
+        labelText: '=labelText',
+        keyWord: '=keyWord'
       },
       link: function (scope, element, attrs) {
         element[0].focus();

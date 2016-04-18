@@ -1,17 +1,4 @@
-<link rel="stylesheet"
-      href="styles/metronic/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css">
-
-<div class="mod-search-bar">
-  <form action="">
-    <div class="u-wrapper">
-      <span class="u-icon">
-      <i></i>
-      </span>
-      <input type="text" id="search" class="u-search" placeholder="Search...">
-    </div>
-    <label for="search" class="u-label">搜索支持文章ID，名称</label>
-  </form>
-</div>
+<mod-search-bar label-text="'搜索暂不支持'" ng-enter="searchList(keyWord)" key-word="keyWord"></mod-search-bar>
 
 <table class="table g-mt30" ng-init="getAllReview()">
   <thead>

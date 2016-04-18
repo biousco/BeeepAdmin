@@ -77,6 +77,14 @@ define(['./../module'], function (controllers) {
       modAlert.success('更新中..');
     }
 
+    /** 搜索 **/
+    $scope.searchList = function (product_id) {
+      ProductService.getProductList({is_delete: 0}).success(function (data) {
+        if(data.ret_code == 0) {
+          $scope.product_list = data.data;
+        }
+      })
+    }
 
 
 

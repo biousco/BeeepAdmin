@@ -1,46 +1,50 @@
 <link rel="stylesheet" href="styles/metronic/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
-
-
 <div class="mod-newtrial">
 
-  <h4>新增试用</h4>
-  <div class="close-btn" ng-click="cancel()">
-  </div>
+  <form name="newTrialForm">
 
-  <div class="u-goods-info">
-    <img ng-src="{{ modal.banner }}" alt="">
-    <div class="detail">
-      <p class="title" ng-bind="modal.name"></p>
-      <p ng-bind="modal.id"></p>
-      <p ng-bind="modal.brief"></p>
+    <h4>新增试用</h4>
+    <div class="close-btn" ng-click="cancel()">
     </div>
-  </div>
 
-  <div class="u-form-group">
-    <p class="u-group">
-      <label for="" class="u-label">试用申请开始时间:</label>
-      <input type="text" class="u-input u-date" ng-click="openStart()" uib-datepicker-popup
-             ng-model="trial_startdate" is-open="popup1.opened" datepicker-options="dateOptionsStart"
-             ng-required="true" close-text="关闭" alt-input-formats="altInputFormats"/>
-      <input type="time" class="u-input u-time" ng-model="trial_starttime">
-      <span class="tips">Needed</span>
-    </p>
-    <p class="u-group">
-      <label for="" class="u-label">试用申请截止时间:</label>
-      <input type="text" class="u-input u-date" ng-click="openEnd()" uib-datepicker-popup
-             ng-model="trial_enddate" is-open="popup2.opened" datepicker-options="dateOptionsEnd"
-             ng-required="true" close-text="关闭" alt-input-formats="altInputFormats"/>
-      <input type="time" class="u-input u-time" ng-model="trial_endtime">
-      <span class="tips">Needed</span>
-    </p>
-    <p class="u-group">
-      <label for="" class="u-label">试用数量:</label>
-      <input type="number" class="u-input">
-      <span class="tips">Needed</span>
-    </p>
-  </div>
+    <div class="u-goods-info">
+      <img ng-src="{{ modal.banner }}" alt="">
+      <div class="detail">
+        <p class="title word-break" ng-bind="modal.name"></p>
+        <p ng-bind="modal.id"></p>
+        <p class="word-break" ng-bind="modal.brief"></p>
+      </div>
+    </div>
 
-  <button class="mod-btn btn-submit" ng-click="submitTrial()">提交</button>
-  <p class="u-alert">请填写完整的信息</p>
+    <div class="u-form-group">
+      <p class="u-group">
+        <label for="" class="u-label">试用申请开始时间:</label>
+        <input type="text" class="u-input u-date" ng-click="openStart()" uib-datepicker-popup
+               ng-model="trial_startdate" is-open="popup1.opened" datepicker-options="dateOptionsStart"
+               ng-required="true" close-text="关闭" alt-input-formats="altInputFormats"/>
+        <input type="time" class="u-input u-time" ng-model="trial_starttime" required>
+        <span class="tips">Needed</span>
+      </p>
+      <p class="u-group">
+        <label for="" class="u-label">试用申请截止时间:</label>
+        <input type="text" class="u-input u-date" ng-click="openEnd()" uib-datepicker-popup
+               ng-model="trial_enddate" is-open="popup2.opened" datepicker-options="dateOptionsEnd"
+               ng-required="true" close-text="关闭" alt-input-formats="altInputFormats"/>
+        <input type="time" class="u-input u-time" ng-model="trial_endtime" required>
+        <span class="tips">Needed</span>
+      </p>
+      <!--<p class="u-group">-->
+      <!--<label for="" class="u-label">试用数量:</label>-->
+      <!--<input type="number" class="u-input">-->
+      <!--<span class="tips">Needed</span>-->
+      <!--</p>-->
+    </div>
+
+    <button class="mod-btn btn-submit" ng-click="submitTrial()"
+            ng-class="{true: '', false: 'disable'}[newTrialForm.$valid]" ng-disabled="!newTrialForm.$valid">提交
+    </button>
+    <p class="u-alert" ng-show="!newTrialForm.$valid">请填写完整的信息</p>
+
+  </form>
 
 </div>

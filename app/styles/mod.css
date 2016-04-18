@@ -83,6 +83,9 @@
   color: #333;
   line-height: 36px;
 }
+.mod-table tbody > tr > td .name {
+  max-width: 200px;
+}
 .table .mod-btn {
   padding: 0;
   text-align: left;
@@ -183,6 +186,43 @@
   display: inline-block;
   width: 6em;
 }
+.mod-orderdetail-pop .modal-dialog {
+  width: 965px;
+}
+.mod-orderdetail-pop .mod-simple-modal {
+  width: 965px;
+}
+.mod-orderdetail-pop .mod-orderdetail {
+  padding: 0 15px 30px;
+}
+.mod-orderdetail-pop .mod-order-table {
+  margin: 20px 15px 15px 15px;
+  width: auto;
+}
+.mod-orderdetail-pop .mod-more-detail {
+  font-size: 14px;
+  color: #000;
+  width: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.mod-orderdetail-pop .mod-more-detail .item {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.mod-orderdetail-pop .mod-more-detail .title {
+  float: left;
+  width: 130px;
+  text-align: right;
+  margin-right: 5px;
+}
+.mod-orderdetail-pop .mod-more-detail .content {
+  float: left;
+  width: 85%;
+}
+.mod-orderdetail-pop .mod-more-detail .reason {
+  color: #666666;
+}
 .mod-banner-table a.word-break {
   display: inline-block;
   width: 220px;
@@ -233,18 +273,23 @@
 }
 .mod-newtrial .detail {
   float: left;
+  width: 300px;
 }
 .mod-newtrial .detail .title {
   color: #000;
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 20px;
+  height: 40px;
+  overflow: hidden;
 }
 .mod-newtrial .detail p {
   color: #999;
   text-align: left;
   font-size: 14px;
   line-height: 20px;
+  height: 40px;
+  overflow: hidden;
 }
 .mod-newtrial .u-form-group {
   margin-top: 20px;
@@ -695,4 +740,28 @@
 .mod-avater.big {
   width: 100px;
   height: 100px;
+}
+.mod-common-popup {
+  position: relative;
+  padding: 0 10px 25px 10px;
+}
+.mod-common-popup h4 {
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  border-bottom: 1px solid #eee;
+}
+.mod-common-popup .close-btn {
+  display: inline-block;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/btn-close.png);
+}
+.mod-common-popup .close-btn a {
+  display: block;
+  height: 100%;
 }

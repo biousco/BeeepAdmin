@@ -33,6 +33,7 @@ define(['./../module'], function (controllers) {
       });
 
       modalInstance.result.then(function (isBan) {
+        $state.reload();
       }, function () {});
     }
 
@@ -85,7 +86,7 @@ define(['./../module'], function (controllers) {
     $scope.submitTrial = function () {
       var trial_start_datetime = ReformateDateTime($scope.trial_startdate, $scope.trial_starttime),
         trial_end_datetime = ReformateDateTime($scope.trial_enddate, $scope.trial_endtime);
-      console.log(trial_end_datetime, trial_start_datetime, $scope.trial_starttime)
+      // console.log(trial_end_datetime, trial_start_datetime, $scope.trial_starttime)
       if(goods.id && goods.id !== "") {
         var dataSet = {
           product_id: goods.id,
