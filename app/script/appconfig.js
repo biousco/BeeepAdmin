@@ -216,7 +216,7 @@ define(['./app'], function (app) {
         }
       })
       .state('order.alllist', {
-        url: '/alllist',
+        url: '/alllist/:batch_id',
         templateUrl: 'views/order/alllist.html',
         controller: 'OrderAllListCtrl'
       });

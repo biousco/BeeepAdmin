@@ -75,13 +75,24 @@ define(['./../module'], function (controllers) {
 
     $scope.tipsRank = function () {
       modAlert.success('更新中..');
-    }
+    };
 
     /** 搜索 **/
-    $scope.searchList = function (product_id) {
-      ProductService.getProductList({is_delete: 0}).success(function (data) {
+    $scope.searchType = {search_id: 'id', search_title: 'title'};
+    $scope.search_select = 'id';
+    $scope.searchList = function (key) {
+      var param;
+      if($scope.search_select == 'id') {
+        param = {search_id: key};
+      } else {
+        param = {search_keyword: key};
+      }
+      ProductService.getProductList(param).success(function (data) {
         if(data.ret_code == 0) {
           $scope.product_list = data.data;
+          if(data.data.length == 0) {
+            modAlert.fail('没有该商品');
+          }
         }
       })
     }

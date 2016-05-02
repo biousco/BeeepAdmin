@@ -1,11 +1,18 @@
 <div class="mod-search-bar">
   <form action="">
+    <div class="u-wrapper u-select" ng-show="isType">
+      <select class="u-search_type" ng-model="selected" ng-options="t for t in searchType">
+        <option value="search_id">id</option>
+        <option value="search_title">title</option>
+      </select>
+    </div>
     <div class="u-wrapper">
       <span class="u-icon">
       <i></i>
       </span>
-      <input type="text" id="search" class="u-search" placeholder="Search..." ng-model="keyWord">
+      <input type="text" id="search" class="u-search" placeholder="{{labelText}}" ng-model="keyWord">
     </div>
-    <label for="search" class="u-label" ng-bind="labelText"></label>
+    <button class="btn btn-search" ng-click="searchFun({keyWord: keyWord})">搜索</button>
+    <!--<label for="search" class="u-label" ng-bind="labelText"></label>-->
   </form>
 </div>

@@ -13,6 +13,7 @@ define(['./app'], function (app) {
     updateProduct:'/Admin/Product/Update',
     addBatch: '/Admin/Batch/Add',
     updateBatch: '/Admin/Batch/Update',
+    deleteBatch: '/Admin/Batch/Delete',
     getBatch: '/Admin/Batch/GetBatches',
     addReview: '/Admin/Review/Add',
     deleteReview: '/Admin/Review/Update',
@@ -28,10 +29,14 @@ define(['./app'], function (app) {
     addBaner: '/Admin/Banner/Add',
     updateBanner: '/Admin/Banner/Update',
     getBannerDetail: '/Admin/Banner/GetDetail',
+    deleteBanner: '/Admin/Banner/Delete',
     uploadFile: '/Admin/File/Upload'
   });
   app.constant('CON_goodsRelate', {
-    'buy_channel': ['Amazon','Taobal','Ebay'],
-    'currency_type': ['美元']
+    'buy_channel': ['Amazon','indiegogo','kickstarter','ebay'],
+    'currency_type': ['USD'],
+    'price_map': {
+      'USD': '$'
+    }
   });
 });

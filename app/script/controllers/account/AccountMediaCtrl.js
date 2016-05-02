@@ -14,13 +14,13 @@ define(['./../module'], function (controllers) {
         },
         {
           code: 1,
-          text: '认证不通过',
-          operator: [0, 3]
+          text: '认证通过',
+          operator: [0, 3, 2]
         },
         {
           code: 2,
-          text: '认证通过',
-          operator: [0, 3]
+          text: '认证不通过',
+          operator: [0, 3, 1]
         }
       ];
 
@@ -43,20 +43,23 @@ define(['./../module'], function (controllers) {
         }
       ];
 
+      function accountFilter (data) {
+        return data.data.map(function (ele) {
+          var _temp = STATUS[ele.is_auth_media];
+          ele.status_text = _temp.text;
+          ele.operate = _temp.operator.map(function (eles) {
+            return OPERATE[eles];
+          });
+          return ele;
+        });
+      }
 
       /** 媒体用户 **/
       $scope.getAccountList = function () {
         var param = {type: 1};
         UserService.getUserList(param).success(function (data) {
           if (data.ret_code == 0) {
-            data.data.map(function (ele) {
-              var _temp = STATUS[ele.is_auth_media];
-              ele.status_text = _temp.text;
-              ele.operate = _temp.operator.map(function (eles) {
-                return OPERATE[eles];
-              });
-              return ele;
-            });
+            accountFilter(data);
             $scope.accountList = data.data;
           }
         });
@@ -98,7 +101,7 @@ define(['./../module'], function (controllers) {
 
         modalInstance.result.then(function (isBan) {
           if (!isBan) return false;
-          var data = {id: id, is_auth_media: 2};
+          var data = {id: id, is_auth_media: 1, trial_hc: 1};
           UserService.updateUser(data).success(function (data) {
             if (data.ret_code == 0) {
               modAlert.success('账号验证成功！');
@@ -126,7 +129,7 @@ define(['./../module'], function (controllers) {
 
         modalInstance.result.then(function (isBan) {
           if (!isBan) return false;
-          var data = {id: id, is_auth_media: 1};
+          var data = {id: id, is_auth_media: 2};
           UserService.updateUser(data).success(function (data) {
             if (data.ret_code == 0) {
               modAlert.success('账号操作成功！');
@@ -182,6 +185,27 @@ define(['./../module'], function (controllers) {
 
       $scope.tipsRank = function () {
         modAlert.success('更新中..');
+      }
+
+      /** 搜索 **/
+      $scope.searchType = {search_id: 'id', search_title: 'name'};
+      $scope.search_select = 'id';
+      $scope.searchList = function (key) {
+        var param;
+        if($scope.search_select == 'id') {
+          param = {search_id: key};
+        } else {
+          param = {search_keyword: key};
+        }
+        UserService.getUserList(param).success(function (data) {
+          if(data.ret_code == 0) {
+            accountFilter(data);
+            $scope.accountList = data.data;
+            if(data.data.length == 0) {
+              modAlert.fail('没有该用户');
+            }
+          }
+        })
       }
 
     }]);

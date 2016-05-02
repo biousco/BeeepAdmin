@@ -1,4 +1,5 @@
-<mod-search-bar label-text="'搜索支持uid'" ng-enter="searchList(keyWord)" key-word="keyWord"></mod-search-bar>
+<mod-search-bar label-text="'搜索支持id,用户名'" ng-enter="searchList(keyWord)" key-word="keyWord"
+                search-type="searchType" selected="search_select" is-type="true" search-fun="searchList(keyWord)"></mod-search-bar>
 
 <table class="table g-mt30 mod-account-table" ng-init="getAccountList()">
   <thead>
@@ -8,6 +9,7 @@
     <td>头像</td>
     <td>邮箱</td>
     <td>用户类型</td>
+    <td>用户状态</td>
     <td>试用额度</td>
     <td>操作</td>
   </tr>
@@ -16,15 +18,17 @@
   <tr ng-repeat="t in accountList">
     <td ng-bind="t.id"></td>
     <td ng-bind="t.name"></td>
-    <td><img ng-src="{{ t.avater }}" alt="" class="img-thumb"></td>
+    <td><img ng-src="{{ t.avatar }}" alt="" class="img-thumb"></td>
     <td ng-bind="t.email"></td>
     <td>普通用户</td>
+    <td ng-bind="t.status_text"></td>
     <td>
       <a ng-bind="t.trial_hc" editable-text="t.trial_hc" class="editable editable-click"
          onaftersave="updateRank(t.id,t.trial_hc)" onbeforesave="tipsRank()"></a>
     </td>
     <td>
-      <button class="mod-btn" ng-click="showDetail(t)">查看详情</button>
+      <button class="mod-btn" ng-repeat="tt in t.operate"
+              ng-click="funcHandler(t.id, tt.func, t)" ng-bind="tt.text"></button>
     </td>
   </tr>
   </tbody>

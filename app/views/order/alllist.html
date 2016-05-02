@@ -1,4 +1,4 @@
-<mod-search-bar label-text="'搜索支持试用id'" ng-enter="searchList(keyWord)" key-word="keyWord"></mod-search-bar>
+<mod-search-bar label-text="'搜索支持试用id'" ng-enter="searchList(keyWord)" key-word="keyWord" search-fun="searchList(keyWord)"></mod-search-bar>
 
 <table class="table mod-order-table g-mt30" ng-init="getAllTrial()">
   <thead>
@@ -21,7 +21,7 @@
           <img ng-src="{{ t.product_banner }}">
         </div>
         <div class="u-detail">
-          <p><span>订单号：</span>{{ t.address_info.ordernum }}</p>
+          <p><span>订单号：</span>{{ t.order_num }}</p>
           <p><span>物流公司：</span>{{ t.express }}</p>
           <p><span>物流单号：</span>{{ t.express_number }}</p>
           <p><span>收货地址：</span>{{ t.address_info.address }}</p>

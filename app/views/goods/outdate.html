@@ -1,4 +1,6 @@
-<mod-search-bar label-text="'搜索支持id、商品名称'" ng-enter="updateList()"></mod-search-bar>
+<mod-search-bar label-text="'搜索支持id,商品标题'" ng-enter="searchList(keyWord)" key-word="keyWord"
+                search-type="searchType" selected="search_select" is-type="true" search-fun="searchList(keyWord)"></mod-search-bar>
+
 
 <table class="table table-hover dataTable g-mt30 mod-table" ng-init="getProductList()">
   <thead>

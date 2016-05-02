@@ -3,8 +3,10 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('OrderAllListCtrl', ['$scope', 'TrialService', '$uibModal', 'modAlert', '$state',
-    function ($scope, TrialService, $uibModal, modAlert, $state) {
+  controllers.controller('OrderAllListCtrl', ['$scope', 'TrialService', '$uibModal', 'modAlert', '$state', '$stateParams',
+    function ($scope, TrialService, $uibModal, modAlert, $state, $stateParams) {
+
+      var batch_id = $stateParams.batch_id;
 
       var STATUS = [
         {
@@ -15,7 +17,7 @@ define(['./../module'], function (controllers) {
         {
           status: 1,
           title: '试用申请审核失败',
-          operate: [0]
+          operate: [0, 1]
         },
         {
           status: 2,
@@ -35,12 +37,12 @@ define(['./../module'], function (controllers) {
         {
           status: 5,
           title: '文章审核失败',
-          operate: [0]
+          operate: [0, 4]
         },
         {
           status: 6,
           title: '文章已发布',
-          operate: [0]
+          operate: [0, 5]
         }
 
       ];
@@ -77,6 +79,7 @@ define(['./../module'], function (controllers) {
         }
       ];
 
+      /** 添加订单状态和对应的操作 **/
       function trialListFilter(data) {
         angular.forEach(data, function (value, key) {
           var _s = STATUS[value.status];
@@ -91,10 +94,17 @@ define(['./../module'], function (controllers) {
 
       /** 获取所有申请记录 **/
       $scope.getAllTrial = function () {
-        TrialService.getTrialList().success(function (data) {
+        var param;
+        if(batch_id) {
+          param = {batch_id: batch_id};
+        }
+        TrialService.getTrialList(param).success(function (data) {
           if (data.ret_code == 0) {
             $scope.trial_list = data.data;
             trialListFilter($scope.trial_list);
+            if(data.data == null) {
+              modAlert.fail('没有记录');
+            }
           }
         })
       };
@@ -216,7 +226,7 @@ define(['./../module'], function (controllers) {
 
         modalInstance.result.then(function (isBan) {
           if (!isBan) return false;
-          var data = {id: trial_id, status: 4};
+          var data = {id: trial_id, status: 5};
           TrialService.updateTrial(data).success(function (data) {
             if (data.ret_code == 0) {
               modAlert.success('状态更新成功');

@@ -3,13 +3,44 @@
  */
 define(['./../module'], function (controllers) {
   'use strict';
-  controllers.controller('GoodsUpdateCtrl', ['$scope', 'ProductService', '$stateParams', '$state', 'CON_goodsRelate', 'modAlert',
-    function ($scope, ProductService, $stateParams, $state, CON_goodsRelate, modAlert) {
+  controllers.controller('GoodsUpdateCtrl', ['$scope', 'ProductService', '$stateParams', '$state',
+    'CON_goodsRelate', 'modAlert', 'Upload',
+    function ($scope, ProductService, $stateParams, $state, CON_goodsRelate, modAlert, Upload) {
 
       $scope.buy_channel_list = CON_goodsRelate.buy_channel;
       $scope.product_id = $stateParams.product_id;
       $scope.currency_type = CON_goodsRelate.currency_type;
       $scope.price_type = CON_goodsRelate.currency_type[0];
+
+      $scope.file_text = "上传图片";
+
+
+      $scope.fileCallback = function (response) {
+        var data = response.data;
+        if (data.ret_code == 0) {
+          $scope.product_detail.banner = data.photo_url;
+          modAlert.success('图片上传成功！');
+          $scope.file_text = "重新上传";
+        } else {
+          modAlert.fail('图片上传失败...请重试：' + data.ret_msg);
+        }
+      };
+
+      $scope.upload = function (file) {
+        if(file == null) return true;
+        modAlert.success('图片上传中...请稍后');
+        Upload.upload({
+          url: '/Admin/File/Upload',
+          data: {
+            photo: file
+          },
+          headers: {
+            isFile: true
+          }
+        }).then(function (resp) {
+          $scope.fileCallback(resp);
+        })
+      };
 
       $scope.isEditorReady = false;
       var g_editor;
@@ -18,6 +49,7 @@ define(['./../module'], function (controllers) {
         var data = {id: $scope.product_id};
         ProductService.getProductDetail(data).success(function (data) {
           if (data.ret_code == 0) {
+            data.data.price = parseInt(data.data.price, 10);
             $scope.product_detail = data.data;
             var textContent = html_decode(data.data.content);
 
@@ -68,19 +100,6 @@ define(['./../module'], function (controllers) {
         }
       };
 
-      $scope.onUpload = function () {
-        modAlert.success('图片上传中...请稍后');
-      };
-
-      $scope.fileCallback = function (response) {
-        var data = JSON.parse(response.data);
-        if (data.ret_code == 0) {
-          $scope.product_detail.banner = data.photo_url;
-          modAlert.success('图片上传成功！');
-        } else {
-          modAlert.fail('图片上传失败...请重试：' + data.ret_msg);
-        }
-      };
 
       function html_decode(str)
       {

@@ -10,14 +10,14 @@ define(['./module'], function (directives) {
       replace: true,
       scope: {
         labelText: '=labelText',
-        keyWord: '=keyWord'
+        keyWord: '=keyWord',
+        isType: '=isType',
+        searchType: '=searchType',
+        selected: '=selected',
+        searchFun: '&'
       },
       link: function (scope, element, attrs) {
         element[0].focus();
-
-        scope.show = function () {
-          console.log('h')
-        }
       }
     }
   }])

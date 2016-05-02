@@ -15,7 +15,7 @@
         <div class="content-wrap">
           <div class="item-wrap">
             <div class="input-wrap author-wrap">
-              <input type="text" required ng-model="author">
+              <input type="text" required ng-model="author" valid-author ng-enter="getAuthor(author)">
             </div>
             <button type="button" class="mod-btn" ng-enter="getAuthor(author)" ng-click="getAuthor(author)"></button>
             <span class="require_tips">必填项</span>
@@ -44,11 +44,9 @@
           <div class="img-preview">
             <img src="{{ banner }}">
           </div>
-          <div upload-button
-               url="/Admin/File/Upload" param="photo" id="photo" name="photo"
-               force-iframe-upload = 'true'
-               on-upload="onUpload(files)"
-               on-complete="fileCallback(response)"></div>
+          <div class="btn btn-file" ngf-select="upload(file)" ng-model="file" name="photo" ngf-pattern="'image/*'"
+               ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100" ng-bind="file_text"></div>
+          <p>jpg,png or gif 500x333</p>
         </div>
       </div>
       <div class="m-inputBox">
@@ -61,15 +59,30 @@
       <div class="m-inputBox">
         <p class="title">文章原链接:</p>
         <div class="input-wrap">
-          <input type="text" ng-model="buy_link">
+          <input type="text" ng-model="origin_url">
         </div>
       </div>
-      <div class="m-inputBox">
+
+      <div class="m-inputBox m-author-box">
         <p class="title">关联商品:</p>
-        <div class="input-wrap">
-          <input type="text" ng-model="product_id">
+        <div class="content-wrap">
+          <div class="item-wrap">
+            <div class="input-wrap author-wrap">
+              <input type="text" ng-model="product_id" ng-enter="getProducts(product_id)">
+            </div>
+            <button type="button" class="mod-btn" ng-click="getProducts(product_id)"></button>
+          </div>
+          <p class="tips">请输入商品id，以半角逗号,为分隔符，按确定或回车键提交</p>
+          <div class="user-card" ng-show="RelateProductsList" ng-repeat="Products in RelateProductsList">
+            <div class="mod-avater">
+              <img src="{{ Products.banner }}">
+            </div>
+            <p class="u-name" ng-bind="Products.name">商品名</p>
+            <p class="u-title" ng-bind="Products.title">Title</p>
+          </div>
         </div>
       </div>
+
     </div>
 
     <button type="submit" class="mod-btn btn-submit"

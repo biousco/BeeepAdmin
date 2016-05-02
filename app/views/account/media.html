@@ -1,4 +1,6 @@
-<mod-search-bar label-text="'搜索支持uid，用户名，邮箱'" ng-enter="updateList()"></mod-search-bar>
+<mod-search-bar label-text="'搜索支持id,用户名'" ng-enter="searchList(keyWord)" key-word="keyWord"
+                search-type="searchType" selected="search_select" is-type="true" search-fun="searchList(keyWord)"></mod-search-bar>
+
 
 <table class="table g-mt30 mod-account-table" ng-init="getAccountList()">
   <thead>
@@ -17,9 +19,9 @@
   <tr ng-repeat="t in accountList">
     <td ng-bind="t.id"></td>
     <td ng-bind="t.name"></td>
-    <td><img ng-src="{{t.avater}}" alt="" class="img-thumb"></td>
+    <td><img ng-src="{{t.avatar}}"  class="img-thumb"></td>
     <td ng-bind="t.email"></td>
-    <td>普通用户</td>
+    <td>媒体用户</td>
     <td ng-bind="t.status_text"></td>
     <td>
       <a editable-text="t.trial_hc" class="editable editable-click" ng-bind="t.trial_hc"

@@ -4,7 +4,7 @@ define(['./module'], function(services) {
   services.factory('ServiceInterceptor', ['$q', '$httpParamSerializerJQLike','modAlert', function ($q, $httpParamSerializerJQLike, modAlert) {
     return {
       'request': function (config) {
-        if(config.method == 'POST') {
+        if(config.method == 'POST' && !config.headers.isFile) {
           config.headers['Content-Type'] = 'application/x-www-form-urlencoded';
           config.data = $httpParamSerializerJQLike(config.data);
         }

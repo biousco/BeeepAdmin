@@ -99,6 +99,14 @@ define(['./module'], function (services) {
             method: 'POST',
             data: param
           });
+        },
+
+        deleteBatch: function (param) {
+          return $http({
+            url: cgiList.deleteBatch,
+            method: 'POST',
+            data: param
+          })
         }
       };
 
@@ -191,6 +199,14 @@ define(['./module'], function (services) {
           data: param
 
         });
+      },
+
+      deleteBanner: function (param) {
+        return $http({
+          url: cgiList.deleteBanner,
+          method: 'POST',
+          data: param
+        })
       }
 
     };

@@ -23,12 +23,9 @@
           <div class="img-preview">
             <img src="{{ banner }}">
           </div>
-          <div upload-button
-               url="/Admin/File/Upload" param="photo" id="photo" name="photo"
-               force-iframe-upload = 'true'
-               on-upload="onUpload(files)"
-               on-complete="fileCallback(response)"></div>
-          <p>jpg,png or gif 330X220</p>
+          <div class="btn btn-file" ngf-select="upload(file)" ng-model="file" name="photo" ngf-pattern="'image/*'"
+               ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100" ng-bind="file_text"></div>
+          <p>jpg,png or gif 500x333</p>
         </div>
         <span class="require_tips">必填项</span>
       </div>
@@ -73,7 +70,7 @@
           </select>
         </div>
         <div class="input-wrap price-wrap">
-          <input type="text" ng-model="price" required name="price">
+          <input type="number" ng-model="price" required name="price">
         </div>
         <span class="require_tips">必填项</span>
       </div>

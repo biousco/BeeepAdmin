@@ -17,7 +17,7 @@ define(['./../module'], function (controllers) {
     };
 
     /** 下线banner **/
-    $scope.setoffBanner = function () {
+    $scope.setoffBanner = function (id) {
       var modalInstance = $uibModal.open({
         templateUrl: 'views/common/modal-simple.html',
         controller: 'SimpleDialogInstanceCtrl',
@@ -30,7 +30,15 @@ define(['./../module'], function (controllers) {
 
       modalInstance.result.then(function (isBan) {
         if(!isBan) return false;
-        console.log('yes');
+        var param = {id: id};
+        BannerService.deleteBanner(param).success(function (data) {
+          if(data.ret_code == 0) {
+            modAlert.success('banner下线成功！');
+            $state.reload();
+          } else {
+            modAlert.fail('banner下线失败' + data.ret_msg);
+          }
+        })
       }, function () {});
 
 

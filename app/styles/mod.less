@@ -53,6 +53,31 @@
   border-radius: 18px;
   color: @theme-color;
 }
+.btn-file {
+  width: 100px;
+  height: 28px;
+  text-align: center;
+  line-height: 15px;
+  background-color: @theme-color;
+  border-radius: 18px;
+  color: #FFF;
+  &:hover,&:focus {
+    color: #FFF;
+  }
+}
+.btn-search {
+  width: 70px;
+  height: 36px;
+  text-align: center;
+  line-height: 15px;
+  background-color: @theme-color;
+  border-radius: 18px;
+  color: #FFF;
+  margin-left: 10px;
+  &:hover,&:focus {
+    color: #FFF;
+  }
+}
 .u-alert {
   text-align: center;
   font-size: 12px;
@@ -140,6 +165,17 @@
     margin-left: 20px;
     color: #a0a0a0;
     font-weight: normal;
+  }
+  .u-search_type {
+    font-size: 14px;
+    border: none;
+    background-color: #f0f0f0;
+    width: 100%;
+    text-indent: 11px;
+    height: 100%;
+  }
+  .u-select {
+    width: 85px;
   }
 }
 
@@ -305,7 +341,7 @@
       font-size: 20px;
       margin-bottom: 20px;
       line-height: 20px;
-      height: 40px;
+      max-height: 40px;
       overflow: hidden;
     }
     p {
@@ -313,7 +349,7 @@
       text-align: left;
       font-size: 14px;
       line-height: 20px;
-      height: 40px;
+      max-height: 40px;
       overflow: hidden;
     }
   }
@@ -342,6 +378,7 @@
       border: none;
       outline: none;
       text-indent: 12px;
+      margin-right: 10px;
     }
     .tips {
       float: left;
@@ -433,12 +470,15 @@
     background-color: transparent;
     .placehold {
       width: 450px;
-      height: 168px;
+      min-height: 168px;
       background-color: #cccccc;
       color: #FFF;
       margin-bottom: 10px;
       text-align: center;
       line-height: 168px;
+      img {
+        width: 100%;
+      }
     }
   }
   input,textarea {
@@ -476,6 +516,7 @@
     }
   }
   .prev_preview {
+    display: block;
     width: 360px;
     height: 240px;
     margin-bottom: 10px;
@@ -609,8 +650,8 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     overflow: hidden;
     border-radius: 50%;
     img {
@@ -762,7 +803,7 @@
   color: #FFF;
   background-color: @theme-color;
   transition: height .5s ease;
-  z-index: 1000;
+  z-index: 1200;
   &.show {
     height: 40px;
   }

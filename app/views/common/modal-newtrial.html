@@ -22,22 +22,18 @@
         <input type="text" class="u-input u-date" ng-click="openStart()" uib-datepicker-popup
                ng-model="trial_startdate" is-open="popup1.opened" datepicker-options="dateOptionsStart"
                ng-required="true" close-text="关闭" alt-input-formats="altInputFormats"/>
-        <input type="time" class="u-input u-time" ng-model="trial_starttime" required>
-        <span class="tips">Needed</span>
+        <uib-timepicker ng-model="trial_starttime"
+                        show-meridian="false" show-spinners="false" required></uib-timepicker>
       </p>
       <p class="u-group">
         <label for="" class="u-label">试用申请截止时间:</label>
         <input type="text" class="u-input u-date" ng-click="openEnd()" uib-datepicker-popup
                ng-model="trial_enddate" is-open="popup2.opened" datepicker-options="dateOptionsEnd"
                ng-required="true" close-text="关闭" alt-input-formats="altInputFormats"/>
-        <input type="time" class="u-input u-time" ng-model="trial_endtime" required>
-        <span class="tips">Needed</span>
+        <uib-timepicker ng-model="trial_endtime"
+                        show-meridian="false" show-spinners="false" required></uib-timepicker>
       </p>
-      <!--<p class="u-group">-->
-      <!--<label for="" class="u-label">试用数量:</label>-->
-      <!--<input type="number" class="u-input">-->
-      <!--<span class="tips">Needed</span>-->
-      <!--</p>-->
+
     </div>
 
     <button class="mod-btn btn-submit" ng-click="submitTrial()"

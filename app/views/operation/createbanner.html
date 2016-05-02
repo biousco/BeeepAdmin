@@ -5,12 +5,15 @@
       <div class="m-inputBox">
         <p class="title">上传图片：</p>
         <div class="input-wrap banner-wrap">
-          <img src="{{ image }}" alt="" class="placehold">
+          <div class="placehold">
+            <img src="{{ image }}" alt="" >
+          </div>
           <div upload-button
                url="/Admin/File/Upload" param="photo" id="photo" name="photo"
                force-iframe-upload = 'true'
                on-upload="onUpload(files)"
                on-complete="fileCallback(response)"></div>
+          <p>推荐尺寸：1600x600</p>
         </div>
       </div>
       <div class="m-inputBox">

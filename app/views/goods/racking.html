@@ -1,4 +1,5 @@
-<mod-search-bar label-text="'搜索支持id'" ng-enter="searchList(keyWord)" key-word="keyWord"></mod-search-bar>
+<mod-search-bar label-text="'搜索支持id,商品标题'" ng-enter="searchList(keyWord)" key-word="keyWord"
+                search-type="searchType" selected="search_select" is-type="true" search-fun="searchList(keyWord)"></mod-search-bar>
 
 <table class="table g-mt30 mod-table" ng-init="getProductList()">
   <thead>
@@ -24,13 +25,11 @@
          onaftersave="updateRank(t.id,t.rank)" onbeforesave="tipsRank()"></a>
     </td>
     <td>
-      <button class="mod-btn" ng-click="previewGoods(t.buy_link)">预览</button>
+      <button class="mod-btn" ng-click="previewGoods(t.detail_link)">预览</button>
       <button class="mod-btn" ng-click="updateGoods(t.id)">编辑</button>
       <button class="mod-btn" ng-click="banGoods(t.id)">下架</button>
       <button class="mod-btn" ng-click="trialGoods(t.id)">试用管理</button>
     </td>
   </tr>
   </tbody>
-
-
 </table>
