@@ -54,7 +54,7 @@ require.config({
     }
   },
   deps: ['./bootstrap'],
-  urlArgs: "bust=16043024"
+  urlArgs: "bust=16043025"
 });
 
 

@@ -52,7 +52,7 @@ define(['./../module'], function (controllers) {
             data.data.price = parseInt(data.data.price, 10);
             $scope.product_detail = data.data;
             var textContent = html_decode(data.data.content);
-
+            $scope.buy_channel_optionValue = data.data.buy_channel;
             var retry = function () {
 
               if($scope.isEditorReady) {
@@ -99,6 +99,14 @@ define(['./../module'], function (controllers) {
           console.log($scope.releaseForm, '表单不合法');
         }
       };
+
+      $scope.$watch('buy_channel_optionValue', function (newValue) {
+        if(newValue == '自定义') {
+
+        } else {
+          $scope.product_detail.buy_channel = newValue;
+        }
+      });
 
 
       function html_decode(str)

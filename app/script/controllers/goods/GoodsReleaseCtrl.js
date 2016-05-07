@@ -8,7 +8,7 @@ define(['./../module'], function (controllers) {
     function ($scope, ProductService, $state, CON_goodsRelate, modAlert, UploadService, upload, cgiList, Upload) {
 
       $scope.buy_channel_list = CON_goodsRelate.buy_channel;
-      $scope.buy_channel = CON_goodsRelate.buy_channel[0];
+      $scope.buy_channel_optionValue = CON_goodsRelate.buy_channel[0];
 
       $scope.currency_type = CON_goodsRelate.currency_type;
       $scope.price_unit = CON_goodsRelate.currency_type[0];
@@ -42,6 +42,14 @@ define(['./../module'], function (controllers) {
           $scope.fileCallback(resp);
         })
       };
+
+      $scope.$watch('buy_channel_optionValue', function (newValue) {
+        if(newValue == '自定义') {
+
+        } else {
+          $scope.buy_channel = newValue;
+        }
+      });
 
       $scope.releaseGoods = function () {
         var dataSet = {

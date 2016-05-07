@@ -58,8 +58,11 @@
       <div class="m-inputBox">
         <p class="title">商品平台:</p>
         <div class="input-wrap select-wrap">
-          <select name="buy_channel" required ng-model="buy_channel" ng-options="t for t in buy_channel_list">
+          <select name="buy_channel" required ng-model="buy_channel_optionValue" ng-options="t for t in buy_channel_list">
           </select>
+        </div>
+        <div class="input-wrap select-wrap" ng-show="buy_channel_optionValue == '自定义'" >
+          <input type="text" name="buy_channel" ng-model="buy_channel">
         </div>
         <span class="require_tips">必填项</span>
       </div>

@@ -189,24 +189,18 @@ define(['./../module'], function (controllers) {
       /** 文章已发布 **/
       $scope.sentArticleSuccess = function (trial_id) {
         var modalInstance = $uibModal.open({
-          templateUrl: 'views/common/modal-simple.html',
-          controller: 'SimpleDialogInstanceCtrl',
+          templateUrl: 'views/common/modal-alllist-articlePosted.html',
+          controller: 'OrderPostedInstanceCtrl',
           resolve: {
             modal: {
-              title: "您确认通过该文章的审核吗？"
+              trial_id: trial_id
             }
           }
         });
 
         modalInstance.result.then(function (isBan) {
           if (!isBan) return false;
-          var data = {id: trial_id, status: 6};
-          TrialService.updateTrial(data).success(function (data) {
-            if (data.ret_code == 0) {
-              modAlert.success('状态更新成功');
-              $state.reload();
-            }
-          });
+
         }, function () {
         });
 
@@ -291,6 +285,25 @@ define(['./../module'], function (controllers) {
     }
   });
 
+  /** 发布文章 **/
+  controllers.controller('OrderPostedInstanceCtrl', function ($scope, $uibModalInstance, TrialService, modal, modAlert) {
+
+    $scope.ok = function () {
+      var data = {id: modal.trial_id, status: 6,review_url: $scope.url};
+      TrialService.updateTrial(data).success(function (data) {
+        if (data.ret_code == 0) {
+          modAlert.success('状态更新成功');
+          $uibModalInstance.close(true);
+        } else {
+          modAlert.fail('更新失败: ' + data.ret_msg);
+        }
+      });
+    };
+    $scope.cancel = function () {
+      $uibModalInstance.dismiss('cancel');
+    }
+  });
+
   controllers.controller('SentGoodsInstanceCtrl', function ($scope, $uibModalInstance, modal, modAlert, TrialService) {
     $scope.trial = modal.trial;
 
@@ -300,7 +313,8 @@ define(['./../module'], function (controllers) {
         express: $scope.trial.express,
         express_number: $scope.trial.express_number,
         status: 3,
-        email_content: $scope.trial.email_content
+        email_content: $scope.trial.email_content,
+        deliver_time: new Date()
       };
       TrialService.updateTrial(data).success(function (data) {
         if (data.ret_code == 0) {
@@ -319,5 +333,7 @@ define(['./../module'], function (controllers) {
       $uibModalInstance.dismiss('cancel');
     }
   });
+
+
 
 });

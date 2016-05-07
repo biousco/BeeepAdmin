@@ -33,7 +33,7 @@ define(['./app'], function (app) {
     uploadFile: '/Admin/File/Upload'
   });
   app.constant('CON_goodsRelate', {
-    'buy_channel': ['Amazon','indiegogo','kickstarter','ebay'],
+    'buy_channel': ['Amazon','indiegogo','kickstarter','ebay','自定义'],
     'currency_type': ['USD'],
     'price_map': {
       'USD': '$'
