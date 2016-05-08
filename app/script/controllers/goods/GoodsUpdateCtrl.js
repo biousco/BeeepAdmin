@@ -52,7 +52,11 @@ define(['./../module'], function (controllers) {
             data.data.price = parseInt(data.data.price, 10);
             $scope.product_detail = data.data;
             var textContent = html_decode(data.data.content);
-            $scope.buy_channel_optionValue = data.data.buy_channel;
+            if(CON_goodsRelate.buy_channel.indexOf(data.data.buy_channel) == -1) {
+              $scope.buy_channel_optionValue = '自定义';
+            } else {
+              $scope.buy_channel_optionValue = data.data.buy_channel;
+            }
             var retry = function () {
 
               if($scope.isEditorReady) {
@@ -101,6 +105,7 @@ define(['./../module'], function (controllers) {
       };
 
       $scope.$watch('buy_channel_optionValue', function (newValue) {
+        if(!newValue) return;
         if(newValue == '自定义') {
 
         } else {

@@ -419,6 +419,9 @@
   width: 400px;
   margin-right: 15px;
 }
+.mod-release-box .input-wrap.brief-area {
+  height: 70px;
+}
 .mod-release-box .select-wrap {
   width: 110px;
   margin-right: 10px;
@@ -601,6 +604,12 @@
   color: #999999;
   margin: 0;
   line-height: 16px;
+}
+.mod-release-box .submit-btnBox {
+  text-align: center;
+}
+.mod-release-box .submit-btnBox .btn-submit {
+  display: inline-block;
 }
 .mod-account-detail .m-top {
   position: relative;

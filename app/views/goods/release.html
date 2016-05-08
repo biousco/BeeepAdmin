@@ -10,9 +10,9 @@
         </div>
         <span class="require_tips">必填项</span>
       </div>
-      <div class="m-inputBox">
+      <div class="m-inputBox" >
         <p class="title">商品描述:</p>
-        <div class="input-wrap">
+        <div class="input-wrap brief-area">
           <textarea ng-model="brief" class="desc" required></textarea>
         </div>
         <span class="require_tips">必填项</span>
@@ -79,8 +79,12 @@
       </div>
     </div>
 
-    <button type="submit" class="mod-btn btn-submit"
-            ng-class="{true: '', false: 'disable'}[releaseForm.$valid]" ng-disabled="!releaseForm.$valid">创建商品</button>
+    <div class="submit-btnBox">
+      <button type="submit" class="mod-btn btn-submit"
+              ng-class="{true: '', false: 'disable'}[releaseForm.$valid]" ng-disabled="!releaseForm.$valid">创建商品</button>
+      <button type="button" class="mod-btn btn-submit"
+              ng-class="{true: '', false: 'disable'}[releaseForm.$valid]" ng-disabled="!releaseForm.$valid" ng-click="previewGoods()">预览商品</button>
+    </div>
     <p class="u-alert" ng-show="!releaseForm.$valid">请填写完整的信息</p>
 
   </form>

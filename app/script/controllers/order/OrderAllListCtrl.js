@@ -313,7 +313,6 @@ define(['./../module'], function (controllers) {
         express: $scope.trial.express,
         express_number: $scope.trial.express_number,
         status: 3,
-        email_content: $scope.trial.email_content,
         deliver_time: new Date()
       };
       TrialService.updateTrial(data).success(function (data) {
