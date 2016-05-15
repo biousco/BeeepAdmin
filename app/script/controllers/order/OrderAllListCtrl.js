@@ -286,13 +286,14 @@ define(['./../module'], function (controllers) {
   });
 
   /** 发布文章 **/
-  controllers.controller('OrderPostedInstanceCtrl', function ($scope, $uibModalInstance, TrialService, modal, modAlert) {
+  controllers.controller('OrderPostedInstanceCtrl', function ($scope, $uibModalInstance, TrialService, modal, modAlert,$state) {
 
     $scope.ok = function () {
       var data = {id: modal.trial_id, status: 6,review_url: $scope.url};
       TrialService.updateTrial(data).success(function (data) {
         if (data.ret_code == 0) {
           modAlert.success('状态更新成功');
+          $state.reload();
           $uibModalInstance.close(true);
         } else {
           modAlert.fail('更新失败: ' + data.ret_msg);
@@ -304,7 +305,7 @@ define(['./../module'], function (controllers) {
     }
   });
 
-  controllers.controller('SentGoodsInstanceCtrl', function ($scope, $uibModalInstance, modal, modAlert, TrialService) {
+  controllers.controller('SentGoodsInstanceCtrl', function ($scope, $uibModalInstance, modal, modAlert, TrialService, $state) {
     $scope.trial = modal.trial;
 
     $scope.sentGoods = function () {
@@ -319,6 +320,7 @@ define(['./../module'], function (controllers) {
         if (data.ret_code == 0) {
           modAlert.success('发货成功！');
           $uibModalInstance.close(true);
+          $state.reload();
         } else {
           modAlert.fail('发货失败...' + data.ret_msg);
         }
